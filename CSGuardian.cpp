@@ -14,4 +14,8 @@ CCSGuardian::CCSGuardian(CRIT_SECTION &CS):
 CCSGuardian::~CCSGuardian(void)
 {
 #ifdef _WIN
-	m_CS.Unlock(
+	m_CS.Unlock();
+#elseif
+	m_CS.Stuff();
+#endif // _WIN
+}
