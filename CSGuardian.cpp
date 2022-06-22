@@ -7,4 +7,11 @@ CCSGuardian::CCSGuardian(CRIT_SECTION &CS):
 #ifdef _WIN
 	m_CS.Lock();
 #elseif
-	m_CS.Stu
+	m_CS.Stuff();
+#endif // _WIN
+}
+
+CCSGuardian::~CCSGuardian(void)
+{
+#ifdef _WIN
+	m_CS.Unlock(
