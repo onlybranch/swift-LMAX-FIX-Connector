@@ -21,3 +21,66 @@
   <field name='DeliverToLocationID' required='N' />
   <field name='PossDupFlag' required='N' />
   <field name='PossResend' required='N' />
+  <field name='SendingTime' required='Y' />
+  <field name='OrigSendingTime' required='N' />
+  <field name='XmlDataLen' required='N' />
+  <field name='XmlData' required='N' />
+  <field name='MessageEncoding' required='N' />
+  <field name='LastMsgSeqNumProcessed' required='N' />
+  <group name='NoHops' required='N'>
+   <field name='HopCompID' required='N' />
+   <field name='HopSendingTime' required='N' />
+   <field name='HopRefID' required='N' />
+  </group>
+ </header>
+ <messages>
+  <message name='Heartbeat' msgcat='admin' msgtype='0'>
+   <field name='TestReqID' required='N' />
+  </message>
+  <message name='TestRequest' msgcat='admin' msgtype='1'>
+   <field name='TestReqID' required='Y' />
+  </message>
+  <message name='ResendRequest' msgcat='admin' msgtype='2'>
+   <field name='BeginSeqNo' required='Y' />
+   <field name='EndSeqNo' required='Y' />
+  </message>
+  <message name='Reject' msgcat='admin' msgtype='3'>
+   <field name='RefSeqNum' required='Y' />
+   <field name='RefTagID' required='N' />
+   <field name='RefMsgType' required='N' />
+   <field name='SessionRejectReason' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='SequenceReset' msgcat='admin' msgtype='4'>
+   <field name='GapFillFlag' required='N' />
+   <field name='NewSeqNo' required='Y' />
+  </message>
+  <message name='Logout' msgcat='admin' msgtype='5'>
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='IOI' msgcat='app' msgtype='6'>
+   <field name='IOIID' required='Y' />
+   <field name='IOITransType' required='Y' />
+   <field name='IOIRefID' required='N' />
+   <component name='Instrument' required='Y' />
+   <component name='FinancingDetails' required='N' />
+   <group name='NoUnderlyings' required='N'>
+    <component name='UnderlyingInstrument' required='N' />
+   </group>
+   <field name='Side' required='Y' />
+   <field name='QtyType' required='N' />
+   <component name='OrderQtyData' required='N' />
+   <field name='IOIQty' required='Y' />
+   <field name='Currency' required='N' />
+   <component name='Stipulations' required='N' />
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+    <field name='LegIOIQty' required='N' />
+    <component name='LegStipulations' required='N' />
+   </group>
+   <field name='PriceType' required='N' />
+   <field name='Price' required='N' />
