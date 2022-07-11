@@ -793,3 +793,77 @@
    <field name='PositionEffect' required='N' />
    <field name='AutoAcceptIndicator' required='N' />
    <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='NumDaysInterest' required='N' />
+   <field name='AccruedInterestRate' required='N' />
+   <field name='AccruedInterestAmt' required='N' />
+   <field name='TotalAccruedInterestAmt' required='N' />
+   <field name='InterestAtMaturity' required='N' />
+   <field name='EndAccruedInterestAmt' required='N' />
+   <field name='StartCash' required='N' />
+   <field name='EndCash' required='N' />
+   <field name='LegalConfirm' required='N' />
+   <component name='Stipulations' required='N' />
+   <component name='YieldData' required='N' />
+   <field name='TotNoAllocs' required='N' />
+   <field name='LastFragment' required='N' />
+   <group name='NoAllocs' required='N'>
+    <field name='AllocAccount' required='N' />
+    <field name='AllocAcctIDSource' required='N' />
+    <field name='MatchStatus' required='N' />
+    <field name='AllocPrice' required='N' />
+    <field name='AllocQty' required='N' />
+    <field name='IndividualAllocID' required='N' />
+    <field name='ProcessCode' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='NotifyBrokerOfCredit' required='N' />
+    <field name='AllocHandlInst' required='N' />
+    <field name='AllocText' required='N' />
+    <field name='EncodedAllocTextLen' required='N' />
+    <field name='EncodedAllocText' required='N' />
+    <component name='CommissionData' required='N' />
+    <field name='AllocAvgPx' required='N' />
+    <field name='AllocNetMoney' required='N' />
+    <field name='SettlCurrAmt' required='N' />
+    <field name='AllocSettlCurrAmt' required='N' />
+    <field name='SettlCurrency' required='N' />
+    <field name='AllocSettlCurrency' required='N' />
+    <field name='SettlCurrFxRate' required='N' />
+    <field name='SettlCurrFxRateCalc' required='N' />
+    <field name='AllocAccruedInterestAmt' required='N' />
+    <field name='AllocInterestAtMaturity' required='N' />
+    <group name='NoMiscFees' required='N'>
+     <field name='MiscFeeAmt' required='N' />
+     <field name='MiscFeeCurr' required='N' />
+     <field name='MiscFeeType' required='N' />
+     <field name='MiscFeeBasis' required='N' />
+    </group>
+    <group name='NoClearingInstructions' required='N'>
+     <field name='ClearingInstruction' required='N' />
+    </group>
+    <field name='ClearingFeeIndicator' required='N' />
+    <field name='AllocSettlInstType' required='N' />
+    <component name='SettlInstructionsData' required='N' />
+   </group>
+  </message>
+  <message name='ListCancelRequest' msgcat='app' msgtype='K'>
+   <field name='ListID' required='Y' />
+   <field name='TransactTime' required='Y' />
+   <field name='TradeOriginationDate' required='N' />
+   <field name='TradeDate' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='ListExecute' msgcat='app' msgtype='L'>
+   <field name='ListID' required='Y' />
+   <field name='ClientBidID' required='N' />
+   <field name='BidID' required='N' />
+   <field name='TransactTime' required='Y' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='ListStatusRequest' msgcat='app' msgtype='M'>
+   <field name='ListID' required='Y' />
