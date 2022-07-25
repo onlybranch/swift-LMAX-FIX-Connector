@@ -1107,3 +1107,76 @@
     <field name='PaymentRef' required='N' />
     <field name='CardHolderName' required='N' />
     <field name='CardNumber' required='N' />
+    <field name='CardStartDate' required='N' />
+    <field name='CardExpDate' required='N' />
+    <field name='CardIssNum' required='N' />
+    <field name='PaymentDate' required='N' />
+    <field name='PaymentRemitterID' required='N' />
+   </group>
+  </message>
+  <message name='MarketDataRequest' msgcat='app' msgtype='V'>
+   <field name='MDReqID' required='Y' />
+   <field name='SubscriptionRequestType' required='Y' />
+   <field name='MarketDepth' required='Y' />
+   <field name='MDUpdateType' required='N' />
+   <field name='AggregatedBook' required='N' />
+   <field name='OpenCloseSettlFlag' required='N' />
+   <field name='Scope' required='N' />
+   <field name='MDImplicitDelete' required='N' />
+   <group name='NoMDEntryTypes' required='Y'>
+    <field name='MDEntryType' required='Y' />
+   </group>
+   <group name='NoRelatedSym' required='Y'>
+    <component name='Instrument' required='Y' />
+    <group name='NoUnderlyings' required='N'>
+     <component name='UnderlyingInstrument' required='N' />
+    </group>
+    <group name='NoLegs' required='N'>
+     <component name='InstrumentLeg' required='N' />
+    </group>
+    <group name='NoTradingSessions' required='N'>
+     <field name='TradingSessionID' required='N' />
+     <field name='TradingSessionSubID' required='N' />
+    </group>
+    <field name='ApplQueueAction' required='N' />
+    <field name='ApplQueueMax' required='N' />
+   </group>
+  </message>
+  <message name='MarketDataSnapshotFullRefresh' msgcat='app' msgtype='W'>
+   <field name='MDReqID' required='N' />
+   <component name='Instrument' required='Y' />
+   <group name='NoUnderlyings' required='N'>
+    <component name='UnderlyingInstrument' required='N' />
+   </group>
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+   </group>
+   <field name='FinancialStatus' required='N' />
+   <field name='CorporateAction' required='N' />
+   <field name='NetChgPrevDay' required='N' />
+   <group name='NoMDEntries' required='Y'>
+    <field name='MDEntryType' required='Y' />
+    <field name='MDEntryPx' required='N' />
+    <field name='Currency' required='N' />
+    <field name='MDEntrySize' required='N' />
+    <field name='MDEntryDate' required='N' />
+    <field name='MDEntryTime' required='N' />
+    <field name='TickDirection' required='N' />
+    <field name='MDMkt' required='N' />
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+    <field name='QuoteCondition' required='N' />
+    <field name='TradeCondition' required='N' />
+    <field name='MDEntryOriginator' required='N' />
+    <field name='LocationID' required='N' />
+    <field name='DeskID' required='N' />
+    <field name='OpenCloseSettlFlag' required='N' />
+    <field name='TimeInForce' required='N' />
+    <field name='ExpireDate' required='N' />
+    <field name='ExpireTime' required='N' />
+    <field name='MinQty' required='N' />
+    <field name='ExecInst' required='N' />
+    <field name='SellerDays' required='N' />
+    <field name='OrderID' required='N' />
+    <field name='QuoteEntryID' required='N' />
+    <field name='MDEntryBuyer' required='N' />
