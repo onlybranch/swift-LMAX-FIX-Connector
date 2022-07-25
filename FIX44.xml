@@ -1037,3 +1037,73 @@
     <field name='LegSwapType' required='N' />
     <field name='LegSettlType' required='N' />
     <field name='LegSettlDate' required='N' />
+    <component name='LegStipulations' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='LegPriceType' required='N' />
+    <field name='LegBidPx' required='N' />
+    <field name='LegOfferPx' required='N' />
+    <component name='LegBenchmarkCurveData' required='N' />
+   </group>
+   <field name='BidPx' required='N' />
+   <field name='OfferPx' required='N' />
+   <field name='MktBidPx' required='N' />
+   <field name='MktOfferPx' required='N' />
+   <field name='MinBidSize' required='N' />
+   <field name='BidSize' required='N' />
+   <field name='MinOfferSize' required='N' />
+   <field name='OfferSize' required='N' />
+   <field name='ValidUntilTime' required='N' />
+   <field name='BidSpotRate' required='N' />
+   <field name='OfferSpotRate' required='N' />
+   <field name='BidForwardPoints' required='N' />
+   <field name='OfferForwardPoints' required='N' />
+   <field name='MidPx' required='N' />
+   <field name='BidYield' required='N' />
+   <field name='MidYield' required='N' />
+   <field name='OfferYield' required='N' />
+   <field name='TransactTime' required='N' />
+   <field name='OrdType' required='N' />
+   <field name='BidForwardPoints2' required='N' />
+   <field name='OfferForwardPoints2' required='N' />
+   <field name='SettlCurrBidFxRate' required='N' />
+   <field name='SettlCurrOfferFxRate' required='N' />
+   <field name='SettlCurrFxRateCalc' required='N' />
+   <field name='CommType' required='N' />
+   <field name='Commission' required='N' />
+   <field name='CustOrderCapacity' required='N' />
+   <field name='ExDestination' required='N' />
+   <field name='OrderCapacity' required='N' />
+   <field name='PriceType' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <component name='YieldData' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='SettlementInstructions' msgcat='app' msgtype='T'>
+   <field name='SettlInstMsgID' required='Y' />
+   <field name='SettlInstReqID' required='N' />
+   <field name='SettlInstMode' required='Y' />
+   <field name='SettlInstReqRejCode' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='ClOrdID' required='N' />
+   <field name='TransactTime' required='Y' />
+   <group name='NoSettlInst' required='N'>
+    <field name='SettlInstID' required='N' />
+    <field name='SettlInstTransType' required='N' />
+    <field name='SettlInstRefID' required='N' />
+    <component name='Parties' required='N' />
+    <field name='Side' required='N' />
+    <field name='Product' required='N' />
+    <field name='SecurityType' required='N' />
+    <field name='CFICode' required='N' />
+    <field name='EffectiveTime' required='N' />
+    <field name='ExpireTime' required='N' />
+    <field name='LastUpdateTime' required='N' />
+    <component name='SettlInstructionsData' required='N' />
+    <field name='PaymentMethod' required='N' />
+    <field name='PaymentRef' required='N' />
+    <field name='CardHolderName' required='N' />
+    <field name='CardNumber' required='N' />
