@@ -1325,3 +1325,70 @@
      <field name='BidPx' required='N' />
      <field name='OfferPx' required='N' />
      <field name='BidSize' required='N' />
+     <field name='OfferSize' required='N' />
+     <field name='ValidUntilTime' required='N' />
+     <field name='BidSpotRate' required='N' />
+     <field name='OfferSpotRate' required='N' />
+     <field name='BidForwardPoints' required='N' />
+     <field name='OfferForwardPoints' required='N' />
+     <field name='MidPx' required='N' />
+     <field name='BidYield' required='N' />
+     <field name='MidYield' required='N' />
+     <field name='OfferYield' required='N' />
+     <field name='TransactTime' required='N' />
+     <field name='TradingSessionID' required='N' />
+     <field name='TradingSessionSubID' required='N' />
+     <field name='SettlDate' required='N' />
+     <field name='OrdType' required='N' />
+     <field name='SettlDate2' required='N' />
+     <field name='OrderQty2' required='N' />
+     <field name='BidForwardPoints2' required='N' />
+     <field name='OfferForwardPoints2' required='N' />
+     <field name='Currency' required='N' />
+     <field name='QuoteEntryRejectReason' required='N' />
+    </group>
+   </group>
+  </message>
+  <message name='SecurityDefinitionRequest' msgcat='app' msgtype='c'>
+   <field name='SecurityReqID' required='Y' />
+   <field name='SecurityRequestType' required='Y' />
+   <component name='Instrument' required='N' />
+   <component name='InstrumentExtension' required='N' />
+   <group name='NoUnderlyings' required='N'>
+    <component name='UnderlyingInstrument' required='N' />
+   </group>
+   <field name='Currency' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+   </group>
+   <field name='ExpirationCycle' required='N' />
+   <field name='SubscriptionRequestType' required='N' />
+  </message>
+  <message name='SecurityDefinition' msgcat='app' msgtype='d'>
+   <field name='SecurityReqID' required='Y' />
+   <field name='SecurityResponseID' required='Y' />
+   <field name='SecurityResponseType' required='Y' />
+   <component name='Instrument' required='N' />
+   <component name='InstrumentExtension' required='N' />
+   <group name='NoUnderlyings' required='N'>
+    <component name='UnderlyingInstrument' required='N' />
+   </group>
+   <field name='Currency' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+   </group>
+   <field name='ExpirationCycle' required='N' />
+   <field name='RoundLot' required='N' />
+   <field name='MinTradeVol' required='N' />
+  </message>
+  <message name='SecurityStatusRequest' msgcat='app' msgtype='e'>
