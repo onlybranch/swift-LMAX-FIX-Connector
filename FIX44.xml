@@ -1544,3 +1544,86 @@
     <field name='EFPTrackingError' required='N' />
     <field name='FairValue' required='N' />
     <field name='OutsideIndexPct' required='N' />
+    <field name='ValueOfFutures' required='N' />
+   </group>
+   <group name='NoBidComponents' required='N'>
+    <field name='ListID' required='N' />
+    <field name='Side' required='N' />
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+    <field name='NetGrossInd' required='N' />
+    <field name='SettlType' required='N' />
+    <field name='SettlDate' required='N' />
+    <field name='Account' required='N' />
+    <field name='AcctIDSource' required='N' />
+   </group>
+   <field name='LiquidityIndType' required='N' />
+   <field name='WtAverageLiquidity' required='N' />
+   <field name='ExchangeForPhysical' required='N' />
+   <field name='OutMainCntryUIndex' required='N' />
+   <field name='CrossPercent' required='N' />
+   <field name='ProgRptReqs' required='N' />
+   <field name='ProgPeriodInterval' required='N' />
+   <field name='IncTaxInd' required='N' />
+   <field name='ForexReq' required='N' />
+   <field name='NumBidders' required='N' />
+   <field name='TradeDate' required='N' />
+   <field name='BidTradeType' required='Y' />
+   <field name='BasisPxType' required='Y' />
+   <field name='StrikeTime' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='BidResponse' msgcat='app' msgtype='l'>
+   <field name='BidID' required='N' />
+   <field name='ClientBidID' required='N' />
+   <group name='NoBidComponents' required='Y'>
+    <component name='CommissionData' required='Y' />
+    <field name='ListID' required='N' />
+    <field name='Country' required='N' />
+    <field name='Side' required='N' />
+    <field name='Price' required='N' />
+    <field name='PriceType' required='N' />
+    <field name='FairValue' required='N' />
+    <field name='NetGrossInd' required='N' />
+    <field name='SettlType' required='N' />
+    <field name='SettlDate' required='N' />
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+    <field name='Text' required='N' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+   </group>
+  </message>
+  <message name='ListStrikePrice' msgcat='app' msgtype='m'>
+   <field name='ListID' required='Y' />
+   <field name='TotNoStrikes' required='Y' />
+   <field name='LastFragment' required='N' />
+   <group name='NoStrikes' required='Y'>
+    <component name='Instrument' required='Y' />
+   </group>
+   <group name='NoUnderlyings' required='N'>
+    <component name='UnderlyingInstrument' required='N' />
+    <field name='PrevClosePx' required='N' />
+    <field name='ClOrdID' required='N' />
+    <field name='SecondaryClOrdID' required='N' />
+    <field name='Side' required='N' />
+    <field name='Price' required='Y' />
+    <field name='Currency' required='N' />
+    <field name='Text' required='N' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+   </group>
+  </message>
+  <message name='RegistrationInstructions' msgcat='app' msgtype='o'>
+   <field name='RegistID' required='Y' />
+   <field name='RegistTransType' required='Y' />
+   <field name='RegistRefID' required='Y' />
+   <field name='ClOrdID' required='N' />
+   <component name='Parties' required='N' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='RegistAcctType' required='N' />
+   <field name='TaxAdvantageType' required='N' />
+   <field name='OwnershipType' required='N' />
