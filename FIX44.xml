@@ -1627,3 +1627,79 @@
    <field name='RegistAcctType' required='N' />
    <field name='TaxAdvantageType' required='N' />
    <field name='OwnershipType' required='N' />
+   <group name='NoRegistDtls' required='N'>
+    <field name='RegistDtls' required='N' />
+    <field name='RegistEmail' required='N' />
+    <field name='MailingDtls' required='N' />
+    <field name='MailingInst' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='OwnerType' required='N' />
+    <field name='DateOfBirth' required='N' />
+    <field name='InvestorCountryOfResidence' required='N' />
+   </group>
+   <group name='NoDistribInsts' required='N'>
+    <field name='DistribPaymentMethod' required='N' />
+    <field name='DistribPercentage' required='N' />
+    <field name='CashDistribCurr' required='N' />
+    <field name='CashDistribAgentName' required='N' />
+    <field name='CashDistribAgentCode' required='N' />
+    <field name='CashDistribAgentAcctNumber' required='N' />
+    <field name='CashDistribPayRef' required='N' />
+    <field name='CashDistribAgentAcctName' required='N' />
+   </group>
+  </message>
+  <message name='RegistrationInstructionsResponse' msgcat='app' msgtype='p'>
+   <field name='RegistID' required='Y' />
+   <field name='RegistTransType' required='Y' />
+   <field name='RegistRefID' required='Y' />
+   <field name='ClOrdID' required='N' />
+   <component name='Parties' required='N' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='RegistStatus' required='Y' />
+   <field name='RegistRejReasonCode' required='N' />
+   <field name='RegistRejReasonText' required='N' />
+  </message>
+  <message name='OrderMassCancelRequest' msgcat='app' msgtype='q'>
+   <field name='ClOrdID' required='Y' />
+   <field name='SecondaryClOrdID' required='N' />
+   <field name='MassCancelRequestType' required='Y' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <component name='Instrument' required='N' />
+   <component name='UnderlyingInstrument' required='N' />
+   <field name='Side' required='N' />
+   <field name='TransactTime' required='Y' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='OrderMassCancelReport' msgcat='app' msgtype='r'>
+   <field name='ClOrdID' required='N' />
+   <field name='SecondaryClOrdID' required='N' />
+   <field name='OrderID' required='Y' />
+   <field name='SecondaryOrderID' required='N' />
+   <field name='MassCancelRequestType' required='Y' />
+   <field name='MassCancelResponse' required='Y' />
+   <field name='MassCancelRejectReason' required='N' />
+   <field name='TotalAffectedOrders' required='N' />
+   <group name='NoAffectedOrders' required='N'>
+    <field name='OrigClOrdID' required='N' />
+    <field name='AffectedOrderID' required='N' />
+    <field name='AffectedSecondaryOrderID' required='N' />
+   </group>
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <component name='Instrument' required='N' />
+   <component name='UnderlyingInstrument' required='N' />
+   <field name='Side' required='N' />
+   <field name='TransactTime' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='NewOrderCross' msgcat='app' msgtype='s'>
+   <field name='CrossID' required='Y' />
+   <field name='CrossType' required='Y' />
+   <field name='CrossPrioritization' required='Y' />
+   <group name='NoSides' required='Y'>
