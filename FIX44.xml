@@ -1931,3 +1931,62 @@
    <field name='TradingSessionID' required='N' />
    <field name='TradingSessionSubID' required='N' />
    <field name='Product' required='N' />
+   <field name='SecurityType' required='N' />
+   <field name='SecuritySubType' required='N' />
+  </message>
+  <message name='SecurityTypes' msgcat='app' msgtype='w'>
+   <field name='SecurityReqID' required='Y' />
+   <field name='SecurityResponseID' required='Y' />
+   <field name='SecurityResponseType' required='Y' />
+   <field name='TotNoSecurityTypes' required='N' />
+   <field name='LastFragment' required='N' />
+   <group name='NoSecurityTypes' required='N'>
+    <field name='SecurityType' required='N' />
+    <field name='SecuritySubType' required='N' />
+    <field name='Product' required='N' />
+    <field name='CFICode' required='N' />
+   </group>
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='SubscriptionRequestType' required='N' />
+  </message>
+  <message name='SecurityListRequest' msgcat='app' msgtype='x'>
+   <field name='SecurityReqID' required='Y' />
+   <field name='SecurityListRequestType' required='Y' />
+   <component name='Instrument' required='N' />
+   <component name='InstrumentExtension' required='N' />
+   <component name='FinancingDetails' required='N' />
+   <group name='NoUnderlyings' required='N'>
+    <component name='UnderlyingInstrument' required='N' />
+   </group>
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+   </group>
+   <field name='Currency' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='SubscriptionRequestType' required='N' />
+  </message>
+  <message name='SecurityList' msgcat='app' msgtype='y'>
+   <field name='SecurityReqID' required='Y' />
+   <field name='SecurityResponseID' required='Y' />
+   <field name='SecurityRequestResult' required='Y' />
+   <field name='TotNoRelatedSym' required='N' />
+   <field name='LastFragment' required='N' />
+   <group name='NoRelatedSym' required='N'>
+    <component name='Instrument' required='N' />
+    <component name='InstrumentExtension' required='N' />
+    <component name='FinancingDetails' required='N' />
+    <group name='NoUnderlyings' required='N'>
+     <component name='UnderlyingInstrument' required='N' />
+    </group>
+    <field name='Currency' required='N' />
+    <component name='Stipulations' required='N' />
+    <group name='NoLegs' required='N'>
+     <component name='InstrumentLeg' required='N' />
