@@ -1703,3 +1703,77 @@
    <field name='CrossType' required='Y' />
    <field name='CrossPrioritization' required='Y' />
    <group name='NoSides' required='Y'>
+    <field name='Side' required='Y' />
+    <field name='ClOrdID' required='Y' />
+    <field name='SecondaryClOrdID' required='N' />
+    <field name='ClOrdLinkID' required='N' />
+    <component name='Parties' required='N' />
+    <field name='TradeOriginationDate' required='N' />
+    <field name='TradeDate' required='N' />
+    <field name='Account' required='N' />
+    <field name='AcctIDSource' required='N' />
+    <field name='AccountType' required='N' />
+    <field name='DayBookingInst' required='N' />
+    <field name='BookingUnit' required='N' />
+    <field name='PreallocMethod' required='N' />
+    <field name='AllocID' required='N' />
+    <group name='NoAllocs' required='N'>
+     <field name='AllocAccount' required='N' />
+     <field name='AllocAcctIDSource' required='N' />
+     <field name='AllocSettlCurrency' required='N' />
+     <field name='IndividualAllocID' required='N' />
+     <component name='NestedParties' required='N' />
+     <field name='AllocQty' required='N' />
+    </group>
+    <field name='QtyType' required='N' />
+    <component name='OrderQtyData' required='Y' />
+    <component name='CommissionData' required='N' />
+    <field name='OrderCapacity' required='N' />
+    <field name='OrderRestrictions' required='N' />
+    <field name='CustOrderCapacity' required='N' />
+    <field name='ForexReq' required='N' />
+    <field name='SettlCurrency' required='N' />
+    <field name='BookingType' required='N' />
+    <field name='Text' required='N' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+    <field name='PositionEffect' required='N' />
+    <field name='CoveredOrUncovered' required='N' />
+    <field name='CashMargin' required='N' />
+    <field name='ClearingFeeIndicator' required='N' />
+    <field name='SolicitedFlag' required='N' />
+    <field name='SideComplianceID' required='N' />
+   </group>
+   <component name='Instrument' required='Y' />
+   <group name='NoUnderlyings' required='N'>
+    <component name='UnderlyingInstrument' required='N' />
+   </group>
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+   </group>
+   <field name='SettlType' required='N' />
+   <field name='SettlDate' required='N' />
+   <field name='HandlInst' required='N' />
+   <field name='ExecInst' required='N' />
+   <field name='MinQty' required='N' />
+   <field name='MaxFloor' required='N' />
+   <field name='ExDestination' required='N' />
+   <group name='NoTradingSessions' required='N'>
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+   </group>
+   <field name='ProcessCode' required='N' />
+   <field name='PrevClosePx' required='N' />
+   <field name='LocateReqd' required='N' />
+   <field name='TransactTime' required='Y' />
+   <component name='Stipulations' required='N' />
+   <field name='OrdType' required='Y' />
+   <field name='PriceType' required='N' />
+   <field name='Price' required='N' />
+   <field name='StopPx' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <component name='YieldData' required='N' />
+   <field name='Currency' required='N' />
+   <field name='ComplianceID' required='N' />
+   <field name='IOIID' required='N' />
+   <field name='QuoteID' required='N' />
