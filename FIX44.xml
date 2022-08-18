@@ -2139,3 +2139,58 @@
    <component name='PegInstructions' required='N' />
    <component name='DiscretionInstructions' required='N' />
    <field name='TargetStrategy' required='N' />
+   <field name='TargetStrategyParameters' required='N' />
+   <field name='ParticipationRate' required='N' />
+   <field name='CancellationRights' required='N' />
+   <field name='MoneyLaunderingStatus' required='N' />
+   <field name='RegistID' required='N' />
+   <field name='Designation' required='N' />
+   <field name='MultiLegRptTypeReq' required='N' />
+  </message>
+  <message name='MultilegOrderCancelReplace' msgcat='app' msgtype='AC'>
+   <field name='OrderID' required='N' />
+   <field name='OrigClOrdID' required='Y' />
+   <field name='ClOrdID' required='Y' />
+   <field name='SecondaryClOrdID' required='N' />
+   <field name='ClOrdLinkID' required='N' />
+   <field name='OrigOrdModTime' required='N' />
+   <component name='Parties' required='N' />
+   <field name='TradeOriginationDate' required='N' />
+   <field name='TradeDate' required='N' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='AccountType' required='N' />
+   <field name='DayBookingInst' required='N' />
+   <field name='BookingUnit' required='N' />
+   <field name='PreallocMethod' required='N' />
+   <field name='AllocID' required='N' />
+   <group name='NoAllocs' required='N'>
+    <field name='AllocAccount' required='N' />
+    <field name='AllocAcctIDSource' required='N' />
+    <field name='AllocSettlCurrency' required='N' />
+    <field name='IndividualAllocID' required='N' />
+    <component name='NestedParties3' required='N' />
+    <field name='AllocQty' required='N' />
+   </group>
+   <field name='SettlType' required='N' />
+   <field name='SettlDate' required='N' />
+   <field name='CashMargin' required='N' />
+   <field name='ClearingFeeIndicator' required='N' />
+   <field name='HandlInst' required='N' />
+   <field name='ExecInst' required='N' />
+   <field name='MinQty' required='N' />
+   <field name='MaxFloor' required='N' />
+   <field name='ExDestination' required='N' />
+   <group name='NoTradingSessions' required='N'>
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+   </group>
+   <field name='ProcessCode' required='N' />
+   <field name='Side' required='Y' />
+   <component name='Instrument' required='Y' />
+   <group name='NoUnderlyings' required='N'>
+    <component name='UnderlyingInstrument' required='N' />
+   </group>
+   <field name='PrevClosePx' required='N' />
+   <group name='NoLegs' required='Y'>
+    <component name='InstrumentLeg' required='N' />
