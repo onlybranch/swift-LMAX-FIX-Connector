@@ -2194,3 +2194,84 @@
    <field name='PrevClosePx' required='N' />
    <group name='NoLegs' required='Y'>
     <component name='InstrumentLeg' required='N' />
+    <field name='LegQty' required='N' />
+    <field name='LegSwapType' required='N' />
+    <component name='LegStipulations' required='N' />
+    <group name='NoLegAllocs' required='N'>
+     <field name='LegAllocAccount' required='N' />
+     <field name='LegIndividualAllocID' required='N' />
+     <component name='NestedParties2' required='N' />
+     <field name='LegAllocQty' required='N' />
+     <field name='LegAllocAcctIDSource' required='N' />
+     <field name='LegSettlCurrency' required='N' />
+    </group>
+    <field name='LegPositionEffect' required='N' />
+    <field name='LegCoveredOrUncovered' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='LegRefID' required='N' />
+    <field name='LegPrice' required='N' />
+    <field name='LegSettlType' required='N' />
+    <field name='LegSettlDate' required='N' />
+   </group>
+   <field name='LocateReqd' required='N' />
+   <field name='TransactTime' required='Y' />
+   <field name='QtyType' required='N' />
+   <component name='OrderQtyData' required='Y' />
+   <field name='OrdType' required='Y' />
+   <field name='PriceType' required='N' />
+   <field name='Price' required='N' />
+   <field name='StopPx' required='N' />
+   <field name='Currency' required='N' />
+   <field name='ComplianceID' required='N' />
+   <field name='SolicitedFlag' required='N' />
+   <field name='IOIID' required='N' />
+   <field name='QuoteID' required='N' />
+   <field name='TimeInForce' required='N' />
+   <field name='EffectiveTime' required='N' />
+   <field name='ExpireDate' required='N' />
+   <field name='ExpireTime' required='N' />
+   <field name='GTBookingInst' required='N' />
+   <component name='CommissionData' required='N' />
+   <field name='OrderCapacity' required='N' />
+   <field name='OrderRestrictions' required='N' />
+   <field name='CustOrderCapacity' required='N' />
+   <field name='ForexReq' required='N' />
+   <field name='SettlCurrency' required='N' />
+   <field name='BookingType' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='PositionEffect' required='N' />
+   <field name='CoveredOrUncovered' required='N' />
+   <field name='MaxShow' required='N' />
+   <component name='PegInstructions' required='N' />
+   <component name='DiscretionInstructions' required='N' />
+   <field name='TargetStrategy' required='N' />
+   <field name='TargetStrategyParameters' required='N' />
+   <field name='ParticipationRate' required='N' />
+   <field name='CancellationRights' required='N' />
+   <field name='MoneyLaunderingStatus' required='N' />
+   <field name='RegistID' required='N' />
+   <field name='Designation' required='N' />
+   <field name='MultiLegRptTypeReq' required='N' />
+  </message>
+  <message name='TradeCaptureReportRequest' msgcat='app' msgtype='AD'>
+   <field name='TradeRequestID' required='Y' />
+   <field name='TradeRequestType' required='Y' />
+   <field name='SubscriptionRequestType' required='N' />
+   <field name='TradeReportID' required='N' />
+   <field name='SecondaryTradeReportID' required='N' />
+   <field name='ExecID' required='N' />
+   <field name='ExecType' required='N' />
+   <field name='OrderID' required='N' />
+   <field name='ClOrdID' required='N' />
+   <field name='MatchStatus' required='N' />
+   <field name='TrdType' required='N' />
+   <field name='TrdSubType' required='N' />
+   <field name='TransferReason' required='N' />
+   <field name='SecondaryTrdType' required='N' />
+   <field name='TradeLinkID' required='N' />
+   <field name='TrdMatchID' required='N' />
+   <component name='Parties' required='N' />
+   <component name='Instrument' required='N' />
+   <component name='InstrumentExtension' required='N' />
