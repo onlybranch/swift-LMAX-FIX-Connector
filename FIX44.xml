@@ -2331,3 +2331,75 @@
    <field name='QtyType' required='N' />
    <component name='YieldData' required='N' />
    <group name='NoUnderlyings' required='N'>
+    <component name='UnderlyingInstrument' required='N' />
+   </group>
+   <field name='UnderlyingTradingSessionID' required='N' />
+   <field name='UnderlyingTradingSessionSubID' required='N' />
+   <field name='LastQty' required='Y' />
+   <field name='LastPx' required='Y' />
+   <field name='LastParPx' required='N' />
+   <field name='LastSpotRate' required='N' />
+   <field name='LastForwardPoints' required='N' />
+   <field name='LastMkt' required='N' />
+   <field name='TradeDate' required='Y' />
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='AvgPx' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <field name='AvgPxIndicator' required='N' />
+   <component name='PositionAmountData' required='N' />
+   <field name='MultiLegReportingType' required='N' />
+   <field name='TradeLegRefID' required='N' />
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+    <field name='LegQty' required='N' />
+    <field name='LegSwapType' required='N' />
+    <component name='LegStipulations' required='N' />
+    <field name='LegPositionEffect' required='N' />
+    <field name='LegCoveredOrUncovered' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='LegRefID' required='N' />
+    <field name='LegPrice' required='N' />
+    <field name='LegSettlType' required='N' />
+    <field name='LegSettlDate' required='N' />
+    <field name='LegLastPx' required='N' />
+   </group>
+   <field name='TransactTime' required='Y' />
+   <component name='TrdRegTimestamps' required='N' />
+   <field name='SettlType' required='N' />
+   <field name='SettlDate' required='N' />
+   <field name='MatchStatus' required='N' />
+   <field name='MatchType' required='N' />
+   <group name='NoSides' required='Y'>
+    <field name='Side' required='Y' />
+    <field name='OrderID' required='Y' />
+    <field name='SecondaryOrderID' required='N' />
+    <field name='ClOrdID' required='N' />
+    <field name='SecondaryClOrdID' required='N' />
+    <field name='ListID' required='N' />
+    <component name='Parties' required='N' />
+    <field name='Account' required='N' />
+    <field name='AcctIDSource' required='N' />
+    <field name='AccountType' required='N' />
+    <field name='ProcessCode' required='N' />
+    <field name='OddLot' required='N' />
+    <group name='NoClearingInstructions' required='N'>
+     <field name='ClearingInstruction' required='N' />
+    </group>
+    <field name='ClearingFeeIndicator' required='N' />
+    <field name='TradeInputSource' required='N' />
+    <field name='TradeInputDevice' required='N' />
+    <field name='OrderInputDevice' required='N' />
+    <field name='Currency' required='N' />
+    <field name='ComplianceID' required='N' />
+    <field name='SolicitedFlag' required='N' />
+    <field name='OrderCapacity' required='N' />
+    <field name='OrderRestrictions' required='N' />
+    <field name='CustOrderCapacity' required='N' />
+    <field name='OrdType' required='N' />
+    <field name='ExecInst' required='N' />
+    <field name='TransBkdTime' required='N' />
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+    <field name='TimeBracket' required='N' />
+    <component name='CommissionData' required='N' />
+    <field name='GrossTradeAmt' required='N' />
