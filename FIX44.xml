@@ -2962,3 +2962,60 @@
    <field name='MultiLegReportingType' required='N' />
    <field name='ResponseTransportType' required='N' />
    <field name='ResponseDestination' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='TradeCaptureReportAck' msgcat='app' msgtype='AR'>
+   <field name='TradeReportID' required='Y' />
+   <field name='TradeReportTransType' required='N' />
+   <field name='TradeReportType' required='N' />
+   <field name='TrdType' required='N' />
+   <field name='TrdSubType' required='N' />
+   <field name='SecondaryTrdType' required='N' />
+   <field name='TransferReason' required='N' />
+   <field name='ExecType' required='Y' />
+   <field name='TradeReportRefID' required='N' />
+   <field name='SecondaryTradeReportRefID' required='N' />
+   <field name='TrdRptStatus' required='N' />
+   <field name='TradeReportRejectReason' required='N' />
+   <field name='SecondaryTradeReportID' required='N' />
+   <field name='SubscriptionRequestType' required='N' />
+   <field name='TradeLinkID' required='N' />
+   <field name='TrdMatchID' required='N' />
+   <field name='ExecID' required='N' />
+   <field name='SecondaryExecID' required='N' />
+   <component name='Instrument' required='Y' />
+   <field name='TransactTime' required='N' />
+   <component name='TrdRegTimestamps' required='N' />
+   <field name='ResponseTransportType' required='N' />
+   <field name='ResponseDestination' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+    <field name='LegQty' required='N' />
+    <field name='LegSwapType' required='N' />
+    <component name='LegStipulations' required='N' />
+    <field name='LegPositionEffect' required='N' />
+    <field name='LegCoveredOrUncovered' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='LegRefID' required='N' />
+    <field name='LegPrice' required='N' />
+    <field name='LegSettlType' required='N' />
+    <field name='LegSettlDate' required='N' />
+    <field name='LegLastPx' required='N' />
+   </group>
+   <field name='ClearingFeeIndicator' required='N' />
+   <field name='OrderCapacity' required='N' />
+   <field name='OrderRestrictions' required='N' />
+   <field name='CustOrderCapacity' required='N' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='AccountType' required='N' />
+   <field name='PositionEffect' required='N' />
+   <field name='PreallocMethod' required='N' />
+   <group name='NoAllocs' required='N'>
+    <field name='AllocAccount' required='N' />
+    <field name='AllocAcctIDSource' required='N' />
