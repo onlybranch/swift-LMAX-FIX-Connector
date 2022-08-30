@@ -3159,3 +3159,77 @@
    <field name='SecondaryAllocID' required='N' />
    <field name='TradeDate' required='N' />
    <field name='TransactTime' required='Y' />
+   <field name='AllocStatus' required='Y' />
+   <field name='AllocRejCode' required='N' />
+   <field name='AllocReportType' required='N' />
+   <field name='AllocIntermedReqType' required='N' />
+   <field name='MatchStatus' required='N' />
+   <field name='Product' required='N' />
+   <field name='SecurityType' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <group name='NoAllocs' required='N'>
+    <field name='AllocAccount' required='N' />
+    <field name='AllocAcctIDSource' required='N' />
+    <field name='AllocPrice' required='N' />
+    <field name='IndividualAllocID' required='N' />
+    <field name='IndividualAllocRejCode' required='N' />
+    <field name='AllocText' required='N' />
+    <field name='EncodedAllocTextLen' required='N' />
+    <field name='EncodedAllocText' required='N' />
+   </group>
+  </message>
+  <message name='ConfirmationAck' msgcat='app' msgtype='AU'>
+   <field name='ConfirmID' required='Y' />
+   <field name='TradeDate' required='Y' />
+   <field name='TransactTime' required='Y' />
+   <field name='AffirmStatus' required='Y' />
+   <field name='ConfirmRejReason' required='N' />
+   <field name='MatchStatus' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='SettlementInstructionRequest' msgcat='app' msgtype='AV'>
+   <field name='SettlInstReqID' required='Y' />
+   <field name='TransactTime' required='Y' />
+   <component name='Parties' required='N' />
+   <field name='AllocAccount' required='N' />
+   <field name='AllocAcctIDSource' required='N' />
+   <field name='Side' required='N' />
+   <field name='Product' required='N' />
+   <field name='SecurityType' required='N' />
+   <field name='CFICode' required='N' />
+   <field name='EffectiveTime' required='N' />
+   <field name='ExpireTime' required='N' />
+   <field name='LastUpdateTime' required='N' />
+   <field name='StandInstDbType' required='N' />
+   <field name='StandInstDbName' required='N' />
+   <field name='StandInstDbID' required='N' />
+  </message>
+  <message name='AssignmentReport' msgcat='app' msgtype='AW'>
+   <field name='AsgnRptID' required='Y' />
+   <field name='TotNumAssignmentReports' required='N' />
+   <field name='LastRptRequested' required='N' />
+   <component name='Parties' required='Y' />
+   <field name='Account' required='N' />
+   <field name='AccountType' required='Y' />
+   <component name='Instrument' required='N' />
+   <field name='Currency' required='N' />
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+   </group>
+   <group name='NoUnderlyings' required='N'>
+    <component name='UnderlyingInstrument' required='N' />
+   </group>
+   <component name='PositionQty' required='Y' />
+   <component name='PositionAmountData' required='Y' />
+   <field name='ThresholdAmount' required='N' />
+   <field name='SettlPrice' required='Y' />
+   <field name='SettlPriceType' required='Y' />
+   <field name='UnderlyingSettlPrice' required='Y' />
+   <field name='ExpireDate' required='N' />
+   <field name='AssignmentMethod' required='Y' />
+   <field name='AssignmentUnit' required='N' />
+   <field name='OpenInterest' required='Y' />
