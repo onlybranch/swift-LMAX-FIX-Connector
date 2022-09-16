@@ -3618,3 +3618,68 @@
    <field name='TradingSessionID' required='N' />
    <field name='TradingSessionSubID' required='N' />
    <field name='SettlSessID' required='N' />
+   <field name='SettlSessSubID' required='N' />
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='ResponseTransportType' required='N' />
+   <field name='ResponseDestination' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='ConfirmationRequest' msgcat='app' msgtype='BH'>
+   <field name='ConfirmReqID' required='Y' />
+   <field name='ConfirmType' required='Y' />
+   <group name='NoOrders' required='N'>
+    <field name='ClOrdID' required='N' />
+    <field name='OrderID' required='N' />
+    <field name='SecondaryOrderID' required='N' />
+    <field name='SecondaryClOrdID' required='N' />
+    <field name='ListID' required='N' />
+    <component name='NestedParties2' required='N' />
+    <field name='OrderQty' required='N' />
+    <field name='OrderAvgPx' required='N' />
+    <field name='OrderBookingQty' required='N' />
+   </group>
+   <field name='AllocID' required='N' />
+   <field name='SecondaryAllocID' required='N' />
+   <field name='IndividualAllocID' required='N' />
+   <field name='TransactTime' required='Y' />
+   <field name='AllocAccount' required='N' />
+   <field name='AllocAcctIDSource' required='N' />
+   <field name='AllocAccountType' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+ </messages>
+ <trailer>
+  <field name='SignatureLength' required='N' />
+  <field name='Signature' required='N' />
+  <field name='CheckSum' required='Y' />
+ </trailer>
+ <components>
+  <component name='SpreadOrBenchmarkCurveData'>
+   <field name='Spread' required='N' />
+   <field name='BenchmarkCurveCurrency' required='N' />
+   <field name='BenchmarkCurveName' required='N' />
+   <field name='BenchmarkCurvePoint' required='N' />
+   <field name='BenchmarkPrice' required='N' />
+   <field name='BenchmarkPriceType' required='N' />
+   <field name='BenchmarkSecurityID' required='N' />
+   <field name='BenchmarkSecurityIDSource' required='N' />
+  </component>
+  <component name='FinancingDetails'>
+   <field name='AgreementDesc' required='N' />
+   <field name='AgreementID' required='N' />
+   <field name='AgreementDate' required='N' />
+   <field name='AgreementCurrency' required='N' />
+   <field name='TerminationType' required='N' />
+   <field name='StartDate' required='N' />
+   <field name='EndDate' required='N' />
+   <field name='DeliveryType' required='N' />
+   <field name='MarginRatio' required='N' />
+  </component>
+  <component name='YieldData'>
+   <field name='YieldType' required='N' />
+   <field name='Yield' required='N' />
+   <field name='YieldCalcDate' required='N' />
