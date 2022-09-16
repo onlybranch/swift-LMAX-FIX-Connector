@@ -3549,3 +3549,72 @@
     <field name='RefCompID' required='N' />
     <field name='RefSubID' required='N' />
     <field name='LocationID' required='N' />
+    <field name='DeskID' required='N' />
+   </group>
+  </message>
+  <message name='NetworkCounterpartySystemStatusResponse' msgcat='app' msgtype='BD'>
+   <field name='NetworkStatusResponseType' required='Y' />
+   <field name='NetworkRequestID' required='N' />
+   <field name='NetworkResponseID' required='Y' />
+   <field name='LastNetworkResponseID' required='N' />
+   <group name='NoCompIDs' required='Y'>
+    <field name='RefCompID' required='N' />
+    <field name='RefSubID' required='N' />
+    <field name='LocationID' required='N' />
+    <field name='DeskID' required='N' />
+    <field name='StatusValue' required='N' />
+    <field name='StatusText' required='N' />
+   </group>
+  </message>
+  <message name='UserRequest' msgcat='app' msgtype='BE'>
+   <field name='UserRequestID' required='Y' />
+   <field name='UserRequestType' required='Y' />
+   <field name='Username' required='Y' />
+   <field name='Password' required='N' />
+   <field name='NewPassword' required='N' />
+   <field name='RawDataLength' required='N' />
+   <field name='RawData' required='N' />
+  </message>
+  <message name='UserResponse' msgcat='app' msgtype='BF'>
+   <field name='UserRequestID' required='Y' />
+   <field name='Username' required='Y' />
+   <field name='UserStatus' required='N' />
+   <field name='UserStatusText' required='N' />
+  </message>
+  <message name='CollateralInquiryAck' msgcat='app' msgtype='BG'>
+   <field name='CollInquiryID' required='Y' />
+   <field name='CollInquiryStatus' required='Y' />
+   <field name='CollInquiryResult' required='N' />
+   <group name='NoCollInquiryQualifier' required='N'>
+    <field name='CollInquiryQualifier' required='N' />
+   </group>
+   <field name='TotNumReports' required='N' />
+   <component name='Parties' required='N' />
+   <field name='Account' required='N' />
+   <field name='AccountType' required='N' />
+   <field name='ClOrdID' required='N' />
+   <field name='OrderID' required='N' />
+   <field name='SecondaryOrderID' required='N' />
+   <field name='SecondaryClOrdID' required='N' />
+   <group name='NoExecs' required='N'>
+    <field name='ExecID' required='N' />
+   </group>
+   <group name='NoTrades' required='N'>
+    <field name='TradeReportID' required='N' />
+    <field name='SecondaryTradeReportID' required='N' />
+   </group>
+   <component name='Instrument' required='N' />
+   <component name='FinancingDetails' required='N' />
+   <field name='SettlDate' required='N' />
+   <field name='Quantity' required='N' />
+   <field name='QtyType' required='N' />
+   <field name='Currency' required='N' />
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+   </group>
+   <group name='NoUnderlyings' required='N'>
+    <component name='UnderlyingInstrument' required='N' />
+   </group>
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='SettlSessID' required='N' />
