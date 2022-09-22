@@ -3876,3 +3876,74 @@
      <field name='NestedPartySubID' required='N' />
      <field name='NestedPartySubIDType' required='N' />
     </group>
+   </group>
+  </component>
+  <component name='NestedParties2'>
+   <group name='NoNested2PartyIDs' required='N'>
+    <field name='Nested2PartyID' required='N' />
+    <field name='Nested2PartyIDSource' required='N' />
+    <field name='Nested2PartyRole' required='N' />
+    <group name='NoNested2PartySubIDs' required='N'>
+     <field name='Nested2PartySubID' required='N' />
+     <field name='Nested2PartySubIDType' required='N' />
+    </group>
+   </group>
+  </component>
+  <component name='Stipulations'>
+   <group name='NoStipulations' required='N'>
+    <field name='StipulationType' required='N' />
+    <field name='StipulationValue' required='N' />
+   </group>
+  </component>
+  <component name='NestedParties3'>
+   <group name='NoNested3PartyIDs' required='N'>
+    <field name='Nested3PartyID' required='N' />
+    <field name='Nested3PartyIDSource' required='N' />
+    <field name='Nested3PartyRole' required='N' />
+    <group name='NoNested3PartySubIDs' required='N'>
+     <field name='Nested3PartySubID' required='N' />
+     <field name='Nested3PartySubIDType' required='N' />
+    </group>
+   </group>
+  </component>
+  <component name='UnderlyingStipulations'>
+   <group name='NoUnderlyingStips' required='N'>
+    <field name='UnderlyingStipType' required='N' />
+    <field name='UnderlyingStipValue' required='N' />
+   </group>
+  </component>
+  <component name='Parties'>
+   <group name='NoPartyIDs' required='N'>
+    <field name='PartyID' required='N' />
+    <field name='PartyIDSource' required='N' />
+    <field name='PartyRole' required='N' />
+    <group name='NoPartySubIDs' required='N'>
+     <field name='PartySubID' required='N' />
+     <field name='PartySubIDType' required='N' />
+    </group>
+   </group>
+  </component>
+  <component name='SettlInstructionsData'>
+   <field name='SettlDeliveryType' required='N' />
+   <field name='StandInstDbType' required='N' />
+   <field name='StandInstDbName' required='N' />
+   <field name='StandInstDbID' required='N' />
+   <group name='NoDlvyInst' required='N'>
+    <field name='SettlInstSource' required='N' />
+    <field name='DlvyInstType' required='N' />
+    <component name='SettlParties' required='N' />
+   </group>
+  </component>
+  <component name='OrderQtyData'>
+   <field name='OrderQty' required='N' />
+   <field name='CashOrderQty' required='N' />
+   <field name='OrderPercent' required='N' />
+   <field name='RoundingDirection' required='N' />
+   <field name='RoundingModulus' required='N' />
+  </component>
+  <component name='InstrumentLeg'>
+   <field name='LegSymbol' required='N' />
+   <field name='LegSymbolSfx' required='N' />
+   <field name='LegSecurityID' required='N' />
+   <field name='LegSecurityIDSource' required='N' />
+   <group name='NoLegSecurityAltID' required='N'>
