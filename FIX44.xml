@@ -3947,3 +3947,76 @@
    <field name='LegSecurityID' required='N' />
    <field name='LegSecurityIDSource' required='N' />
    <group name='NoLegSecurityAltID' required='N'>
+    <field name='LegSecurityAltID' required='N' />
+    <field name='LegSecurityAltIDSource' required='N' />
+   </group>
+   <field name='LegProduct' required='N' />
+   <field name='LegCFICode' required='N' />
+   <field name='LegSecurityType' required='N' />
+   <field name='LegSecuritySubType' required='N' />
+   <field name='LegMaturityMonthYear' required='N' />
+   <field name='LegMaturityDate' required='N' />
+   <field name='LegCouponPaymentDate' required='N' />
+   <field name='LegIssueDate' required='N' />
+   <field name='LegRepoCollateralSecurityType' required='N' />
+   <field name='LegRepurchaseTerm' required='N' />
+   <field name='LegRepurchaseRate' required='N' />
+   <field name='LegFactor' required='N' />
+   <field name='LegCreditRating' required='N' />
+   <field name='LegInstrRegistry' required='N' />
+   <field name='LegCountryOfIssue' required='N' />
+   <field name='LegStateOrProvinceOfIssue' required='N' />
+   <field name='LegLocaleOfIssue' required='N' />
+   <field name='LegRedemptionDate' required='N' />
+   <field name='LegStrikePrice' required='N' />
+   <field name='LegStrikeCurrency' required='N' />
+   <field name='LegOptAttribute' required='N' />
+   <field name='LegContractMultiplier' required='N' />
+   <field name='LegCouponRate' required='N' />
+   <field name='LegSecurityExchange' required='N' />
+   <field name='LegIssuer' required='N' />
+   <field name='EncodedLegIssuerLen' required='N' />
+   <field name='EncodedLegIssuer' required='N' />
+   <field name='LegSecurityDesc' required='N' />
+   <field name='EncodedLegSecurityDescLen' required='N' />
+   <field name='EncodedLegSecurityDesc' required='N' />
+   <field name='LegRatioQty' required='N' />
+   <field name='LegSide' required='N' />
+   <field name='LegCurrency' required='N' />
+   <field name='LegPool' required='N' />
+   <field name='LegDatedDate' required='N' />
+   <field name='LegContractSettlMonth' required='N' />
+   <field name='LegInterestAccrualDate' required='N' />
+  </component>
+ </components>
+ <fields>
+  <field number='1' name='Account' type='STRING' />
+  <field number='2' name='AdvId' type='STRING' />
+  <field number='3' name='AdvRefID' type='STRING' />
+  <field number='4' name='AdvSide' type='CHAR'>
+   <value enum='B' description='BUY' />
+   <value enum='S' description='SELL' />
+   <value enum='T' description='TRADE' />
+   <value enum='X' description='CROSS' />
+  </field>
+  <field number='5' name='AdvTransType' type='STRING'>
+   <value enum='C' description='ADVCANCEL' />
+   <value enum='N' description='ADVNEW' />
+   <value enum='R' description='ADVREPLACE' />
+  </field>
+  <field number='6' name='AvgPx' type='PRICE' />
+  <field number='7' name='BeginSeqNo' type='SEQNUM' />
+  <field number='8' name='BeginString' type='STRING' />
+  <field number='9' name='BodyLength' type='LENGTH' />
+  <field number='10' name='CheckSum' type='STRING' />
+  <field number='11' name='ClOrdID' type='STRING' />
+  <field number='12' name='Commission' type='AMT' />
+  <field number='13' name='CommType' type='CHAR'>
+   <value enum='1' description='PER_UNIT' />
+   <value enum='2' description='PERCENT' />
+   <value enum='3' description='ABSOLUTE' />
+   <value enum='4' description='PCTWAIVEDCSHDISC' />
+   <value enum='5' description='PCTWAIVEDENUNITS' />
+   <value enum='6' description='PERBOND' />
+  </field>
+  <field number='14' name='CumQty' type='QTY' />
