@@ -4020,3 +4020,68 @@
    <value enum='6' description='PERBOND' />
   </field>
   <field number='14' name='CumQty' type='QTY' />
+  <field number='15' name='Currency' type='CURRENCY' />
+  <field number='16' name='EndSeqNo' type='SEQNUM' />
+  <field number='17' name='ExecID' type='STRING' />
+  <field number='18' name='ExecInst' type='MULTIPLEVALUESTRING'>
+   <value enum='0' description='STAYOFFER' />
+   <value enum='1' description='NOTHELD' />
+   <value enum='2' description='WORK' />
+   <value enum='3' description='GOALONG' />
+   <value enum='4' description='OVERDAY' />
+   <value enum='5' description='HELD' />
+   <value enum='6' description='PARTNOTINIT' />
+   <value enum='7' description='STRICTSCALE' />
+   <value enum='8' description='TRYTOSCALE' />
+   <value enum='9' description='STAYBID' />
+   <value enum='A' description='NOCROSS' />
+   <value enum='a' description='TRAILSTOPPEG' />
+   <value enum='B' description='OKCROSS' />
+   <value enum='b' description='STRICTLIMIT' />
+   <value enum='c' description='IGNOREPRICECHK' />
+   <value enum='C' description='CALLFIRST' />
+   <value enum='d' description='PEGTOLIMIT' />
+   <value enum='D' description='PERCVOL' />
+   <value enum='E' description='DNI' />
+   <value enum='e' description='WORKTOSTRATEGY' />
+   <value enum='F' description='DNR' />
+   <value enum='G' description='AON' />
+   <value enum='H' description='RESTATEONSYSFAIL' />
+   <value enum='I' description='INSTITONLY' />
+   <value enum='J' description='RESTATEONTRADINGHALT' />
+   <value enum='K' description='CANCELONTRADINGHALT' />
+   <value enum='L' description='LASTPEG' />
+   <value enum='M' description='MIDPRCPEG' />
+   <value enum='N' description='NONNEGO' />
+   <value enum='O' description='OPENPEG' />
+   <value enum='P' description='MARKPEG' />
+   <value enum='Q' description='CANCELONSYSFAIL' />
+   <value enum='R' description='PRIMPEG' />
+   <value enum='S' description='SUSPEND' />
+   <value enum='U' description='CUSTDISPINST' />
+   <value enum='V' description='NETTING' />
+   <value enum='W' description='PEGVWAP' />
+   <value enum='X' description='TRADEALONG' />
+   <value enum='Y' description='TRYTOSTOP' />
+   <value enum='Z' description='CXLIFNOTBEST' />
+  </field>
+  <field number='19' name='ExecRefID' type='STRING' />
+  <field number='20' name='ExecTransType' type='CHAR'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='CANCEL' />
+   <value enum='2' description='CORRECT' />
+   <value enum='3' description='STATUS' />
+  </field>
+  <field number='21' name='HandlInst' type='CHAR'>
+   <value enum='1' description='AUTOEXECPRIV' />
+   <value enum='2' description='AUTOEXECPUB' />
+   <value enum='3' description='MANUAL' />
+  </field>
+  <field number='22' name='SecurityIDSource' type='STRING'>
+   <value enum='1' description='CUSIP' />
+   <value enum='2' description='SEDOL' />
+   <value enum='3' description='QUIK' />
+   <value enum='4' description='ISIN' />
+   <value enum='5' description='RIC' />
+   <value enum='6' description='ISOCURR' />
+   <value enum='7' description='ISOCOUNTRY' />
