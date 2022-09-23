@@ -4085,3 +4085,72 @@
    <value enum='5' description='RIC' />
    <value enum='6' description='ISOCURR' />
    <value enum='7' description='ISOCOUNTRY' />
+   <value enum='8' description='EXCHSYMB' />
+   <value enum='9' description='CTA' />
+   <value enum='A' description='BLMBRG' />
+   <value enum='B' description='WERTPAPIER' />
+   <value enum='C' description='DUTCH' />
+   <value enum='D' description='VALOREN' />
+   <value enum='E' description='SICOVAM' />
+   <value enum='F' description='BELGIAN' />
+   <value enum='G' description='COMMON' />
+   <value enum='H' description='CLEARINGHOUSE' />
+   <value enum='I' description='FPML' />
+   <value enum='J' description='OPTIONPRICEREPORTINGAUTHORITY' />
+  </field>
+  <field number='23' name='IOIID' type='STRING' />
+  <field number='24' name='IOIOthSvc' type='CHAR' />
+  <field number='25' name='IOIQltyInd' type='CHAR'>
+   <value enum='H' description='HIGH' />
+   <value enum='L' description='LOW' />
+   <value enum='M' description='MEDIUM' />
+  </field>
+  <field number='26' name='IOIRefID' type='STRING' />
+  <field number='27' name='IOIQty' type='STRING' />
+  <field number='28' name='IOITransType' type='CHAR'>
+   <value enum='C' description='CANCEL' />
+   <value enum='N' description='NEW' />
+   <value enum='R' description='REPLACE' />
+  </field>
+  <field number='29' name='LastCapacity' type='CHAR'>
+   <value enum='1' description='A' />
+   <value enum='2' description='XA' />
+   <value enum='3' description='XP' />
+   <value enum='4' description='P' />
+  </field>
+  <field number='30' name='LastMkt' type='EXCHANGE' />
+  <field number='31' name='LastPx' type='PRICE' />
+  <field number='32' name='LastQty' type='QTY' />
+  <field number='33' name='NoLinesOfText' type='NUMINGROUP' />
+  <field number='34' name='MsgSeqNum' type='SEQNUM' />
+  <field number='35' name='MsgType' type='STRING'>
+   <value enum='0' description='HEARTBEAT' />
+   <value enum='1' description='TESTREQUEST' />
+   <value enum='2' description='RESENDREQUEST' />
+   <value enum='3' description='REJECT' />
+   <value enum='4' description='SEQUENCERESET' />
+   <value enum='5' description='LOGOUT' />
+   <value enum='6' description='IOI' />
+   <value enum='7' description='ADVERTISEMENT' />
+   <value enum='8' description='EXECUTIONREPORT' />
+   <value enum='9' description='ORDERCANCELREJECT' />
+   <value enum='a' description='QUOTESTATUSREQUEST' />
+   <value enum='A' description='LOGON' />
+   <value enum='AA' description='DERIVATIVESECURITYLIST' />
+   <value enum='AB' description='NEWORDERMULTILEG' />
+   <value enum='AC' description='MULTILEGORDERCANCELREPLACE' />
+   <value enum='AD' description='TRADECAPTUREREPORTREQUEST' />
+   <value enum='AE' description='TRADECAPTUREREPORT' />
+   <value enum='AF' description='ORDERMASSSTATUSREQUEST' />
+   <value enum='AG' description='QUOTEREQUESTREJECT' />
+   <value enum='AH' description='RFQREQUEST' />
+   <value enum='AI' description='QUOTESTATUSREPORT' />
+   <value enum='AJ' description='QUOTERESPONSE' />
+   <value enum='AK' description='CONFIRMATION' />
+   <value enum='AL' description='POSITIONMAINTENANCEREQUEST' />
+   <value enum='AM' description='POSITIONMAINTENANCEREPORT' />
+   <value enum='AN' description='REQUESTFORPOSITIONS' />
+   <value enum='AO' description='REQUESTFORPOSITIONSACK' />
+   <value enum='AP' description='POSITIONREPORT' />
+   <value enum='AQ' description='TRADECAPTUREREPORTREQUESTACK' />
+   <value enum='AR' description='TRADECAPTUREREPORTACK' />
