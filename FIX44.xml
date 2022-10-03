@@ -4287,3 +4287,77 @@
    <value enum='N' description='PRGINDEXARBOTHMEM' />
    <value enum='O' description='COMPETINGDEALER' />
    <value enum='P' description='PRINCIPAL' />
+   <value enum='R' description='COMPDEALER1' />
+   <value enum='S' description='SPECIALIST' />
+   <value enum='T' description='COMPDEALER2' />
+   <value enum='U' description='PRGINDEXARBOTHAGN' />
+   <value enum='W' description='ALLOTHERAGN' />
+   <value enum='X' description='SHTEXTRANMEMWT' />
+   <value enum='Y' description='PRGNONINDEXARBOTHAGN' />
+   <value enum='Z' description='SHTEXTRANNONMEM' />
+  </field>
+  <field number='48' name='SecurityID' type='STRING' />
+  <field number='49' name='SenderCompID' type='STRING' />
+  <field number='50' name='SenderSubID' type='STRING' />
+  <field number='51' name='SendingDate' type='LOCALMKTDATE' />
+  <field number='52' name='SendingTime' type='UTCTIMESTAMP' />
+  <field number='53' name='Quantity' type='QTY' />
+  <field number='54' name='Side' type='CHAR'>
+   <value enum='1' description='BUY' />
+   <value enum='2' description='SELL' />
+   <value enum='3' description='BUYMIN' />
+   <value enum='4' description='SELLPLUS' />
+   <value enum='5' description='SELLSHT' />
+   <value enum='6' description='SELLSHTEX' />
+   <value enum='7' description='UNDISC' />
+   <value enum='8' description='CROSS' />
+   <value enum='9' description='CROSSSHORT' />
+   <value enum='A' description='CROSSSHORTEX' />
+   <value enum='B' description='ASDEFINED' />
+   <value enum='C' description='OPPOSITE' />
+   <value enum='D' description='SUBSCRIBE' />
+   <value enum='E' description='REDEEM' />
+   <value enum='F' description='LENDFINANCING' />
+   <value enum='G' description='BORROWFINANCING' />
+  </field>
+  <field number='55' name='Symbol' type='STRING' />
+  <field number='56' name='TargetCompID' type='STRING' />
+  <field number='57' name='TargetSubID' type='STRING' />
+  <field number='58' name='Text' type='STRING' />
+  <field number='59' name='TimeInForce' type='CHAR'>
+   <value enum='0' description='DAY' />
+   <value enum='1' description='GOODTILLCANCEL' />
+   <value enum='2' description='ATTHEOPENING' />
+   <value enum='3' description='IMMEDIATEORCANCEL' />
+   <value enum='4' description='FILLORKILL' />
+   <value enum='5' description='GOODTILLCROSSING' />
+   <value enum='6' description='GOODTILLDATE' />
+   <value enum='7' description='ATTHECLOSE' />
+  </field>
+  <field number='60' name='TransactTime' type='UTCTIMESTAMP' />
+  <field number='61' name='Urgency' type='CHAR'>
+   <value enum='0' description='NORMAL' />
+   <value enum='1' description='FLASH' />
+   <value enum='2' description='BACKGROUND' />
+  </field>
+  <field number='62' name='ValidUntilTime' type='UTCTIMESTAMP' />
+  <field number='63' name='SettlType' type='CHAR'>
+   <value enum='0' description='REGULAR' />
+   <value enum='1' description='CASH' />
+   <value enum='2' description='NEXTDAY' />
+   <value enum='3' description='T2' />
+   <value enum='4' description='T3' />
+   <value enum='5' description='T4' />
+   <value enum='6' description='FUTURE' />
+   <value enum='7' description='WHENISSUED' />
+   <value enum='8' description='T5' />
+   <value enum='9' description='T1' />
+  </field>
+  <field number='64' name='SettlDate' type='LOCALMKTDATE' />
+  <field number='65' name='SymbolSfx' type='STRING'>
+   <value enum='CD' description='EUCPLUMPSUMINTEREST' />
+   <value enum='WI' description='WHENISSUED' />
+  </field>
+  <field number='66' name='ListID' type='STRING' />
+  <field number='67' name='ListSeqNo' type='INT' />
+  <field number='68' name='TotNoOrders' type='INT' />
