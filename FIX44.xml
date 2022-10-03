@@ -4361,3 +4361,72 @@
   <field number='66' name='ListID' type='STRING' />
   <field number='67' name='ListSeqNo' type='INT' />
   <field number='68' name='TotNoOrders' type='INT' />
+  <field number='69' name='ListExecInst' type='STRING' />
+  <field number='70' name='AllocID' type='STRING' />
+  <field number='71' name='AllocTransType' type='CHAR'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='REPLACE' />
+   <value enum='2' description='CANCEL' />
+   <value enum='3' description='PRELIMINARY' />
+   <value enum='4' description='CALCULATED' />
+   <value enum='5' description='CALCULATEDWITHOUTPRELIMINARY' />
+  </field>
+  <field number='72' name='RefAllocID' type='STRING' />
+  <field number='73' name='NoOrders' type='NUMINGROUP' />
+  <field number='74' name='AvgPxPrecision' type='INT' />
+  <field number='75' name='TradeDate' type='LOCALMKTDATE' />
+  <field number='76' name='ExecBroker' type='STRING' />
+  <field number='77' name='PositionEffect' type='CHAR'>
+   <value enum='C' description='CLOSE' />
+   <value enum='F' description='FIFO' />
+   <value enum='O' description='OPEN' />
+   <value enum='R' description='ROLLED' />
+  </field>
+  <field number='78' name='NoAllocs' type='NUMINGROUP' />
+  <field number='79' name='AllocAccount' type='STRING' />
+  <field number='80' name='AllocQty' type='QTY' />
+  <field number='81' name='ProcessCode' type='CHAR'>
+   <value enum='0' description='REGULAR' />
+   <value enum='1' description='SOFTDOLLAR' />
+   <value enum='2' description='STEPIN' />
+   <value enum='3' description='STEPOUT' />
+   <value enum='4' description='STEPINSOFT' />
+   <value enum='5' description='STEPOUTSOFT' />
+   <value enum='6' description='PLANSPONSOR' />
+  </field>
+  <field number='82' name='NoRpts' type='INT' />
+  <field number='83' name='RptSeq' type='INT' />
+  <field number='84' name='CxlQty' type='QTY' />
+  <field number='85' name='NoDlvyInst' type='NUMINGROUP' />
+  <field number='86' name='DlvyInst' type='STRING' />
+  <field number='87' name='AllocStatus' type='INT'>
+   <value enum='0' description='ACCEPTEDSUCCESSFULLYPROCESSED' />
+   <value enum='1' description='BLOCKLEVELREJECT' />
+   <value enum='2' description='ACCOUNTLEVELREJECT' />
+   <value enum='3' description='RECEIVEDRECEIVEDNOTYETPROCESSED' />
+   <value enum='4' description='INCOMPLETE' />
+   <value enum='5' description='REJECTEDBYINTERMEDIARY' />
+  </field>
+  <field number='88' name='AllocRejCode' type='INT'>
+   <value enum='0' description='UNKNOWNACCT' />
+   <value enum='1' description='INCORRECTQTY' />
+   <value enum='10' description='UNKNOWNORSTALEEXECID' />
+   <value enum='11' description='MISMATCHEDDATA' />
+   <value enum='12' description='UNKNOWNCLORDID' />
+   <value enum='13' description='WAREHOUSEREQUESTREJECTED' />
+   <value enum='2' description='INCORRECTAVGPRC' />
+   <value enum='3' description='INCORRECTBRKMNC' />
+   <value enum='4' description='COMMDIFF' />
+   <value enum='5' description='UNKNOWNORDID' />
+   <value enum='6' description='UNKNOWNLISTID' />
+   <value enum='7' description='OTHER' />
+   <value enum='8' description='INCORRECTALLOCATEDQUANTITY' />
+   <value enum='9' description='CALCULATIONDIFFERENCE' />
+  </field>
+  <field number='89' name='Signature' type='DATA' />
+  <field number='90' name='SecureDataLen' type='LENGTH' />
+  <field number='91' name='SecureData' type='DATA' />
+  <field number='92' name='BrokerOfCredit' type='STRING' />
+  <field number='93' name='SignatureLength' type='LENGTH' />
+  <field number='94' name='EmailType' type='CHAR'>
+   <value enum='0' description='NEW' />
