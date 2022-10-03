@@ -4219,3 +4219,71 @@
    <value enum='z' description='DERIVATIVESECURITYLISTREQUEST' />
   </field>
   <field number='36' name='NewSeqNo' type='SEQNUM' />
+  <field number='37' name='OrderID' type='STRING' />
+  <field number='38' name='OrderQty' type='QTY' />
+  <field number='39' name='OrdStatus' type='CHAR'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='PARTIAL' />
+   <value enum='2' description='FILLED' />
+   <value enum='3' description='DONE' />
+   <value enum='4' description='CANCELED' />
+   <value enum='6' description='PENDING_CANCEL' />
+   <value enum='7' description='STOPPED' />
+   <value enum='8' description='REJECTED' />
+   <value enum='9' description='SUSPENDED' />
+   <value enum='A' description='PENDINGNEW' />
+   <value enum='B' description='CALCULATED' />
+   <value enum='C' description='EXPIRED' />
+   <value enum='D' description='ACCEPTBIDDING' />
+   <value enum='E' description='PENDINGREP' />
+  </field>
+  <field number='40' name='OrdType' type='CHAR'>
+   <value enum='1' description='MARKET' />
+   <value enum='2' description='LIMIT' />
+   <value enum='3' description='STOP' />
+   <value enum='4' description='STOPLIMIT' />
+   <value enum='5' description='MARKETONCLOSE' />
+   <value enum='6' description='WITHORWITHOUT' />
+   <value enum='7' description='LIMITORBETTER' />
+   <value enum='8' description='LIMITWITHORWITHOUT' />
+   <value enum='9' description='ONBASIS' />
+   <value enum='A' description='ONCLOSE' />
+   <value enum='B' description='LIMITONCLOSE' />
+   <value enum='C' description='FOREXMARKET' />
+   <value enum='D' description='PREVIOUSLYQUOTED' />
+   <value enum='E' description='PREVIOUSLYINDICATED' />
+   <value enum='F' description='FOREXLIMIT' />
+   <value enum='G' description='FOREXSWAP' />
+   <value enum='H' description='FOREXPREVIOUSLYQUOTED' />
+   <value enum='I' description='FUNARI' />
+   <value enum='J' description='MARKETIFTOUCHED' />
+   <value enum='K' description='MARKETWITHLEFTOVERLIMIT' />
+   <value enum='L' description='PREVIOUSFUNDVALUATIONPOINT' />
+   <value enum='M' description='NEXTFUNDVALUATIONPOINT' />
+   <value enum='P' description='PEGGED' />
+  </field>
+  <field number='41' name='OrigClOrdID' type='STRING' />
+  <field number='42' name='OrigTime' type='UTCTIMESTAMP' />
+  <field number='43' name='PossDupFlag' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='44' name='Price' type='PRICE' />
+  <field number='45' name='RefSeqNum' type='SEQNUM' />
+  <field number='46' name='RelatdSym' type='STRING' />
+  <field number='47' name='Rule80A' type='CHAR'>
+   <value enum='A' description='AGENCYSINGLE' />
+   <value enum='B' description='SHTEXTRANA' />
+   <value enum='C' description='PRGNONINDEXARBMEM' />
+   <value enum='D' description='PRGINDEXARBMEM' />
+   <value enum='E' description='MARKETMAKER' />
+   <value enum='F' description='SHTEXTRANW' />
+   <value enum='H' description='SHTEXTRANI' />
+   <value enum='I' description='INVINESTOR' />
+   <value enum='J' description='PRGNONINDEXARBINV' />
+   <value enum='K' description='PRGINDEXARBINV' />
+   <value enum='L' description='SHTEXTRANMEM' />
+   <value enum='M' description='PRGNONINDEXARBOTHMEM' />
+   <value enum='N' description='PRGINDEXARBOTHMEM' />
+   <value enum='O' description='COMPETINGDEALER' />
+   <value enum='P' description='PRINCIPAL' />
