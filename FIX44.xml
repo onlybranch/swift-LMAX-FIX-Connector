@@ -4430,3 +4430,84 @@
   <field number='93' name='SignatureLength' type='LENGTH' />
   <field number='94' name='EmailType' type='CHAR'>
    <value enum='0' description='NEW' />
+   <value enum='1' description='REPLY' />
+   <value enum='2' description='ADMINREPLY' />
+  </field>
+  <field number='95' name='RawDataLength' type='LENGTH' />
+  <field number='96' name='RawData' type='DATA' />
+  <field number='97' name='PossResend' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='98' name='EncryptMethod' type='INT'>
+   <value enum='0' description='NONEOTHER' />
+   <value enum='1' description='PKCSPROPRIETARY' />
+   <value enum='2' description='DESECBMODE' />
+   <value enum='3' description='PKCSDESPROPRIETARY' />
+   <value enum='4' description='PGPDESDEFUNCT' />
+   <value enum='5' description='PGPDESMD5SEEAPPNOTEONFIXWEBSITE' />
+   <value enum='6' description='PEMDESMD5SEEAPPNOTEONFIXWEBSITENAFORFIXMLNOTUSED' />
+  </field>
+  <field number='99' name='StopPx' type='PRICE' />
+  <field number='100' name='ExDestination' type='EXCHANGE' />
+  <field number='102' name='CxlRejReason' type='INT'>
+   <value enum='0' description='TOOLATE' />
+   <value enum='1' description='UNKNOWN' />
+   <value enum='2' description='BROKEROPT' />
+   <value enum='3' description='ALREADYPENDINGCXL' />
+   <value enum='4' description='UNABLETOPROCESS' />
+   <value enum='5' description='ORIGORDMODTIMEMISMATCH' />
+   <value enum='6' description='DUPCLORDID' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='103' name='OrdRejReason' type='INT'>
+   <value enum='0' description='BROKEROPT' />
+   <value enum='1' description='UNKNOWNSYM' />
+   <value enum='10' description='INVINVID' />
+   <value enum='11' description='UNSUPPORDERCHAR' />
+   <value enum='12' description='SURVEILLENCE' />
+   <value enum='13' description='INCORRECTQUANTITY' />
+   <value enum='14' description='INCORRECTALLOCATEDQUANTITY' />
+   <value enum='15' description='UNKNOWNACCOUNTS' />
+   <value enum='2' description='EXCHCLOSED' />
+   <value enum='3' description='EXCEEDSLIM' />
+   <value enum='4' description='TOOLATE' />
+   <value enum='5' description='UNKNOWN' />
+   <value enum='6' description='DUPLICATE' />
+   <value enum='7' description='DUPLICATEVERBAL' />
+   <value enum='8' description='STALE' />
+   <value enum='9' description='TRADEALONGREQ' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='104' name='IOIQualifier' type='CHAR'>
+   <value enum='A' description='AON' />
+   <value enum='B' description='MOC' />
+   <value enum='C' description='ATCLOSE' />
+   <value enum='D' description='VWAP' />
+   <value enum='I' description='INTOUCH' />
+   <value enum='L' description='LIMIT' />
+   <value enum='M' description='MOREBEHIND' />
+   <value enum='O' description='ATOPEN' />
+   <value enum='P' description='TAKEPOSITION' />
+   <value enum='Q' description='ATMARKET' />
+   <value enum='R' description='READYTRADE' />
+   <value enum='S' description='PORTSHOW' />
+   <value enum='T' description='THROUGHDAY' />
+   <value enum='V' description='VERSUS' />
+   <value enum='W' description='INDWRKAWAY' />
+   <value enum='X' description='CROSSOPP' />
+   <value enum='Y' description='ATMID' />
+   <value enum='Z' description='PREOPEN' />
+  </field>
+  <field number='105' name='WaveNo' type='STRING' />
+  <field number='106' name='Issuer' type='STRING' />
+  <field number='107' name='SecurityDesc' type='STRING' />
+  <field number='108' name='HeartBtInt' type='INT' />
+  <field number='109' name='ClientID' type='STRING' />
+  <field number='110' name='MinQty' type='QTY' />
+  <field number='111' name='MaxFloor' type='QTY' />
+  <field number='112' name='TestReqID' type='STRING' />
+  <field number='113' name='ReportToExch' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
