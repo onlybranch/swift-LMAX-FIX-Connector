@@ -4589,3 +4589,67 @@
    <value enum='4' description='CANCELED' />
    <value enum='5' description='REPLACED' />
    <value enum='6' description='PENDINGCXL' />
+   <value enum='7' description='STOPPED' />
+   <value enum='8' description='REJECTED' />
+   <value enum='9' description='SUSPENDED' />
+   <value enum='A' description='PENDINGNEW' />
+   <value enum='B' description='CALCULATED' />
+   <value enum='C' description='EXPIRED' />
+   <value enum='D' description='RESTATED' />
+   <value enum='E' description='PENDINGREPLACE' />
+   <value enum='F' description='TRADE' />
+   <value enum='G' description='TRADECORRECT' />
+   <value enum='H' description='TRADECANCEL' />
+   <value enum='I' description='ORDERSTATUS' />
+  </field>
+  <field number='151' name='LeavesQty' type='QTY' />
+  <field number='152' name='CashOrderQty' type='QTY' />
+  <field number='153' name='AllocAvgPx' type='PRICE' />
+  <field number='154' name='AllocNetMoney' type='AMT' />
+  <field number='155' name='SettlCurrFxRate' type='FLOAT' />
+  <field number='156' name='SettlCurrFxRateCalc' type='CHAR'>
+   <value enum='M' description='MULTIPLY' />
+   <value enum='D' description='DIVIDE' />
+  </field>
+  <field number='157' name='NumDaysInterest' type='INT' />
+  <field number='158' name='AccruedInterestRate' type='PERCENTAGE' />
+  <field number='159' name='AccruedInterestAmt' type='AMT' />
+  <field number='160' name='SettlInstMode' type='CHAR'>
+   <value enum='0' description='DEFAULT' />
+   <value enum='1' description='SIPROVIDED' />
+   <value enum='2' description='ACCOUNTOVERRIDING' />
+   <value enum='3' description='ACCOUNTSTANDING' />
+   <value enum='4' description='CIVORDERSINGLEACCT' />
+   <value enum='5' description='REJECT' />
+  </field>
+  <field number='161' name='AllocText' type='STRING' />
+  <field number='162' name='SettlInstID' type='STRING' />
+  <field number='163' name='SettlInstTransType' type='CHAR'>
+   <value enum='C' description='CANCEL' />
+   <value enum='N' description='NEW' />
+   <value enum='R' description='REPLACE' />
+   <value enum='T' description='RESTATE' />
+  </field>
+  <field number='164' name='EmailThreadID' type='STRING' />
+  <field number='165' name='SettlInstSource' type='CHAR'>
+   <value enum='1' description='BROKERINSTR' />
+   <value enum='2' description='INSTINSTR' />
+   <value enum='3' description='INVESTORCIV' />
+  </field>
+  <field number='166' name='SettlLocation' type='STRING'>
+   <value enum='CED' description='CEDEL' />
+   <value enum='DTC' description='DEPOSITORYTRUSTCOMPANY' />
+   <value enum='EUR' description='EUROCLEAR' />
+   <value enum='FED' description='FEDERALBOOKENTRY' />
+   <value enum='ISO_Country_Code' description='LOCALMARKETSETTLELOCATION' />
+   <value enum='PNY' description='PHYSICAL' />
+   <value enum='PTC' description='PARTICIPANTTRUSTCOMPANY' />
+  </field>
+  <field number='167' name='SecurityType' type='STRING'>
+   <value enum='ABS' description='ASSETBACKEDSECURITIES' />
+   <value enum='AMENDED' description='AMENDEDRESTATED' />
+   <value enum='AN' description='OTHERANTICIPATIONNOTESBANGANETC' />
+   <value enum='BA' description='BANKERSACCEPTANCE' />
+   <value enum='BN' description='BANKNOTES' />
+   <value enum='BOX' description='BILLOFEXCHANGES' />
+   <value enum='BRADY' description='BRADYBOND' />
