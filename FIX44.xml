@@ -4511,3 +4511,81 @@
    <value enum='N' description='NO' />
    <value enum='Y' description='YES' />
   </field>
+  <field number='114' name='LocateReqd' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='115' name='OnBehalfOfCompID' type='STRING' />
+  <field number='116' name='OnBehalfOfSubID' type='STRING' />
+  <field number='117' name='QuoteID' type='STRING' />
+  <field number='118' name='NetMoney' type='AMT' />
+  <field number='119' name='SettlCurrAmt' type='AMT' />
+  <field number='120' name='SettlCurrency' type='CURRENCY' />
+  <field number='121' name='ForexReq' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='122' name='OrigSendingTime' type='UTCTIMESTAMP' />
+  <field number='123' name='GapFillFlag' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='124' name='NoExecs' type='NUMINGROUP' />
+  <field number='125' name='CxlType' type='CHAR' />
+  <field number='126' name='ExpireTime' type='UTCTIMESTAMP' />
+  <field number='127' name='DKReason' type='CHAR'>
+   <value enum='A' description='UNKNOWNSYMBOL' />
+   <value enum='B' description='WRONGSIDE' />
+   <value enum='C' description='QUANTITYEXCEEDSORDER' />
+   <value enum='D' description='NOMATCH' />
+   <value enum='E' description='PRICEEXCEEDSLIMIT' />
+   <value enum='F' description='CALCULATIONDIFFERENCE' />
+   <value enum='Z' description='OTHER' />
+  </field>
+  <field number='128' name='DeliverToCompID' type='STRING' />
+  <field number='129' name='DeliverToSubID' type='STRING' />
+  <field number='130' name='IOINaturalFlag' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='131' name='QuoteReqID' type='STRING' />
+  <field number='132' name='BidPx' type='PRICE' />
+  <field number='133' name='OfferPx' type='PRICE' />
+  <field number='134' name='BidSize' type='QTY' />
+  <field number='135' name='OfferSize' type='QTY' />
+  <field number='136' name='NoMiscFees' type='NUMINGROUP' />
+  <field number='137' name='MiscFeeAmt' type='AMT' />
+  <field number='138' name='MiscFeeCurr' type='CURRENCY' />
+  <field number='139' name='MiscFeeType' type='CHAR'>
+   <value enum='1' description='REG' />
+   <value enum='10' description='TRANSACTION' />
+   <value enum='11' description='CONVERSION' />
+   <value enum='12' description='AGENT' />
+   <value enum='2' description='TAX' />
+   <value enum='3' description='LOCALCOMM' />
+   <value enum='4' description='EXCHFEE' />
+   <value enum='5' description='STAMP' />
+   <value enum='6' description='LEVY' />
+   <value enum='7' description='OTHER' />
+   <value enum='8' description='MARKUP' />
+   <value enum='9' description='CONSUMPTION' />
+  </field>
+  <field number='140' name='PrevClosePx' type='PRICE' />
+  <field number='141' name='ResetSeqNumFlag' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='142' name='SenderLocationID' type='STRING' />
+  <field number='143' name='TargetLocationID' type='STRING' />
+  <field number='144' name='OnBehalfOfLocationID' type='STRING' />
+  <field number='145' name='DeliverToLocationID' type='STRING' />
+  <field number='146' name='NoRelatedSym' type='NUMINGROUP' />
+  <field number='147' name='Subject' type='STRING' />
+  <field number='148' name='Headline' type='STRING' />
+  <field number='149' name='URLLink' type='STRING' />
+  <field number='150' name='ExecType' type='CHAR'>
+   <value enum='0' description='NEW' />
+   <value enum='3' description='DONE' />
+   <value enum='4' description='CANCELED' />
+   <value enum='5' description='REPLACED' />
+   <value enum='6' description='PENDINGCXL' />
