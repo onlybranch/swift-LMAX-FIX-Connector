@@ -4727,3 +4727,68 @@
    <value enum='TD' description='TIMEDEPOSIT' />
    <value enum='TECP' description='TAXEXEMPTCOMMERCIALPAPER' />
    <value enum='TERM' description='TERMLOAN' />
+   <value enum='TINT' description='INTERESTSTRIPFROMANYBONDORNOTE' />
+   <value enum='TIPS' description='TREASURYINFLATIONPROTECTEDSECURITIES' />
+   <value enum='TNOTE' description='USTREASURYNOTE' />
+   <value enum='TPRN' description='PRINCIPALSTRIPFROMANONCALLABLEBONDORNOTE' />
+   <value enum='TRAN' description='TAXREVENUEANTICIPATIONNOTE' />
+   <value enum='UST' description='USTREASURYNOTEDEPRECATEDVALUEUSETNOTE' />
+   <value enum='USTB' description='USTREASURYBILLDEPRECATEDVALUEUSETBILL' />
+   <value enum='VRDN' description='VARIABLERATEDEMANDNOTE' />
+   <value enum='WAR' description='WARRANT' />
+   <value enum='WITHDRN' description='WITHDRAWN' />
+   <value enum='WLD' description='WILDCARDENTRY' />
+   <value enum='XCN' description='EXTENDEDCOMMNOTE' />
+   <value enum='XLINKD' description='INDEXEDLINKED' />
+   <value enum='YANK' description='YANKEECORPORATEBOND' />
+   <value enum='YCD' description='YANKEECERTIFICATEOFDEPOSIT' />
+  </field>
+  <field number='168' name='EffectiveTime' type='UTCTIMESTAMP' />
+  <field number='169' name='StandInstDbType' type='INT'>
+   <value enum='0' description='OTHER' />
+   <value enum='1' description='SID' />
+   <value enum='2' description='ALERT' />
+   <value enum='3' description='CUSTODIAN' />
+   <value enum='4' description='ACCOUNTNET' />
+  </field>
+  <field number='170' name='StandInstDbName' type='STRING' />
+  <field number='171' name='StandInstDbID' type='STRING' />
+  <field number='172' name='SettlDeliveryType' type='INT' />
+  <field number='173' name='SettlDepositoryCode' type='STRING' />
+  <field number='174' name='SettlBrkrCode' type='STRING' />
+  <field number='175' name='SettlInstCode' type='STRING' />
+  <field number='176' name='SecuritySettlAgentName' type='STRING' />
+  <field number='177' name='SecuritySettlAgentCode' type='STRING' />
+  <field number='178' name='SecuritySettlAgentAcctNum' type='STRING' />
+  <field number='179' name='SecuritySettlAgentAcctName' type='STRING' />
+  <field number='180' name='SecuritySettlAgentContactName' type='STRING' />
+  <field number='181' name='SecuritySettlAgentContactPhone' type='STRING' />
+  <field number='182' name='CashSettlAgentName' type='STRING' />
+  <field number='183' name='CashSettlAgentCode' type='STRING' />
+  <field number='184' name='CashSettlAgentAcctNum' type='STRING' />
+  <field number='185' name='CashSettlAgentAcctName' type='STRING' />
+  <field number='186' name='CashSettlAgentContactName' type='STRING' />
+  <field number='187' name='CashSettlAgentContactPhone' type='STRING' />
+  <field number='188' name='BidSpotRate' type='PRICE' />
+  <field number='189' name='BidForwardPoints' type='PRICEOFFSET' />
+  <field number='190' name='OfferSpotRate' type='PRICE' />
+  <field number='191' name='OfferForwardPoints' type='PRICEOFFSET' />
+  <field number='192' name='OrderQty2' type='QTY' />
+  <field number='193' name='SettlDate2' type='LOCALMKTDATE' />
+  <field number='194' name='LastSpotRate' type='PRICE' />
+  <field number='195' name='LastForwardPoints' type='PRICEOFFSET' />
+  <field number='196' name='AllocLinkID' type='STRING' />
+  <field number='197' name='AllocLinkType' type='INT'>
+   <value enum='0' description='FXNETTING' />
+   <value enum='1' description='FXSWAP' />
+  </field>
+  <field number='198' name='SecondaryOrderID' type='STRING' />
+  <field number='199' name='NoIOIQualifiers' type='NUMINGROUP' />
+  <field number='200' name='MaturityMonthYear' type='MONTHYEAR' />
+  <field number='201' name='PutOrCall' type='INT'>
+   <value enum='0' description='PUT' />
+   <value enum='1' description='CALL' />
+  </field>
+  <field number='202' name='StrikePrice' type='PRICE' />
+  <field number='203' name='CoveredOrUncovered' type='INT'>
+   <value enum='0' description='COVERED' />
