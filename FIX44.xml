@@ -5024,3 +5024,99 @@
   <field number='272' name='MDEntryDate' type='UTCDATEONLY' />
   <field number='273' name='MDEntryTime' type='UTCTIMEONLY' />
   <field number='274' name='TickDirection' type='CHAR'>
+   <value enum='0' description='PLUS' />
+   <value enum='1' description='ZEROPLUS' />
+   <value enum='2' description='MINUS' />
+   <value enum='3' description='ZEROMINUS' />
+  </field>
+  <field number='275' name='MDMkt' type='EXCHANGE' />
+  <field number='276' name='QuoteCondition' type='MULTIPLEVALUESTRING'>
+   <value enum='A' description='OPEN' />
+   <value enum='B' description='CLOSED' />
+   <value enum='C' description='EXCHBEST' />
+   <value enum='D' description='CONSOLBEST' />
+   <value enum='E' description='LOCKED' />
+   <value enum='F' description='CROSSED' />
+   <value enum='G' description='DEPTH' />
+   <value enum='H' description='FAST' />
+   <value enum='I' description='NONFIRM' />
+  </field>
+  <field number='277' name='TradeCondition' type='MULTIPLEVALUESTRING'>
+   <value enum='A' description='CASHMKT' />
+   <value enum='B' description='AVGPX' />
+   <value enum='C' description='CASHTRADE' />
+   <value enum='D' description='NEXTDAY_D' />
+   <value enum='E' description='OPENING' />
+   <value enum='F' description='INTRADAY' />
+   <value enum='G' description='RULE127' />
+   <value enum='H' description='RULE155' />
+   <value enum='I' description='SOLDLAST' />
+   <value enum='J' description='NEXTDAY_J' />
+   <value enum='K' description='OPENED' />
+   <value enum='L' description='SELLER' />
+   <value enum='M' description='SOLD' />
+   <value enum='N' description='STOPPED' />
+   <value enum='P' description='IMBALANCEMOREBUYERS' />
+   <value enum='Q' description='IMBALANCEMORESELLERS' />
+   <value enum='R' description='OPENINGPRICE' />
+  </field>
+  <field number='278' name='MDEntryID' type='STRING' />
+  <field number='279' name='MDUpdateAction' type='CHAR'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='CHANGE' />
+   <value enum='2' description='DELETE' />
+  </field>
+  <field number='280' name='MDEntryRefID' type='STRING' />
+  <field number='281' name='MDReqRejReason' type='CHAR'>
+   <value enum='0' description='UNKNOWNSYM' />
+   <value enum='1' description='DUPID' />
+   <value enum='2' description='INSBAND' />
+   <value enum='3' description='INSPERM' />
+   <value enum='4' description='UNSUPPSUB' />
+   <value enum='5' description='UNSUPPMKTDEPTH' />
+   <value enum='6' description='UNSUPPMDUPDATE' />
+   <value enum='7' description='UNSUPPAGGBK' />
+   <value enum='8' description='UNSUPPENTRY' />
+   <value enum='9' description='UNSUPPTRDSESSIONID' />
+   <value enum='A' description='UNSUPPSCOPE' />
+   <value enum='B' description='UNSUPPPOSITIONEFFECTSETTLEFLAG' />
+   <value enum='C' description='UNSUPPMDIMPLICITDELETE' />
+  </field>
+  <field number='282' name='MDEntryOriginator' type='STRING' />
+  <field number='283' name='LocationID' type='STRING' />
+  <field number='284' name='DeskID' type='STRING' />
+  <field number='285' name='DeleteReason' type='CHAR'>
+   <value enum='0' description='CANCELTRADEBUST' />
+   <value enum='1' description='ERROR' />
+  </field>
+  <field number='286' name='OpenCloseSettlFlag' type='MULTIPLEVALUESTRING'>
+   <value enum='0' description='DAILYOPEN' />
+   <value enum='1' description='SESSIONOPEN' />
+   <value enum='2' description='DELIVERYSETTLEMENT' />
+   <value enum='3' description='EXPECTEDENTRY' />
+   <value enum='4' description='ENTRYFROMPREVBUSINESSDAY' />
+   <value enum='5' description='THEORETICALPRICE' />
+  </field>
+  <field number='287' name='SellerDays' type='INT' />
+  <field number='288' name='MDEntryBuyer' type='STRING' />
+  <field number='289' name='MDEntrySeller' type='STRING' />
+  <field number='290' name='MDEntryPositionNo' type='INT' />
+  <field number='291' name='FinancialStatus' type='MULTIPLEVALUESTRING'>
+   <value enum='1' description='BANKRUPT' />
+   <value enum='2' description='PENDINGDELISTING' />
+  </field>
+  <field number='292' name='CorporateAction' type='MULTIPLEVALUESTRING'>
+   <value enum='A' description='EXDIVIDEND' />
+   <value enum='B' description='EXDIST' />
+   <value enum='C' description='EXRIGHTS' />
+   <value enum='D' description='NEW' />
+   <value enum='E' description='EXINTEREST' />
+  </field>
+  <field number='293' name='DefBidSize' type='QTY' />
+  <field number='294' name='DefOfferSize' type='QTY' />
+  <field number='295' name='NoQuoteEntries' type='NUMINGROUP' />
+  <field number='296' name='NoQuoteSets' type='NUMINGROUP' />
+  <field number='297' name='QuoteStatus' type='INT'>
+   <value enum='0' description='ACCPT' />
+   <value enum='1' description='CXLSYM' />
+   <value enum='10' description='PENDING' />
