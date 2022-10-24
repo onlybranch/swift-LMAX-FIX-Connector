@@ -4935,3 +4935,92 @@
    <value enum='CALL' description='YIELDTONEXTCALL' />
    <value enum='CHANGE' description='YIELDCHANGESINCECLOSE' />
    <value enum='CLOSE' description='CLOSINGYIELD' />
+   <value enum='COMPOUND' description='COMPOUNDYIELD' />
+   <value enum='CURRENT' description='CURRENTYIELD' />
+   <value enum='GOVTEQUIV' description='GVNTEQUIVALENTYIELD' />
+   <value enum='GROSS' description='TRUEGROSSYIELD' />
+   <value enum='INFLATION' description='YIELDINFLATIONASSUMPTION' />
+   <value enum='INVERSEFLOATER' description='INVFLOATERBONDYIELD' />
+   <value enum='LASTCLOSE' description='MOSTRECENTCLOSINGYIELD' />
+   <value enum='LASTMONTH' description='CLOSINGYIELDMOSTRECENTMONTH' />
+   <value enum='LASTQUARTER' description='CLOSINGYIELDMOSTRECENTQUARTER' />
+   <value enum='LASTYEAR' description='CLOSINGYIELDMOSTRECENTYEAR' />
+   <value enum='LONGAVGLIFE' description='YIELDTOLONGESTAVERAGELIFE' />
+   <value enum='MARK' description='MARKTOMARKETYIELD' />
+   <value enum='MATURITY' description='YIELDTOMATURITY' />
+   <value enum='NEXTREFUND' description='YIELDTONEXTREFUNDSINKING' />
+   <value enum='OPENAVG' description='OPENAVERAGEYIELD' />
+   <value enum='PREVCLOSE' description='PREVIOUSCLOSEYIELD' />
+   <value enum='PROCEEDS' description='PROCEEDSYIELD' />
+   <value enum='PUT' description='YIELDTONEXTPUT' />
+   <value enum='SEMIANNUAL' description='SEMI' />
+   <value enum='SHORTAVGLIFE' description='YIELDTOSHORTESTAVERAGELIFE' />
+   <value enum='SIMPLE' description='SIMPLEYIELD' />
+   <value enum='TAXEQUIV' description='TAXEQUIVALENTYIELD' />
+   <value enum='TENDER' description='YIELDTOTENDERDATE' />
+   <value enum='TRUE' description='TRUEYIELD' />
+   <value enum='VALUE1_32' description='YIELDVALUEOF132' />
+   <value enum='WORST' description='YIELDTOWORSTCONVENTION' />
+  </field>
+  <field number='236' name='Yield' type='PERCENTAGE' />
+  <field number='237' name='TotalTakedown' type='AMT' />
+  <field number='238' name='Concession' type='AMT' />
+  <field number='239' name='RepoCollateralSecurityType' type='INT' />
+  <field number='240' name='RedemptionDate' type='LOCALMKTDATE' />
+  <field number='241' name='UnderlyingCouponPaymentDate' type='LOCALMKTDATE' />
+  <field number='242' name='UnderlyingIssueDate' type='LOCALMKTDATE' />
+  <field number='243' name='UnderlyingRepoCollateralSecurityType' type='INT' />
+  <field number='244' name='UnderlyingRepurchaseTerm' type='INT' />
+  <field number='245' name='UnderlyingRepurchaseRate' type='PERCENTAGE' />
+  <field number='246' name='UnderlyingFactor' type='FLOAT' />
+  <field number='247' name='UnderlyingRedemptionDate' type='LOCALMKTDATE' />
+  <field number='248' name='LegCouponPaymentDate' type='LOCALMKTDATE' />
+  <field number='249' name='LegIssueDate' type='LOCALMKTDATE' />
+  <field number='250' name='LegRepoCollateralSecurityType' type='INT' />
+  <field number='251' name='LegRepurchaseTerm' type='INT' />
+  <field number='252' name='LegRepurchaseRate' type='PERCENTAGE' />
+  <field number='253' name='LegFactor' type='FLOAT' />
+  <field number='254' name='LegRedemptionDate' type='LOCALMKTDATE' />
+  <field number='255' name='CreditRating' type='STRING' />
+  <field number='256' name='UnderlyingCreditRating' type='STRING' />
+  <field number='257' name='LegCreditRating' type='STRING' />
+  <field number='258' name='TradedFlatSwitch' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='259' name='BasisFeatureDate' type='LOCALMKTDATE' />
+  <field number='260' name='BasisFeaturePrice' type='PRICE' />
+  <field number='262' name='MDReqID' type='STRING' />
+  <field number='263' name='SubscriptionRequestType' type='CHAR'>
+   <value enum='0' description='SNAPSHOT' />
+   <value enum='1' description='SNAPSHOTUPDATE' />
+   <value enum='2' description='UNSUBSCRIBE' />
+  </field>
+  <field number='264' name='MarketDepth' type='INT' />
+  <field number='265' name='MDUpdateType' type='INT'>
+   <value enum='0' description='FULL' />
+   <value enum='1' description='INCREMENTAL' />
+  </field>
+  <field number='266' name='AggregatedBook' type='BOOLEAN' />
+  <field number='267' name='NoMDEntryTypes' type='NUMINGROUP' />
+  <field number='268' name='NoMDEntries' type='NUMINGROUP' />
+  <field number='269' name='MDEntryType' type='CHAR'>
+   <value enum='0' description='BID' />
+   <value enum='1' description='OFFER' />
+   <value enum='2' description='TRADE' />
+   <value enum='3' description='INDEXVALUE' />
+   <value enum='4' description='OPENING' />
+   <value enum='5' description='CLOSING' />
+   <value enum='6' description='SETTLEMENT' />
+   <value enum='7' description='TRADINGHIGH' />
+   <value enum='8' description='TRADINGLOW' />
+   <value enum='9' description='TRADINGVWAP' />
+   <value enum='A' description='IMBALANCE' />
+   <value enum='B' description='TRADEVOLUME' />
+   <value enum='C' description='OPENINTEREST' />
+  </field>
+  <field number='270' name='MDEntryPx' type='PRICE' />
+  <field number='271' name='MDEntrySize' type='QTY' />
+  <field number='272' name='MDEntryDate' type='UTCDATEONLY' />
+  <field number='273' name='MDEntryTime' type='UTCTIMEONLY' />
+  <field number='274' name='TickDirection' type='CHAR'>
