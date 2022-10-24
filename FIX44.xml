@@ -5120,3 +5120,71 @@
    <value enum='0' description='ACCPT' />
    <value enum='1' description='CXLSYM' />
    <value enum='10' description='PENDING' />
+   <value enum='11' description='PASS' />
+   <value enum='12' description='LOCKEDMARKETWARNING' />
+   <value enum='13' description='CROSSMARKETWARNING' />
+   <value enum='14' description='CANCELEDDUETOLOCKMARKET' />
+   <value enum='15' description='CANCELEDDUETOCROSSMARKET' />
+   <value enum='2' description='CXLSECTYPE' />
+   <value enum='3' description='CXLUNDER' />
+   <value enum='4' description='CXLALL' />
+   <value enum='5' description='REJ' />
+   <value enum='6' description='REMOVED' />
+   <value enum='7' description='EXPIRED' />
+   <value enum='8' description='QUERY' />
+   <value enum='9' description='QUOTENOTFOUND' />
+  </field>
+  <field number='298' name='QuoteCancelType' type='INT'>
+   <value enum='1' description='CXLSYM' />
+   <value enum='2' description='CXLSECTYPE' />
+   <value enum='3' description='CXLUNDER' />
+   <value enum='4' description='CXLALL' />
+  </field>
+  <field number='299' name='QuoteEntryID' type='STRING' />
+  <field number='300' name='QuoteRejectReason' type='INT'>
+   <value enum='1' description='UNKNSYM' />
+   <value enum='2' description='EXCHCLSD' />
+   <value enum='3' description='ORDEXLIM' />
+   <value enum='4' description='TOOLATE' />
+   <value enum='5' description='UNKNORD' />
+   <value enum='6' description='DUPORD' />
+   <value enum='7' description='INVSPREAD' />
+   <value enum='8' description='INVPX' />
+   <value enum='9' description='NOTAUTH' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='301' name='QuoteResponseLevel' type='INT'>
+   <value enum='0' description='NOACK' />
+   <value enum='1' description='ACKNEG' />
+   <value enum='2' description='ACKEACH' />
+  </field>
+  <field number='302' name='QuoteSetID' type='STRING' />
+  <field number='303' name='QuoteRequestType' type='INT'>
+   <value enum='1' description='MAN' />
+   <value enum='2' description='AUTO' />
+  </field>
+  <field number='304' name='TotNoQuoteEntries' type='INT' />
+  <field number='305' name='UnderlyingSecurityIDSource' type='STRING' />
+  <field number='306' name='UnderlyingIssuer' type='STRING' />
+  <field number='307' name='UnderlyingSecurityDesc' type='STRING' />
+  <field number='308' name='UnderlyingSecurityExchange' type='EXCHANGE' />
+  <field number='309' name='UnderlyingSecurityID' type='STRING' />
+  <field number='310' name='UnderlyingSecurityType' type='STRING' />
+  <field number='311' name='UnderlyingSymbol' type='STRING' />
+  <field number='312' name='UnderlyingSymbolSfx' type='STRING' />
+  <field number='313' name='UnderlyingMaturityMonthYear' type='MONTHYEAR' />
+  <field number='314' name='UnderlyingMaturityDay' type='DAYOFMONTH' />
+  <field number='315' name='UnderlyingPutOrCall' type='INT' />
+  <field number='316' name='UnderlyingStrikePrice' type='PRICE' />
+  <field number='317' name='UnderlyingOptAttribute' type='CHAR' />
+  <field number='318' name='UnderlyingCurrency' type='CURRENCY' />
+  <field number='319' name='RatioQty' type='QTY' />
+  <field number='320' name='SecurityReqID' type='STRING' />
+  <field number='321' name='SecurityRequestType' type='INT'>
+   <value enum='0' description='REQSECID' />
+   <value enum='1' description='REQSECIDPROV' />
+   <value enum='2' description='REQSECLISTTYPES' />
+   <value enum='3' description='REQSECLIST' />
+  </field>
+  <field number='322' name='SecurityResponseID' type='STRING' />
+  <field number='323' name='SecurityResponseType' type='INT'>
