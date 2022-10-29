@@ -5188,3 +5188,71 @@
   </field>
   <field number='322' name='SecurityResponseID' type='STRING' />
   <field number='323' name='SecurityResponseType' type='INT'>
+   <value enum='1' description='ACCPTSECPROP' />
+   <value enum='2' description='ACCPTSECPROPREV' />
+   <value enum='3' description='SECLISTTYPESRET' />
+   <value enum='4' description='SECLISTRET' />
+   <value enum='5' description='REJSECPROP' />
+   <value enum='6' description='NOMATCH' />
+  </field>
+  <field number='324' name='SecurityStatusReqID' type='STRING' />
+  <field number='325' name='UnsolicitedIndicator' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='326' name='SecurityTradingStatus' type='INT'>
+   <value enum='1' description='OPENDELAY' />
+   <value enum='10' description='MKTONCLSIMBSELL' />
+   <value enum='11' description='NA' />
+   <value enum='12' description='NOMKTIMB' />
+   <value enum='13' description='NOMKTONCLSIMB' />
+   <value enum='14' description='ITSPREOPN' />
+   <value enum='15' description='NEWPXIND' />
+   <value enum='16' description='TRDDISTIME' />
+   <value enum='17' description='READY' />
+   <value enum='18' description='NOTAVAIL' />
+   <value enum='19' description='NOTTRADED' />
+   <value enum='2' description='TRDHALT' />
+   <value enum='20' description='UNKNOWN' />
+   <value enum='21' description='PRE_OPEN' />
+   <value enum='22' description='OPENINGROTATION' />
+   <value enum='23' description='FASTMARKET' />
+   <value enum='3' description='RESUME' />
+   <value enum='4' description='NOOPEN' />
+   <value enum='5' description='PXIND' />
+   <value enum='6' description='TRDRNGIND' />
+   <value enum='7' description='MKTIMBBUY' />
+   <value enum='8' description='MKTBALSELL' />
+   <value enum='9' description='MKTONCLSIMBBUY' />
+  </field>
+  <field number='327' name='HaltReasonChar' type='CHAR'>
+   <value enum='D' description='NEWSDISS' />
+   <value enum='E' description='ORDINFL' />
+   <value enum='I' description='ORDIMB' />
+   <value enum='M' description='ADDINFO' />
+   <value enum='P' description='NEWSPEND' />
+   <value enum='X' description='EQUIPCHANGE' />
+  </field>
+  <field number='328' name='InViewOfCommon' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='329' name='DueToRelated' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='330' name='BuyVolume' type='QTY' />
+  <field number='331' name='SellVolume' type='QTY' />
+  <field number='332' name='HighPx' type='PRICE' />
+  <field number='333' name='LowPx' type='PRICE' />
+  <field number='334' name='Adjustment' type='INT'>
+   <value enum='1' description='CANCEL' />
+   <value enum='2' description='ERROR' />
+   <value enum='3' description='CORRECTION' />
+  </field>
+  <field number='335' name='TradSesReqID' type='STRING' />
+  <field number='336' name='TradingSessionID' type='STRING' />
+  <field number='337' name='ContraTrader' type='STRING' />
+  <field number='338' name='TradSesMethod' type='INT'>
+   <value enum='1' description='ELECTRONIC' />
+   <value enum='2' description='OPENOUTCRY' />
