@@ -5318,3 +5318,68 @@
   <field number='373' name='SessionRejectReason' type='INT'>
    <value enum='0' description='INVALIDTAGNUMBER' />
    <value enum='1' description='REQUIREDTAGMISSING' />
+   <value enum='10' description='SENDINGTIMEACCURACYPROBLEM' />
+   <value enum='11' description='INVALIDMSGTYPE' />
+   <value enum='12' description='XMLVALIDATIONERROR' />
+   <value enum='13' description='TAGAPPEARSMORETHANONCE' />
+   <value enum='14' description='TAGSPECIFIEDOUTOFREQUIREDORDER' />
+   <value enum='15' description='REPEATINGGROUPFIELDSOUTOFORDER' />
+   <value enum='16' description='INCORRECTNUMINGROUPCOUNTFORREPEATINGGROUP' />
+   <value enum='17' description='NONDATAVALUEINCLUDESFIELDDELIMITERSOHCHARACTER' />
+   <value enum='2' description='TAGNOTDEFINEDFORTHISMESSAGETYPE' />
+   <value enum='3' description='UNDEFINEDTAG' />
+   <value enum='4' description='TAGSPECIFIEDWITHOUTAVALUE' />
+   <value enum='5' description='VALUEISINCORRECTOUTOFRANGEFORTHISTAG' />
+   <value enum='6' description='INCORRECTDATAFORMATFORVALUE' />
+   <value enum='7' description='DECRYPTIONPROBLEM' />
+   <value enum='8' description='SIGNATUREPROBLEM' />
+   <value enum='9' description='COMPIDPROBLEM' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='374' name='BidRequestTransType' type='CHAR'>
+   <value enum='C' description='CANCEL' />
+   <value enum='N' description='NO' />
+  </field>
+  <field number='375' name='ContraBroker' type='STRING' />
+  <field number='376' name='ComplianceID' type='STRING' />
+  <field number='377' name='SolicitedFlag' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='378' name='ExecRestatementReason' type='INT'>
+   <value enum='0' description='GTCORPACT' />
+   <value enum='1' description='GTRENEW' />
+   <value enum='10' description='WAREHOUSERECAP' />
+   <value enum='2' description='VERBAL' />
+   <value enum='3' description='REPX' />
+   <value enum='4' description='BRKROPT' />
+   <value enum='5' description='PARTDEC' />
+   <value enum='6' description='CXLTRADINGHALT' />
+   <value enum='7' description='CXLSYSTEMFAILURE' />
+   <value enum='8' description='MRKTOPTION' />
+   <value enum='9' description='CANCELEDNOTBEST' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='379' name='BusinessRejectRefID' type='STRING' />
+  <field number='380' name='BusinessRejectReason' type='INT'>
+   <value enum='0' description='OTHER' />
+   <value enum='1' description='UNKNID' />
+   <value enum='2' description='UNKNSEC' />
+   <value enum='3' description='UNKNMSGTYPE' />
+   <value enum='4' description='APPNA' />
+   <value enum='5' description='CONDFLDMISS' />
+   <value enum='6' description='NOTAUTH' />
+   <value enum='7' description='NODELIVTOFIRM' />
+  </field>
+  <field number='381' name='GrossTradeAmt' type='AMT' />
+  <field number='382' name='NoContraBrokers' type='NUMINGROUP' />
+  <field number='383' name='MaxMessageSize' type='LENGTH' />
+  <field number='384' name='NoMsgTypes' type='NUMINGROUP' />
+  <field number='385' name='MsgDirection' type='CHAR'>
+   <value enum='R' description='RECEIVE' />
+   <value enum='S' description='SEND' />
+  </field>
+  <field number='386' name='NoTradingSessions' type='NUMINGROUP' />
+  <field number='387' name='TotalVolumeTraded' type='QTY' />
+  <field number='388' name='DiscretionInst' type='CHAR'>
+   <value enum='0' description='RELDISPPX' />
