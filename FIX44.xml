@@ -5457,3 +5457,70 @@
    <value enum='4' description='CURRPX' />
    <value enum='5' description='SQ' />
    <value enum='6' description='VWAPDAY' />
+   <value enum='7' description='VWAPMORN' />
+   <value enum='8' description='VWAPAFT' />
+   <value enum='9' description='VWAPDAYXYORI' />
+   <value enum='A' description='VWAPMORNXYORI' />
+   <value enum='B' description='VWAPAFTXYORI' />
+   <value enum='C' description='STRIKE' />
+   <value enum='D' description='OPEN' />
+   <value enum='Z' description='OTHERS' />
+  </field>
+  <field number='420' name='NoBidComponents' type='NUMINGROUP' />
+  <field number='421' name='Country' type='COUNTRY' />
+  <field number='422' name='TotNoStrikes' type='INT' />
+  <field number='423' name='PriceType' type='INT'>
+   <value enum='1' description='PCT' />
+   <value enum='10' description='FIXEDCABINETTRADEPRICE' />
+   <value enum='11' description='VARIABLECABINETTRADEPRICE' />
+   <value enum='2' description='CPS' />
+   <value enum='3' description='ABS' />
+   <value enum='4' description='DISCOUNT' />
+   <value enum='5' description='PREMIUM' />
+   <value enum='6' description='SPREAD' />
+   <value enum='7' description='TEDPRICE' />
+   <value enum='8' description='TEDYIELD' />
+   <value enum='9' description='YIELD' />
+  </field>
+  <field number='424' name='DayOrderQty' type='QTY' />
+  <field number='425' name='DayCumQty' type='QTY' />
+  <field number='426' name='DayAvgPx' type='PRICE' />
+  <field number='427' name='GTBookingInst' type='INT'>
+   <value enum='0' description='BOOKALL' />
+   <value enum='1' description='ACCUMUNTILFILL' />
+   <value enum='2' description='ACCUMUNTILNOTIFY' />
+  </field>
+  <field number='428' name='NoStrikes' type='NUMINGROUP' />
+  <field number='429' name='ListStatusType' type='INT'>
+   <value enum='1' description='ACK' />
+   <value enum='2' description='RESP' />
+   <value enum='3' description='TIMED' />
+   <value enum='4' description='EXECSTART' />
+   <value enum='5' description='ALLDONE' />
+   <value enum='6' description='ALERT' />
+  </field>
+  <field number='430' name='NetGrossInd' type='INT'>
+   <value enum='1' description='NET' />
+   <value enum='2' description='GROSS' />
+  </field>
+  <field number='431' name='ListOrderStatus' type='INT'>
+   <value enum='1' description='INBIDPROC' />
+   <value enum='2' description='RECVFOREXEC' />
+   <value enum='3' description='EXEC' />
+   <value enum='4' description='CXL' />
+   <value enum='5' description='ALERT' />
+   <value enum='6' description='ALLDONE' />
+   <value enum='7' description='REJ' />
+  </field>
+  <field number='432' name='ExpireDate' type='LOCALMKTDATE' />
+  <field number='433' name='ListExecInstType' type='CHAR'>
+   <value enum='1' description='IMMED' />
+   <value enum='2' description='WAIT' />
+   <value enum='3' description='EXCHCIVSELL' />
+   <value enum='4' description='EXCHCIVBUYTOP' />
+   <value enum='5' description='EXCHCIVBUYWD' />
+  </field>
+  <field number='434' name='CxlRejResponseTo' type='CHAR'>
+   <value enum='1' description='ORDCXLREQ' />
+   <value enum='2' description='ORDCXLREPREQ' />
+  </field>
