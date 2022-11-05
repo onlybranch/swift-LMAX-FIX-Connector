@@ -5524,3 +5524,81 @@
    <value enum='1' description='ORDCXLREQ' />
    <value enum='2' description='ORDCXLREPREQ' />
   </field>
+  <field number='435' name='UnderlyingCouponRate' type='PERCENTAGE' />
+  <field number='436' name='UnderlyingContractMultiplier' type='FLOAT' />
+  <field number='437' name='ContraTradeQty' type='QTY' />
+  <field number='438' name='ContraTradeTime' type='UTCTIMESTAMP' />
+  <field number='439' name='ClearingFirm' type='STRING' />
+  <field number='440' name='ClearingAccount' type='STRING' />
+  <field number='441' name='LiquidityNumSecurities' type='INT' />
+  <field number='442' name='MultiLegReportingType' type='CHAR'>
+   <value enum='1' description='SINGLE' />
+   <value enum='2' description='INDIVLEG' />
+   <value enum='3' description='MULTILEG' />
+  </field>
+  <field number='443' name='StrikeTime' type='UTCTIMESTAMP' />
+  <field number='444' name='ListStatusText' type='STRING' />
+  <field number='445' name='EncodedListStatusTextLen' type='LENGTH' />
+  <field number='446' name='EncodedListStatusText' type='DATA' />
+  <field number='447' name='PartyIDSource' type='CHAR'>
+   <value enum='1' description='KOREANINVESTORID' />
+   <value enum='2' description='TAIWANESEQUALIFIED' />
+   <value enum='3' description='TAIWANESETRADINGACCT' />
+   <value enum='4' description='MCDNUMBER' />
+   <value enum='5' description='CHINESEBSHARE' />
+   <value enum='6' description='UKNATIONALINSPENNUMBER' />
+   <value enum='7' description='USSOCIALSECURITY' />
+   <value enum='8' description='USEMPLOYERIDNUMBER' />
+   <value enum='9' description='AUSTRALIANBUSINESSNUMBER' />
+   <value enum='A' description='AUSTRALIANTAXFILENUMBER' />
+   <value enum='B' description='BIC' />
+   <value enum='C' description='ACCPTMARKETPART' />
+   <value enum='D' description='PROPCODE' />
+   <value enum='E' description='ISOCODE' />
+   <value enum='F' description='SETTLENTLOC' />
+   <value enum='G' description='MIC' />
+   <value enum='H' description='CSDPARTCODE' />
+   <value enum='I' description='DIRECTEDDEFINEDISITC' />
+  </field>
+  <field number='448' name='PartyID' type='STRING' />
+  <field number='449' name='TotalVolumeTradedDate' type='UTCDATEONLY' />
+  <field number='450' name='TotalVolumeTradedTime' type='UTCTIMEONLY' />
+  <field number='451' name='NetChgPrevDay' type='PRICEOFFSET' />
+  <field number='452' name='PartyRole' type='INT'>
+   <value enum='1' description='EXECUTINGFIRM' />
+   <value enum='10' description='SETTLEMENTLOCATION' />
+   <value enum='11' description='INITIATINGTRADER' />
+   <value enum='12' description='EXECUTINGTRADER' />
+   <value enum='13' description='ORDERORIGINATOR' />
+   <value enum='14' description='GIVEUPCLEARINGFIRM' />
+   <value enum='15' description='CORRESPONDANTCLEARINGFIRM' />
+   <value enum='16' description='EXECUTINGSYSTEM' />
+   <value enum='17' description='CONTRAFIRM' />
+   <value enum='18' description='CONTRACLEARINGFIRM' />
+   <value enum='19' description='SPONSORINGFIRM' />
+   <value enum='2' description='BROKEROFCREDIT' />
+   <value enum='20' description='UNDRCONTRAFIRM' />
+   <value enum='21' description='CLEARINGORGANIZATION' />
+   <value enum='22' description='EXCHANGE' />
+   <value enum='24' description='CUSTOMERACCOUNT' />
+   <value enum='25' description='CORRESPONDENTCLEARINGORGANIZATION' />
+   <value enum='26' description='CORRESPONDENTBROKER' />
+   <value enum='27' description='BUYERSELLERRECEIVERDELIVERER' />
+   <value enum='28' description='CUSTODIAN' />
+   <value enum='29' description='INTERMEDIARY' />
+   <value enum='3' description='CLIENTID' />
+   <value enum='30' description='AGENT' />
+   <value enum='31' description='SUBCUSTODIAN' />
+   <value enum='32' description='BENEFICIARY' />
+   <value enum='33' description='INTERESTEDPARTY' />
+   <value enum='34' description='REGULATORYBODY' />
+   <value enum='35' description='LIQUIDITYPROVIDER' />
+   <value enum='36' description='ENTERINGTRADER' />
+   <value enum='37' description='CONTRATRADER' />
+   <value enum='38' description='POSITIONACCOUNT' />
+   <value enum='39' description='ALLOCENTITY' />
+   <value enum='4' description='CLEARINGFIRM' />
+   <value enum='5' description='INVESTORID' />
+   <value enum='6' description='INTRODUCINGFIRM' />
+   <value enum='7' description='ENTERINGFIRM' />
+   <value enum='8' description='LOCATELENDINGFIRM' />
