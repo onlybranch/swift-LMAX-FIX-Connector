@@ -5687,3 +5687,64 @@
    <value enum='N' description='NOTCHECKED' />
    <value enum='Y' description='PASSED' />
   </field>
+  <field number='482' name='MailingInst' type='STRING' />
+  <field number='483' name='TransBkdTime' type='UTCTIMESTAMP' />
+  <field number='484' name='ExecPriceType' type='CHAR'>
+   <value enum='B' description='BIDPRICE' />
+   <value enum='C' description='CREATIONPRICE' />
+   <value enum='D' description='CREATIONPRICEADJPCT' />
+   <value enum='E' description='CREATIONPRICEADJAMT' />
+   <value enum='O' description='OFFERPRICE' />
+   <value enum='P' description='OFFERPRICEMINUSADJPCT' />
+   <value enum='Q' description='OFFERPRICEMINUSADJAMT' />
+   <value enum='S' description='SINGLEPRICE' />
+  </field>
+  <field number='485' name='ExecPriceAdjustment' type='FLOAT' />
+  <field number='486' name='DateOfBirth' type='LOCALMKTDATE' />
+  <field number='487' name='TradeReportTransType' type='INT'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='CANCEL' />
+   <value enum='2' description='REPLACE' />
+   <value enum='3' description='RELEASE' />
+   <value enum='4' description='REVERSE' />
+  </field>
+  <field number='488' name='CardHolderName' type='STRING' />
+  <field number='489' name='CardNumber' type='STRING' />
+  <field number='490' name='CardExpDate' type='LOCALMKTDATE' />
+  <field number='491' name='CardIssNum' type='STRING' />
+  <field number='492' name='PaymentMethod' type='INT'>
+   <value enum='1' description='CREST' />
+   <value enum='10' description='DIRECTCREDITBECS' />
+   <value enum='11' description='CREDITCARD' />
+   <value enum='12' description='ACHDEBIT' />
+   <value enum='13' description='ACHCREDIT' />
+   <value enum='14' description='BPAY' />
+   <value enum='15' description='HIGHVALUECLEARINGSYSTEMHVACS' />
+   <value enum='2' description='NSCC' />
+   <value enum='3' description='EUROCLEAR' />
+   <value enum='4' description='CLEARSTREAM' />
+   <value enum='5' description='CHEQUE' />
+   <value enum='6' description='TELEGRAPHICTRANSFER' />
+   <value enum='7' description='FEDWIRE' />
+   <value enum='8' description='DEBITCARD' />
+   <value enum='9' description='DIRECTDEBITBECS' />
+  </field>
+  <field number='493' name='RegistAcctType' type='STRING' />
+  <field number='494' name='Designation' type='STRING' />
+  <field number='495' name='TaxAdvantageType' type='INT'>
+   <value enum='0' description='NONE' />
+   <value enum='1' description='MAXIISAUK' />
+   <value enum='10' description='EMPLOYEECURRENTYEARUS' />
+   <value enum='11' description='EMPLOYERPRIORYEARUS' />
+   <value enum='12' description='EMPLOYERCURRENTYEARUS' />
+   <value enum='13' description='NONFUNDPROTOTYPEIRAUS' />
+   <value enum='14' description='NONFUNDQUALIFIEDPLANUS' />
+   <value enum='15' description='DEFINEDCONTRIBUTIONPLANUS' />
+   <value enum='16' description='INDIVIDUALRETIREMENTACCOUNTUS' />
+   <value enum='17' description='INDIVIDUALRETIREMENTACCOUNTROLLOVERUS' />
+   <value enum='18' description='KEOGHUS' />
+   <value enum='19' description='PROFITSHARINGPLANUS' />
+   <value enum='2' description='TESSAUK' />
+   <value enum='20' description='401KUS' />
+   <value enum='21' description='SELFDIRECTEDIRAUS' />
+   <value enum='22' description='403BUS' />
