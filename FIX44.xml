@@ -5602,3 +5602,88 @@
    <value enum='6' description='INTRODUCINGFIRM' />
    <value enum='7' description='ENTERINGFIRM' />
    <value enum='8' description='LOCATELENDINGFIRM' />
+   <value enum='9' description='FUNDMANAGER' />
+  </field>
+  <field number='453' name='NoPartyIDs' type='NUMINGROUP' />
+  <field number='454' name='NoSecurityAltID' type='NUMINGROUP' />
+  <field number='455' name='SecurityAltID' type='STRING' />
+  <field number='456' name='SecurityAltIDSource' type='STRING' />
+  <field number='457' name='NoUnderlyingSecurityAltID' type='NUMINGROUP' />
+  <field number='458' name='UnderlyingSecurityAltID' type='STRING' />
+  <field number='459' name='UnderlyingSecurityAltIDSource' type='STRING' />
+  <field number='460' name='Product' type='INT'>
+   <value enum='1' description='AGENCY' />
+   <value enum='10' description='MORTGAGE' />
+   <value enum='11' description='MUNICIPAL' />
+   <value enum='12' description='OTHER' />
+   <value enum='13' description='FINANCING' />
+   <value enum='2' description='COMMODITY' />
+   <value enum='3' description='CORPORATE' />
+   <value enum='4' description='CURRENCY' />
+   <value enum='5' description='EQUITY' />
+   <value enum='6' description='GOVERNMENT' />
+   <value enum='7' description='INDEX' />
+   <value enum='8' description='LOAN' />
+   <value enum='9' description='MONEYMARKET' />
+  </field>
+  <field number='461' name='CFICode' type='STRING' />
+  <field number='462' name='UnderlyingProduct' type='INT' />
+  <field number='463' name='UnderlyingCFICode' type='STRING' />
+  <field number='464' name='TestMessageIndicator' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='465' name='QuantityType' type='INT'>
+   <value enum='1' description='SHARES' />
+   <value enum='2' description='BONDS' />
+   <value enum='3' description='CURRENTFACE' />
+   <value enum='4' description='ORIGINALFACE' />
+   <value enum='5' description='CURRENCY' />
+   <value enum='6' description='CONTRACTS' />
+   <value enum='7' description='OTHER' />
+   <value enum='8' description='PAR' />
+  </field>
+  <field number='466' name='BookingRefID' type='STRING' />
+  <field number='467' name='IndividualAllocID' type='STRING' />
+  <field number='468' name='RoundingDirection' type='CHAR'>
+   <value enum='0' description='ROUNDNEAREST' />
+   <value enum='1' description='ROUNDDOWN' />
+   <value enum='2' description='ROUNDUP' />
+  </field>
+  <field number='469' name='RoundingModulus' type='FLOAT' />
+  <field number='470' name='CountryOfIssue' type='COUNTRY' />
+  <field number='471' name='StateOrProvinceOfIssue' type='STRING' />
+  <field number='472' name='LocaleOfIssue' type='STRING' />
+  <field number='473' name='NoRegistDtls' type='NUMINGROUP' />
+  <field number='474' name='MailingDtls' type='STRING' />
+  <field number='475' name='InvestorCountryOfResidence' type='COUNTRY' />
+  <field number='476' name='PaymentRef' type='STRING' />
+  <field number='477' name='DistribPaymentMethod' type='INT'>
+   <value enum='1' description='CREST' />
+   <value enum='10' description='BPAY' />
+   <value enum='11' description='HIGHVALUECLEARINGSYSTEMHVACS' />
+   <value enum='12' description='REINVESTINFUND' />
+   <value enum='2' description='NSCC' />
+   <value enum='3' description='EUROCLEAR' />
+   <value enum='4' description='CLEARSTREAM' />
+   <value enum='5' description='CHEQUE' />
+   <value enum='6' description='TELEGRAPHICTRANSFER' />
+   <value enum='7' description='FEDWIRE' />
+   <value enum='8' description='DIRECTCREDITBECSBACS' />
+   <value enum='9' description='ACHCREDIT' />
+  </field>
+  <field number='478' name='CashDistribCurr' type='CURRENCY' />
+  <field number='479' name='CommCurrency' type='CURRENCY' />
+  <field number='480' name='CancellationRights' type='CHAR'>
+   <value enum='M' description='NOWAIVER' />
+   <value enum='N' description='NOEXECONLY' />
+   <value enum='O' description='NOINSTIT' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='481' name='MoneyLaunderingStatus' type='CHAR'>
+   <value enum='1' description='EXBELOWLIM' />
+   <value enum='2' description='EXCLIENTMONEYTYPE' />
+   <value enum='3' description='EXAUTHCREDIT' />
+   <value enum='N' description='NOTCHECKED' />
+   <value enum='Y' description='PASSED' />
+  </field>
