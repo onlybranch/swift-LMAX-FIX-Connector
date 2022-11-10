@@ -5748,3 +5748,74 @@
    <value enum='20' description='401KUS' />
    <value enum='21' description='SELFDIRECTEDIRAUS' />
    <value enum='22' description='403BUS' />
+   <value enum='23' description='457US' />
+   <value enum='24' description='ROTHIRAFUNDPROTOTYPEUS' />
+   <value enum='25' description='ROTHIRANONPROTOTYPEUS' />
+   <value enum='26' description='ROTHCONVERSIONIRAFUNDPROTOTYPEUS' />
+   <value enum='27' description='ROTHCONVERSIONIRANONPROTOTYPEUS' />
+   <value enum='28' description='EDUCATIONIRAFUNDPROTOTYPEUS' />
+   <value enum='29' description='EDUCATIONIRANONPROTOTYPEUS' />
+   <value enum='3' description='MINICASHISAUK' />
+   <value enum='4' description='MINISTOCKSANDSHARESISAUK' />
+   <value enum='5' description='MINIINSURANCEISAUK' />
+   <value enum='6' description='CURRENTYEARPAYMENTUS' />
+   <value enum='7' description='PRIORYEARPAYMENTUS' />
+   <value enum='8' description='ASSETTRANSFERUS' />
+   <value enum='9' description='EMPLOYEEPRIORYEARUS' />
+   <value enum='999' description='OTHER' />
+  </field>
+  <field number='496' name='RegistRejReasonText' type='STRING' />
+  <field number='497' name='FundRenewWaiv' type='CHAR'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='498' name='CashDistribAgentName' type='STRING' />
+  <field number='499' name='CashDistribAgentCode' type='STRING' />
+  <field number='500' name='CashDistribAgentAcctNumber' type='STRING' />
+  <field number='501' name='CashDistribPayRef' type='STRING' />
+  <field number='502' name='CashDistribAgentAcctName' type='STRING' />
+  <field number='503' name='CardStartDate' type='LOCALMKTDATE' />
+  <field number='504' name='PaymentDate' type='LOCALMKTDATE' />
+  <field number='505' name='PaymentRemitterID' type='STRING' />
+  <field number='506' name='RegistStatus' type='CHAR'>
+   <value enum='A' description='ACCEPTED' />
+   <value enum='H' description='HELD' />
+   <value enum='N' description='REMINDER_IE_REGISTRATION_INSTRUCTIONS_ARE_STILL_OUTSTANDING' />
+   <value enum='R' description='REJECTED' />
+  </field>
+  <field number='507' name='RegistRejReasonCode' type='INT'>
+   <value enum='1' description='INVALIDACCOUNTTYPE' />
+   <value enum='10' description='INVALIDINVESTORIDSOURCE' />
+   <value enum='11' description='INVALIDDATEOFBIRTH' />
+   <value enum='12' description='INVALIDINVESTORCOUNTRYOFRESIDENCE' />
+   <value enum='13' description='INVALIDNODISTRIBINSTNS' />
+   <value enum='14' description='INVALIDDISTRIBPERCENTAGE' />
+   <value enum='15' description='INVALIDDISTRIBPAYMENTMETHOD' />
+   <value enum='16' description='INVALIDCASHDISTRIBAGENTACCTNAME' />
+   <value enum='17' description='INVALIDCASHDISTRIBAGENTCODE' />
+   <value enum='18' description='INVALIDCASHDISTRIBAGENTACCTNUM' />
+   <value enum='2' description='INVALIDTAXEXEMPTTYPE' />
+   <value enum='3' description='INVALIDOWNERSHIPTYPE' />
+   <value enum='4' description='INVALIDNOREGDETLS' />
+   <value enum='5' description='INVALIDREGSEQNO' />
+   <value enum='6' description='INVALIDREGDTLS' />
+   <value enum='7' description='INVALIDMAILINGDTLS' />
+   <value enum='8' description='INVALIDMAILINGINST' />
+   <value enum='9' description='INVALIDINVESTORID' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='508' name='RegistRefID' type='STRING' />
+  <field number='509' name='RegistDtls' type='STRING' />
+  <field number='510' name='NoDistribInsts' type='NUMINGROUP' />
+  <field number='511' name='RegistEmail' type='STRING' />
+  <field number='512' name='DistribPercentage' type='PERCENTAGE' />
+  <field number='513' name='RegistID' type='STRING' />
+  <field number='514' name='RegistTransType' type='CHAR'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='REPLACE' />
+   <value enum='2' description='CANCEL' />
+  </field>
+  <field number='515' name='ExecValuationPoint' type='UTCTIMESTAMP' />
+  <field number='516' name='OrderPercent' type='PERCENTAGE' />
+  <field number='517' name='OwnershipType' type='CHAR'>
+   <value enum='2' description='JOINT_TRUSTEES' />
