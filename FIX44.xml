@@ -5819,3 +5819,65 @@
   <field number='516' name='OrderPercent' type='PERCENTAGE' />
   <field number='517' name='OwnershipType' type='CHAR'>
    <value enum='2' description='JOINT_TRUSTEES' />
+   <value enum='J' description='JOINT_INVESTORS' />
+   <value enum='T' description='TENANTS_IN_COMMON' />
+  </field>
+  <field number='518' name='NoContAmts' type='NUMINGROUP' />
+  <field number='519' name='ContAmtType' type='INT'>
+   <value enum='1' description='COMMISSIONAMT' />
+   <value enum='10' description='EXITCHARGEPCT' />
+   <value enum='11' description='FUNDBASEDRENEWALCOMM' />
+   <value enum='12' description='PROJECTEDFUNDVALUE' />
+   <value enum='13' description='FUNDBASEDRENEWALCOMMAMTORD' />
+   <value enum='14' description='FUNDBASEDRENEWALCOMMAMTPROJ' />
+   <value enum='15' description='NETSETTLEMENTAMOUNT' />
+   <value enum='2' description='COMMISSIONPCT' />
+   <value enum='3' description='INITIALCHARGEAMT' />
+   <value enum='4' description='INITIALCHARGEPCT' />
+   <value enum='5' description='DISCOUNTAMT' />
+   <value enum='6' description='DISCOUNTPCT' />
+   <value enum='7' description='DILUTIONLEVYAMT' />
+   <value enum='8' description='DILUTIONLEVYPCT' />
+   <value enum='9' description='EXITCHARGEAMT' />
+  </field>
+  <field number='520' name='ContAmtValue' type='FLOAT' />
+  <field number='521' name='ContAmtCurr' type='CURRENCY' />
+  <field number='522' name='OwnerType' type='INT'>
+   <value enum='1' description='INDIVINVESTOR' />
+   <value enum='10' description='NETWORKINGSUBACCT' />
+   <value enum='11' description='NON_PROFITORG' />
+   <value enum='12' description='CORPBODY' />
+   <value enum='13' description='NOMINEE' />
+   <value enum='2' description='PUBLICCOMPANY' />
+   <value enum='3' description='PRIVATECOMPANY' />
+   <value enum='4' description='INDIVTRUSTEE' />
+   <value enum='5' description='COMPANYTRUSTEE' />
+   <value enum='6' description='PENSIONPLAN' />
+   <value enum='7' description='CUSTODIANMINORSACT' />
+   <value enum='8' description='TRUSTS' />
+   <value enum='9' description='FIDUCIARIES' />
+  </field>
+  <field number='523' name='PartySubID' type='STRING' />
+  <field number='524' name='NestedPartyID' type='STRING' />
+  <field number='525' name='NestedPartyIDSource' type='CHAR' />
+  <field number='526' name='SecondaryClOrdID' type='STRING' />
+  <field number='527' name='SecondaryExecID' type='STRING' />
+  <field number='528' name='OrderCapacity' type='CHAR'>
+   <value enum='A' description='AGENCY' />
+   <value enum='G' description='PROPRIETARY' />
+   <value enum='I' description='INDIVIDUAL' />
+   <value enum='P' description='PRINCIPAL' />
+   <value enum='R' description='RISKLESSPRINCIPAL' />
+   <value enum='W' description='AGENTOTHERMEMBER' />
+  </field>
+  <field number='529' name='OrderRestrictions' type='MULTIPLEVALUESTRING'>
+   <value enum='1' description='PROGRAMTRADE' />
+   <value enum='2' description='INDEXARBITRAGE' />
+   <value enum='3' description='NON_INDEXARBITRAGE' />
+   <value enum='4' description='COMPETINGMARKETMAKER' />
+   <value enum='5' description='ACTMM' />
+   <value enum='6' description='ACTMMDERIV' />
+   <value enum='7' description='FORENTITY' />
+   <value enum='8' description='EXMRKTPART' />
+   <value enum='9' description='EXINTMRKTLINK' />
+   <value enum='A' description='RISKARB' />
