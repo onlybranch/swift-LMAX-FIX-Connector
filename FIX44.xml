@@ -6003,3 +6003,72 @@
    <value enum='0' description='ALLTRADES' />
    <value enum='1' description='MATCHEDTRADES' />
    <value enum='2' description='UNMATCHEDTRADES' />
+   <value enum='3' description='UNREPORTEDTRADES' />
+   <value enum='4' description='ADVISORIESMATCH' />
+  </field>
+  <field number='570' name='PreviouslyReported' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='571' name='TradeReportID' type='STRING' />
+  <field number='572' name='TradeReportRefID' type='STRING' />
+  <field number='573' name='MatchStatus' type='CHAR'>
+   <value enum='0' description='COMPMATAFF' />
+   <value enum='1' description='UNCOMPUNMATUNAFF' />
+   <value enum='2' description='ADVALERT' />
+  </field>
+  <field number='574' name='MatchType' type='STRING'>
+   <value enum='A1' description='EXACTMATCHONTRADEDATESTOCKSYMBOLQUANTITYPRICETRADETYPEANDSPECIALTRADEINDICATORPLUSFOURBADGESANDEXECUTIONTIME' />
+   <value enum='A2' description='EXACTMATCHONTRADEDATESTOCKSYMBOLQUANTITYPRICETRADETYPEANDSPECIALTRADEINDICATORPLUSFOURBADGES' />
+   <value enum='A3' description='EXACTMATCHONTRADEDATESTOCKSYMBOLQUANTITYPRICETRADETYPEANDSPECIALTRADEINDICATORPLUSTWOBADGESANDEXECUTIONTIME' />
+   <value enum='A4' description='EXACTMATCHONTRADEDATESTOCKSYMBOLQUANTITYPRICETRADETYPEANDSPECIALTRADEINDICATORPLUSTWOBADGES' />
+   <value enum='A5' description='EXACTMATCHONTRADEDATESTOCKSYMBOLQUANTITYPRICETRADETYPEANDSPECIALTRADEINDICATORPLUSEXECUTIONTIME' />
+   <value enum='ACTM1' description='NASDAQACTM1MATCH' />
+   <value enum='ACTM2' description='NASDAQACTM2MATCH' />
+   <value enum='ACTM3' description='NASDAQACTACCEPTEDTRADE' />
+   <value enum='ACTM4' description='NASDAQACTDEFAULTTRADE' />
+   <value enum='ACTM5' description='NASDAQACTDEFAULTAFTERM2' />
+   <value enum='ACTM6' description='NASDAQACTM6MATCH' />
+   <value enum='ACTMT' description='NASDAQNONACT' />
+   <value enum='AQ' description='COMPAREDRECORDSRESULTINGFROMSTAMPEDADVISORIESORSPECIALISTACCEPTSPAIROFFS' />
+   <value enum='M1' description='EXACTMATCHONTRADEDATESTOCKSYMBOLQUANTITYPRICETRADETYPEANDSPECIALTRADEINDICATORMINUSBADGESANDTIMES' />
+   <value enum='M2' description='SUMMARIZEDMATCHMINUSBADGESANDTIMES' />
+   <value enum='MT' description='OCSLOCKEDIN' />
+   <value enum='S1' description='SUMMARIZEDMATCHUSINGA1' />
+   <value enum='S2' description='SUMMARIZEDMATCHUSINGA2' />
+   <value enum='S3' description='SUMMARIZEDMATCHUSINGA3' />
+   <value enum='S4' description='SUMMARIZEDMATCHUSINGA4' />
+   <value enum='S5' description='SUMMARIZEDMATCHUSINGA5' />
+  </field>
+  <field number='575' name='OddLot' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='576' name='NoClearingInstructions' type='NUMINGROUP' />
+  <field number='577' name='ClearingInstruction' type='INT'>
+   <value enum='0' description='PROCESSNORMALLY' />
+   <value enum='1' description='EXCLUDEFROMALLNETTING' />
+   <value enum='10' description='AUTOMATICGIVEUPMODETRADEGIVEUPTOTHEGIVEUPDESTINATIONNUMBERSPECIFIED' />
+   <value enum='11' description='QUALIFIEDSERVICEREPRESENTATIVEQSR' />
+   <value enum='12' description='CUSTOMERTRADE' />
+   <value enum='13' description='SELFCLEARING' />
+   <value enum='2' description='BILATERALNETTINGONLY' />
+   <value enum='3' description='EXCLEARING' />
+   <value enum='4' description='SPECIALTRADE' />
+   <value enum='5' description='MULTILATERALNETTING' />
+   <value enum='6' description='CLEARAGAINSTCENTRALCOUNTERPARTY' />
+   <value enum='7' description='EXCLUDEFROMCENTRALCOUNTERPARTY' />
+   <value enum='8' description='MANUALMODEPREPOSTINGANDORPREGIVEUP' />
+   <value enum='9' description='AUTOMATICPOSTINGMODETRADEPOSTINGTOTHEPOSITIONACCOUNTNUMBERSPECIFIED' />
+  </field>
+  <field number='578' name='TradeInputSource' type='STRING' />
+  <field number='579' name='TradeInputDevice' type='STRING' />
+  <field number='580' name='NoDates' type='INT' />
+  <field number='581' name='AccountType' type='INT'>
+   <value enum='1' description='ACCOUNTCUSTOMER' />
+   <value enum='2' description='ACCOUNTNONCUSTOMER' />
+   <value enum='3' description='HOUSETRADER' />
+   <value enum='4' description='FLOORTRADER' />
+   <value enum='6' description='ACCOUNTNONCUSTOMERCROSS' />
+   <value enum='7' description='HOUSETRADERCROSS' />
+   <value enum='8' description='JOINTBOACCT' />
