@@ -6072,3 +6072,74 @@
    <value enum='6' description='ACCOUNTNONCUSTOMERCROSS' />
    <value enum='7' description='HOUSETRADERCROSS' />
    <value enum='8' description='JOINTBOACCT' />
+  </field>
+  <field number='582' name='CustOrderCapacity' type='INT'>
+   <value enum='1' description='MEMBER_TRADING_FOR_THEIR_OWN_ACCOUNT' />
+   <value enum='2' description='CLEARING_FIRM_TRADING_FOR_ITS_PROPRIETARY_ACCOUNT' />
+   <value enum='3' description='MEMBER_TRADING_FOR_ANOTHER_MEMBER' />
+   <value enum='4' description='ALL_OTHER' />
+  </field>
+  <field number='583' name='ClOrdLinkID' type='STRING' />
+  <field number='584' name='MassStatusReqID' type='STRING' />
+  <field number='585' name='MassStatusReqType' type='INT'>
+   <value enum='1' description='STATUSSECURITY' />
+   <value enum='2' description='STATUSUNDERLYINGSECURITY' />
+   <value enum='3' description='STATUSPRODUCT' />
+   <value enum='4' description='STATUSCFICODE' />
+   <value enum='5' description='STATUSSECURITYTYPE' />
+   <value enum='6' description='STATUSTRDSESSION' />
+   <value enum='7' description='STATUSALLORDERS' />
+   <value enum='8' description='STATUSPARTYID' />
+  </field>
+  <field number='586' name='OrigOrdModTime' type='UTCTIMESTAMP' />
+  <field number='587' name='LegSettlType' type='CHAR' />
+  <field number='588' name='LegSettlDate' type='LOCALMKTDATE' />
+  <field number='589' name='DayBookingInst' type='CHAR'>
+   <value enum='0' description='CAN_TRIGGER_BOOKING_WITHOUT_REFERENCE_TO_THE_ORDER_INITIATOR_AUTO' />
+   <value enum='1' description='SPEAK_WITH_ORDER_INITIATOR_BEFORE_BOOKING_SPEAK_FIRST' />
+   <value enum='2' description='ACCUMULATE' />
+  </field>
+  <field number='590' name='BookingUnit' type='CHAR'>
+   <value enum='0' description='EACH_PARTIAL_EXECUTION_IS_A_BOOKABLE_UNIT' />
+   <value enum='1' description='AGGREGATE_PARTIAL_EXECUTIONS_ON_THIS_ORDER_AND_BOOK_ONE_TRADE_PER_ORDER' />
+   <value enum='2' description='AGGREGATE_EXECUTIONS_FOR_THIS_SYMBOL_SIDE_AND_SETTLEMENT_DATE' />
+  </field>
+  <field number='591' name='PreallocMethod' type='CHAR'>
+   <value enum='0' description='PRORATA' />
+   <value enum='1' description='DO_NOT_PRORATA_DISCUSS_FIRST' />
+  </field>
+  <field number='592' name='UnderlyingCountryOfIssue' type='COUNTRY' />
+  <field number='593' name='UnderlyingStateOrProvinceOfIssue' type='STRING' />
+  <field number='594' name='UnderlyingLocaleOfIssue' type='STRING' />
+  <field number='595' name='UnderlyingInstrRegistry' type='STRING' />
+  <field number='596' name='LegCountryOfIssue' type='COUNTRY' />
+  <field number='597' name='LegStateOrProvinceOfIssue' type='STRING' />
+  <field number='598' name='LegLocaleOfIssue' type='STRING' />
+  <field number='599' name='LegInstrRegistry' type='STRING' />
+  <field number='600' name='LegSymbol' type='STRING' />
+  <field number='601' name='LegSymbolSfx' type='STRING' />
+  <field number='602' name='LegSecurityID' type='STRING' />
+  <field number='603' name='LegSecurityIDSource' type='STRING' />
+  <field number='604' name='NoLegSecurityAltID' type='STRING' />
+  <field number='605' name='LegSecurityAltID' type='STRING' />
+  <field number='606' name='LegSecurityAltIDSource' type='STRING' />
+  <field number='607' name='LegProduct' type='INT' />
+  <field number='608' name='LegCFICode' type='STRING' />
+  <field number='609' name='LegSecurityType' type='STRING' />
+  <field number='610' name='LegMaturityMonthYear' type='MONTHYEAR' />
+  <field number='611' name='LegMaturityDate' type='LOCALMKTDATE' />
+  <field number='612' name='LegStrikePrice' type='PRICE' />
+  <field number='613' name='LegOptAttribute' type='CHAR' />
+  <field number='614' name='LegContractMultiplier' type='FLOAT' />
+  <field number='615' name='LegCouponRate' type='PERCENTAGE' />
+  <field number='616' name='LegSecurityExchange' type='EXCHANGE' />
+  <field number='617' name='LegIssuer' type='STRING' />
+  <field number='618' name='EncodedLegIssuerLen' type='LENGTH' />
+  <field number='619' name='EncodedLegIssuer' type='DATA' />
+  <field number='620' name='LegSecurityDesc' type='STRING' />
+  <field number='621' name='EncodedLegSecurityDescLen' type='LENGTH' />
+  <field number='622' name='EncodedLegSecurityDesc' type='DATA' />
+  <field number='623' name='LegRatioQty' type='FLOAT' />
+  <field number='624' name='LegSide' type='CHAR' />
+  <field number='625' name='TradingSessionSubID' type='STRING' />
+  <field number='626' name='AllocType' type='INT'>
