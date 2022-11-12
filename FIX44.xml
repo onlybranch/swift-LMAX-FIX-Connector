@@ -6143,3 +6143,68 @@
   <field number='624' name='LegSide' type='CHAR' />
   <field number='625' name='TradingSessionSubID' type='STRING' />
   <field number='626' name='AllocType' type='INT'>
+   <value enum='1' description='BUYSIDECALC' />
+   <value enum='2' description='BUYSIDEPRELIM' />
+   <value enum='3' description='SELLSIDECALC' />
+   <value enum='4' description='SELLSIDECALCWITHOUTPRELIM' />
+   <value enum='5' description='BUYSIDEREADYTOBOOKSINGLE' />
+   <value enum='6' description='BUYSIDEREADYTOBOOKCOMBINED' />
+   <value enum='7' description='WAREHOUSEINSTRUCTION' />
+   <value enum='8' description='REQUESTTOINTERMEDIARY' />
+  </field>
+  <field number='627' name='NoHops' type='NUMINGROUP' />
+  <field number='628' name='HopCompID' type='STRING' />
+  <field number='629' name='HopSendingTime' type='UTCTIMESTAMP' />
+  <field number='630' name='HopRefID' type='SEQNUM' />
+  <field number='631' name='MidPx' type='PRICE' />
+  <field number='632' name='BidYield' type='PERCENTAGE' />
+  <field number='633' name='MidYield' type='PERCENTAGE' />
+  <field number='634' name='OfferYield' type='PERCENTAGE' />
+  <field number='635' name='ClearingFeeIndicator' type='STRING'>
+   <value enum='1' description='1STYEARDELEGATE' />
+   <value enum='2' description='2NDYEARDELEGATE' />
+   <value enum='3' description='3RDYEARDELEGATE' />
+   <value enum='4' description='4THYEARDELEGATE' />
+   <value enum='5' description='5THYEARDELEGATE' />
+   <value enum='9' description='6THYEARDELEGATE' />
+   <value enum='B' description='CBOEMEMBER' />
+   <value enum='C' description='NONMEMBERCUSTOMER' />
+   <value enum='E' description='EQUITYCLEARINGMEMBER' />
+   <value enum='F' description='FULLASSOCIATEMEMBER' />
+   <value enum='H' description='106H106J' />
+   <value enum='I' description='GIMIDEMCOMMEMBERSHIP' />
+   <value enum='L' description='LESSEE106F' />
+   <value enum='M' description='ALLOTHERS' />
+  </field>
+  <field number='636' name='WorkingIndicator' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='637' name='LegLastPx' type='PRICE' />
+  <field number='638' name='PriorityIndicator' type='INT'>
+   <value enum='0' description='PRIORITYUNCHANGED' />
+   <value enum='1' description='LOSTPRIORITY' />
+  </field>
+  <field number='639' name='PriceImprovement' type='PRICEOFFSET' />
+  <field number='640' name='Price2' type='PRICE' />
+  <field number='641' name='LastForwardPoints2' type='PRICEOFFSET' />
+  <field number='642' name='BidForwardPoints2' type='PRICEOFFSET' />
+  <field number='643' name='OfferForwardPoints2' type='PRICEOFFSET' />
+  <field number='644' name='RFQReqID' type='STRING' />
+  <field number='645' name='MktBidPx' type='PRICE' />
+  <field number='646' name='MktOfferPx' type='PRICE' />
+  <field number='647' name='MinBidSize' type='QTY' />
+  <field number='648' name='MinOfferSize' type='QTY' />
+  <field number='649' name='QuoteStatusReqID' type='STRING' />
+  <field number='650' name='LegalConfirm' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='651' name='UnderlyingLastPx' type='PRICE' />
+  <field number='652' name='UnderlyingLastQty' type='QTY' />
+  <field number='653' name='SecDefStatus' type='INT'>
+   <value enum='0' description='PENDINGAPPROVAL' />
+   <value enum='1' description='APPROVEDACCEPTED' />
+   <value enum='2' description='REJECTED' />
+   <value enum='3' description='UNAUTHORIZEDREQUEST' />
+   <value enum='4' description='INVALIDDEFINITIONREQUEST' />
