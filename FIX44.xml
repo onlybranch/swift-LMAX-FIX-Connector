@@ -6208,3 +6208,81 @@
    <value enum='2' description='REJECTED' />
    <value enum='3' description='UNAUTHORIZEDREQUEST' />
    <value enum='4' description='INVALIDDEFINITIONREQUEST' />
+  </field>
+  <field number='654' name='LegRefID' type='STRING' />
+  <field number='655' name='ContraLegRefID' type='STRING' />
+  <field number='656' name='SettlCurrBidFxRate' type='FLOAT' />
+  <field number='657' name='SettlCurrOfferFxRate' type='FLOAT' />
+  <field number='658' name='QuoteRequestRejectReason' type='INT'>
+   <value enum='1' description='UNKNOWNSYM' />
+   <value enum='10' description='PASS' />
+   <value enum='2' description='EXCHANGECLOSED' />
+   <value enum='3' description='QUOTEREQUESTEXLIMIT' />
+   <value enum='4' description='TOOLATE' />
+   <value enum='5' description='INVPRICE' />
+   <value enum='6' description='NOTAUTHTOREQQUOTE' />
+   <value enum='7' description='NOMATCHFORINQUIRY' />
+   <value enum='8' description='NOMARKETFORINSTRUMENT' />
+   <value enum='9' description='NOINVENTORY' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='659' name='SideComplianceID' type='STRING' />
+  <field number='660' name='AcctIDSource' type='INT'>
+   <value enum='1' description='BIC' />
+   <value enum='2' description='SIDCODE' />
+   <value enum='3' description='TFMGSPTA' />
+   <value enum='4' description='OMGEOALERTID' />
+   <value enum='5' description='DTCCCODE' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='661' name='AllocAcctIDSource' type='INT' />
+  <field number='662' name='BenchmarkPrice' type='PRICE' />
+  <field number='663' name='BenchmarkPriceType' type='INT' />
+  <field number='664' name='ConfirmID' type='STRING' />
+  <field number='665' name='ConfirmStatus' type='INT'>
+   <value enum='1' description='RECEIVED' />
+   <value enum='2' description='MISMATCHEDACCOUNT' />
+   <value enum='3' description='MISSINGSETTLEMENTINSTRUCTIONS' />
+   <value enum='4' description='CONFIRMED' />
+   <value enum='5' description='REQUESTREJECTED' />
+  </field>
+  <field number='666' name='ConfirmTransType' type='INT'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='REPLACE' />
+   <value enum='2' description='CANCEL' />
+  </field>
+  <field number='667' name='ContractSettlMonth' type='MONTHYEAR' />
+  <field number='668' name='DeliveryForm' type='INT'>
+   <value enum='1' description='BOOKENTRY' />
+   <value enum='2' description='BEARER' />
+  </field>
+  <field number='669' name='LastParPx' type='PRICE' />
+  <field number='670' name='NoLegAllocs' type='NUMINGROUP' />
+  <field number='671' name='LegAllocAccount' type='STRING' />
+  <field number='672' name='LegIndividualAllocID' type='STRING' />
+  <field number='673' name='LegAllocQty' type='QTY' />
+  <field number='674' name='LegAllocAcctIDSource' type='STRING' />
+  <field number='675' name='LegSettlCurrency' type='CURRENCY' />
+  <field number='676' name='LegBenchmarkCurveCurrency' type='CURRENCY' />
+  <field number='677' name='LegBenchmarkCurveName' type='STRING' />
+  <field number='678' name='LegBenchmarkCurvePoint' type='STRING' />
+  <field number='679' name='LegBenchmarkPrice' type='PRICE' />
+  <field number='680' name='LegBenchmarkPriceType' type='INT' />
+  <field number='681' name='LegBidPx' type='PRICE' />
+  <field number='682' name='LegIOIQty' type='STRING' />
+  <field number='683' name='NoLegStipulations' type='NUMINGROUP' />
+  <field number='684' name='LegOfferPx' type='PRICE' />
+  <field number='685' name='LegOrderQty' type='QTY' />
+  <field number='686' name='LegPriceType' type='INT' />
+  <field number='687' name='LegQty' type='QTY' />
+  <field number='688' name='LegStipulationType' type='STRING' />
+  <field number='689' name='LegStipulationValue' type='STRING' />
+  <field number='690' name='LegSwapType' type='INT'>
+   <value enum='1' description='PARFORPAR' />
+   <value enum='2' description='MODIFIEDDURATION' />
+   <value enum='4' description='RISK' />
+   <value enum='5' description='PROCEEDS' />
+  </field>
+  <field number='691' name='Pool' type='STRING' />
+  <field number='692' name='QuotePriceType' type='INT'>
+   <value enum='1' description='PERCENT' />
