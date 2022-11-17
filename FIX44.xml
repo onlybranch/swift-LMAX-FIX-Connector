@@ -6286,3 +6286,65 @@
   <field number='691' name='Pool' type='STRING' />
   <field number='692' name='QuotePriceType' type='INT'>
    <value enum='1' description='PERCENT' />
+   <value enum='10' description='YIELD' />
+   <value enum='2' description='PERSHARE' />
+   <value enum='3' description='FIXEDAMOUNT' />
+   <value enum='4' description='DISCOUNT' />
+   <value enum='5' description='PREMIUM' />
+   <value enum='6' description='BASISPOINTSRELATIVETOBENCHMARK' />
+   <value enum='7' description='TEDPRICE' />
+   <value enum='8' description='TEDYIELD' />
+   <value enum='9' description='YIELDSPREADSWAPS' />
+  </field>
+  <field number='693' name='QuoteRespID' type='STRING' />
+  <field number='694' name='QuoteRespType' type='INT'>
+   <value enum='1' description='HITLIFT' />
+   <value enum='2' description='COUNTER' />
+   <value enum='3' description='EXPIRED' />
+   <value enum='4' description='COVER' />
+   <value enum='5' description='DONEAWAY' />
+   <value enum='6' description='PASS' />
+  </field>
+  <field number='695' name='QuoteQualifier' type='CHAR' />
+  <field number='696' name='YieldRedemptionDate' type='LOCALMKTDATE' />
+  <field number='697' name='YieldRedemptionPrice' type='PRICE' />
+  <field number='698' name='YieldRedemptionPriceType' type='INT' />
+  <field number='699' name='BenchmarkSecurityID' type='STRING' />
+  <field number='700' name='ReversalIndicator' type='BOOLEAN' />
+  <field number='701' name='YieldCalcDate' type='LOCALMKTDATE' />
+  <field number='702' name='NoPositions' type='NUMINGROUP' />
+  <field number='703' name='PosType' type='STRING'>
+   <value enum='ALC' description='ALLOCATIONTRADEQTY' />
+   <value enum='AS' description='OPTIONASSIGNMENT' />
+   <value enum='ASF' description='ASOFTRADEQTY' />
+   <value enum='DLV' description='DELIVERYQTY' />
+   <value enum='ETR' description='ELECTRONICTRADEQTY' />
+   <value enum='EX' description='OPTIONEXERCISEQTY' />
+   <value enum='FIN' description='ENDOFDAYQTY' />
+   <value enum='IAS' description='INTRASPREADQTY' />
+   <value enum='IES' description='INTERSPREADQTY' />
+   <value enum='PA' description='ADJUSTMENTQTY' />
+   <value enum='PIT' description='PITTRADEQTY' />
+   <value enum='SOD' description='STARTOFDAYQTY' />
+   <value enum='SPL' description='INTEGRALSPLIT' />
+   <value enum='TA' description='TRANSACTIONFROMASSIGNMENT' />
+   <value enum='TOT' description='TOTALTRANSACTIONQTY' />
+   <value enum='TQ' description='TRANSACTIONQUANTITY' />
+   <value enum='TRF' description='TRANSFERTRADEQTY' />
+   <value enum='TX' description='TRANSACTIONFROMEXERCISE' />
+   <value enum='XM' description='CROSSMARGINQTY' />
+  </field>
+  <field number='704' name='LongQty' type='QTY' />
+  <field number='705' name='ShortQty' type='QTY' />
+  <field number='706' name='PosQtyStatus' type='INT'>
+   <value enum='0' description='SUBMITTED' />
+   <value enum='1' description='ACCEPTED' />
+   <value enum='2' description='REJECTED' />
+  </field>
+  <field number='707' name='PosAmtType' type='STRING'>
+   <value enum='CASH' description='CASHAMOUNTCORPORATEEVENT' />
+   <value enum='CRES' description='CASHRESIDUALAMOUNT' />
+   <value enum='FMTM' description='FINALMARKTOMARKETAMOUNT' />
+   <value enum='IMTM' description='INCREMENTALMARKTOMARKETAMOUNT' />
+   <value enum='PREM' description='PREMIUMAMOUNT' />
+   <value enum='SMTM' description='STARTOFDAYMARKTOMARKETAMOUNT' />
