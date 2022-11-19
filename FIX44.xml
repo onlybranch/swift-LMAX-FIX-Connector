@@ -6414,3 +6414,73 @@
   </field>
   <field number='729' name='PosReqStatus' type='INT'>
    <value enum='0' description='COMPLETED' />
+   <value enum='1' description='COMPLETEDWITHWARNINGS' />
+   <value enum='2' description='REJECTED' />
+  </field>
+  <field number='730' name='SettlPrice' type='PRICE' />
+  <field number='731' name='SettlPriceType' type='INT'>
+   <value enum='1' description='FINAL' />
+   <value enum='2' description='THEORETICAL' />
+  </field>
+  <field number='732' name='UnderlyingSettlPrice' type='PRICE' />
+  <field number='733' name='UnderlyingSettlPriceType' type='INT' />
+  <field number='734' name='PriorSettlPrice' type='PRICE' />
+  <field number='735' name='NoQuoteQualifiers' type='NUMINGROUP' />
+  <field number='736' name='AllocSettlCurrency' type='CURRENCY' />
+  <field number='737' name='AllocSettlCurrAmt' type='AMT' />
+  <field number='738' name='InterestAtMaturity' type='AMT' />
+  <field number='739' name='LegDatedDate' type='LOCALMKTDATE' />
+  <field number='740' name='LegPool' type='STRING' />
+  <field number='741' name='AllocInterestAtMaturity' type='AMT' />
+  <field number='742' name='AllocAccruedInterestAmt' type='AMT' />
+  <field number='743' name='DeliveryDate' type='LOCALMKTDATE' />
+  <field number='744' name='AssignmentMethod' type='CHAR'>
+   <value enum='P' description='PRORATA' />
+   <value enum='R' description='RANDOM' />
+  </field>
+  <field number='745' name='AssignmentUnit' type='QTY' />
+  <field number='746' name='OpenInterest' type='AMT' />
+  <field number='747' name='ExerciseMethod' type='CHAR'>
+   <value enum='A' description='AUTOMATIC' />
+   <value enum='M' description='MANUAL' />
+  </field>
+  <field number='748' name='TotNumTradeReports' type='INT' />
+  <field number='749' name='TradeRequestResult' type='INT'>
+   <value enum='0' description='SUCCESSFUL' />
+   <value enum='1' description='INVALIDORUNKNOWNINSTRUMENT' />
+   <value enum='2' description='INVALIDTYPEOFTRADEREQUESTED' />
+   <value enum='3' description='INVALIDPARTIES' />
+   <value enum='4' description='INVALIDTRANSPORTTYPEREQUESTED' />
+   <value enum='5' description='INVALIDDESTINATIONREQUESTED' />
+   <value enum='8' description='TRADEREQUESTTYPENOTSUPPORTED' />
+   <value enum='9' description='UNAUTHORIZEDFORTRADECAPTUREREPORTREQUEST' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='750' name='TradeRequestStatus' type='INT'>
+   <value enum='0' description='ACCEPTED' />
+   <value enum='1' description='COMPLETED' />
+   <value enum='2' description='REJECTED' />
+  </field>
+  <field number='751' name='TradeReportRejectReason' type='INT'>
+   <value enum='0' description='SUCCESSFULDEFAULT' />
+   <value enum='1' description='INVALIDPARTYINFORMATION' />
+   <value enum='2' description='UNKNOWNINSTRUMENT' />
+   <value enum='3' description='UNAUTHORIZEDTOREPORTTRADES' />
+   <value enum='4' description='INVALIDTRADETYPE' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='752' name='SideMultiLegReportingType' type='INT'>
+   <value enum='1' description='SINGLESECURITY' />
+   <value enum='2' description='INDIVIDUALLEGOFAMULTILEGSECURITY' />
+   <value enum='3' description='MULTILEGSECURITY' />
+  </field>
+  <field number='753' name='NoPosAmt' type='NUMINGROUP' />
+  <field number='754' name='AutoAcceptIndicator' type='BOOLEAN' />
+  <field number='755' name='AllocReportID' type='STRING' />
+  <field number='756' name='NoNested2PartyIDs' type='NUMINGROUP' />
+  <field number='757' name='Nested2PartyID' type='STRING' />
+  <field number='758' name='Nested2PartyIDSource' type='CHAR' />
+  <field number='759' name='Nested2PartyRole' type='INT' />
+  <field number='760' name='Nested2PartySubID' type='STRING' />
+  <field number='761' name='BenchmarkSecurityIDSource' type='STRING' />
+  <field number='762' name='SecuritySubType' type='STRING' />
