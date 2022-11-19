@@ -6557,3 +6557,70 @@
    <value enum='4' description='SELLSIDECALCULATEDWITHOUTPRELIMINARY' />
    <value enum='5' description='WAREHOUSERECAP' />
    <value enum='8' description='REQUESTTOINTERMEDIARY' />
+  </field>
+  <field number='795' name='AllocReportRefID' type='STRING' />
+  <field number='796' name='AllocCancReplaceReason' type='INT'>
+   <value enum='1' description='ORIGINALDETAILSINCORRECT' />
+   <value enum='2' description='CHANGEINUNDERLYINGORDERDETAILS' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='797' name='CopyMsgIndicator' type='BOOLEAN' />
+  <field number='798' name='AllocAccountType' type='INT'>
+   <value enum='1' description='ACCOUNTISCARRIEDONCUSTOMERSIDEOFBOOKS' />
+   <value enum='2' description='ACCOUNTISCARRIEDONNONCUSTOMERSIDEOFBOOKS' />
+   <value enum='3' description='HOUSETRADER' />
+   <value enum='4' description='FLOORTRADER' />
+   <value enum='6' description='ACCOUNTISCARRIEDONNONCUSTOMERSIDEOFBOOKSANDISCROSSMARGINED' />
+   <value enum='7' description='ACCOUNTISHOUSETRADERANDISCROSSMARGINED' />
+   <value enum='8' description='JBO' />
+  </field>
+  <field number='799' name='OrderAvgPx' type='PRICE' />
+  <field number='800' name='OrderBookingQty' type='QTY' />
+  <field number='801' name='NoSettlPartySubIDs' type='NUMINGROUP' />
+  <field number='802' name='NoPartySubIDs' type='NUMINGROUP' />
+  <field number='803' name='PartySubIDType' type='INT'>
+   <value enum='1' description='FIRM' />
+   <value enum='10' description='SECURITIESACCOUNTNUMBER' />
+   <value enum='11' description='REGISTRATIONNUMBER' />
+   <value enum='12' description='REGISTEREDADDRESS_12' />
+   <value enum='13' description='REGULATORYSTATUS' />
+   <value enum='14' description='REGISTRATIONNAME' />
+   <value enum='15' description='CASHACCOUNT' />
+   <value enum='16' description='BIC' />
+   <value enum='17' description='CSDPARTICIPANTMEMBERCODE' />
+   <value enum='18' description='REGISTEREDADDRESS_18' />
+   <value enum='19' description='FUNDACCOUNTNAME' />
+   <value enum='2' description='PERSON' />
+   <value enum='20' description='TELEXNUMBER' />
+   <value enum='21' description='FAXNUMBER' />
+   <value enum='22' description='SECURITIESACCOUNTNAME' />
+   <value enum='23' description='CASHACCOUNTNAME' />
+   <value enum='24' description='DEPARTMENT' />
+   <value enum='25' description='LOCATIONDESK' />
+   <value enum='26' description='POSITIONACCOUNTTYPE' />
+   <value enum='3' description='SYSTEM' />
+   <value enum='4' description='APPLICATION' />
+   <value enum='4000' description='RESERVEDANDAVAILABLEFORBILATERALLYAGREEDUPONUSERDEFINEDVALUES' />
+   <value enum='5' description='FULLLEGALNAMEOFFIRM' />
+   <value enum='6' description='POSTALADDRESS' />
+   <value enum='7' description='PHONENUMBER' />
+   <value enum='8' description='EMAILADDRESS' />
+   <value enum='9' description='CONTACTNAME' />
+  </field>
+  <field number='804' name='NoNestedPartySubIDs' type='NUMINGROUP' />
+  <field number='805' name='NestedPartySubIDType' type='INT' />
+  <field number='806' name='NoNested2PartySubIDs' type='NUMINGROUP' />
+  <field number='807' name='Nested2PartySubIDType' type='INT' />
+  <field number='808' name='AllocIntermedReqType' type='INT'>
+   <value enum='1' description='PENDINGACCEPT' />
+   <value enum='2' description='PENDINGRELEASE' />
+   <value enum='3' description='PENDINGREVERSAL' />
+   <value enum='4' description='ACCEPT' />
+   <value enum='5' description='BLOCKLEVELREJECT' />
+   <value enum='6' description='ACCOUNTLEVELREJECT' />
+  </field>
+  <field number='810' name='UnderlyingPx' type='PRICE' />
+  <field number='811' name='PriceDelta' type='FLOAT' />
+  <field number='812' name='ApplQueueMax' type='INT' />
+  <field number='813' name='ApplQueueDepth' type='INT' />
+  <field number='814' name='ApplQueueResolution' type='INT'>
