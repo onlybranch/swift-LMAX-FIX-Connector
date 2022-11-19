@@ -6624,3 +6624,66 @@
   <field number='812' name='ApplQueueMax' type='INT' />
   <field number='813' name='ApplQueueDepth' type='INT' />
   <field number='814' name='ApplQueueResolution' type='INT'>
+   <value enum='0' description='NOACTIONTAKEN' />
+   <value enum='1' description='QUEUEFLUSHED' />
+   <value enum='2' description='OVERLAYLAST' />
+   <value enum='3' description='ENDSESSION' />
+  </field>
+  <field number='815' name='ApplQueueAction' type='INT'>
+   <value enum='0' description='NOACTIONTAKEN' />
+   <value enum='1' description='QUEUEFLUSHED' />
+   <value enum='2' description='OVERLAYLAST' />
+   <value enum='3' description='ENDSESSION' />
+  </field>
+  <field number='816' name='NoAltMDSource' type='NUMINGROUP' />
+  <field number='817' name='AltMDSourceID' type='STRING' />
+  <field number='818' name='SecondaryTradeReportID' type='STRING' />
+  <field number='819' name='AvgPxIndicator' type='INT'>
+   <value enum='0' description='NOAVERAGEPRICING' />
+   <value enum='1' description='TRADEAVERAGEPRICEGROUP' />
+   <value enum='2' description='LASTTRADEAVERAGEPRICEGROUP' />
+  </field>
+  <field number='820' name='TradeLinkID' type='STRING' />
+  <field number='821' name='OrderInputDevice' type='STRING' />
+  <field number='822' name='UnderlyingTradingSessionID' type='STRING' />
+  <field number='823' name='UnderlyingTradingSessionSubID' type='STRING' />
+  <field number='824' name='TradeLegRefID' type='STRING' />
+  <field number='825' name='ExchangeRule' type='STRING' />
+  <field number='826' name='TradeAllocIndicator' type='INT'>
+   <value enum='0' description='ALLOCATIONNOTREQUIRED' />
+   <value enum='1' description='ALLOCATIONREQUIREDALLOCATIONINFORMATIONNOTPROVIDED' />
+   <value enum='2' description='USEALLOCATIONPROVIDEDWITHTHETRADE' />
+  </field>
+  <field number='827' name='ExpirationCycle' type='INT'>
+   <value enum='0' description='EXPIREONTRADINGSESSIONCLOSE' />
+   <value enum='1' description='EXPIREONTRADINGSESSIONOPEN' />
+  </field>
+  <field number='828' name='TrdType' type='INT'>
+   <value enum='0' description='REGULARTRADE' />
+   <value enum='1' description='BLOCKTRADE' />
+   <value enum='10' description='AFTERHOURSTRADE' />
+   <value enum='2' description='EFP' />
+   <value enum='3' description='TRANSFER' />
+   <value enum='4' description='LATETRADE' />
+   <value enum='5' description='TTRADE' />
+   <value enum='6' description='WEIGHTEDAVERAGEPRICETRADE' />
+   <value enum='7' description='BUNCHEDTRADE' />
+   <value enum='8' description='LATEBUNCHEDTRADE' />
+   <value enum='9' description='PRIORREFERENCEPRICETRADE' />
+  </field>
+  <field number='829' name='TrdSubType' type='INT' />
+  <field number='830' name='TransferReason' type='STRING' />
+  <field number='831' name='AsgnReqID' type='STRING' />
+  <field number='832' name='TotNumAssignmentReports' type='INT' />
+  <field number='833' name='AsgnRptID' type='STRING' />
+  <field number='834' name='ThresholdAmount' type='PRICEOFFSET' />
+  <field number='835' name='PegMoveType' type='INT'>
+   <value enum='0' description='FLOATING' />
+   <value enum='1' description='FIXED' />
+  </field>
+  <field number='836' name='PegOffsetType' type='INT'>
+   <value enum='0' description='PRICE' />
+   <value enum='1' description='BASISPOINTS' />
+   <value enum='2' description='TICKS' />
+   <value enum='3' description='PRICETIERLEVEL' />
+  </field>
