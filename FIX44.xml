@@ -6484,3 +6484,76 @@
   <field number='760' name='Nested2PartySubID' type='STRING' />
   <field number='761' name='BenchmarkSecurityIDSource' type='STRING' />
   <field number='762' name='SecuritySubType' type='STRING' />
+  <field number='763' name='UnderlyingSecuritySubType' type='STRING' />
+  <field number='764' name='LegSecuritySubType' type='STRING' />
+  <field number='765' name='AllowableOneSidednessPct' type='PERCENTAGE' />
+  <field number='766' name='AllowableOneSidednessValue' type='AMT' />
+  <field number='767' name='AllowableOneSidednessCurr' type='CURRENCY' />
+  <field number='768' name='NoTrdRegTimestamps' type='NUMINGROUP' />
+  <field number='769' name='TrdRegTimestamp' type='UTCTIMESTAMP' />
+  <field number='770' name='TrdRegTimestampType' type='INT'>
+   <value enum='1' description='EXECUTIONTIME' />
+   <value enum='2' description='TIMEIN' />
+   <value enum='3' description='TIMEOUT' />
+   <value enum='4' description='BROKERRECEIPT' />
+   <value enum='5' description='BROKEREXECUTION' />
+  </field>
+  <field number='771' name='TrdRegTimestampOrigin' type='STRING' />
+  <field number='772' name='ConfirmRefID' type='STRING' />
+  <field number='773' name='ConfirmType' type='INT'>
+   <value enum='1' description='STATUS' />
+   <value enum='2' description='CONFIRMATION' />
+   <value enum='3' description='CONFIRMATIONREQUESTREJECTED' />
+  </field>
+  <field number='774' name='ConfirmRejReason' type='INT'>
+   <value enum='1' description='MISMATCHEDACCOUNT' />
+   <value enum='2' description='MISSINGSETTLEMENTINSTRUCTIONS' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='775' name='BookingType' type='INT'>
+   <value enum='0' description='REGULARBOOKING' />
+   <value enum='1' description='CFDCONTRACTFORDIFFERENCE' />
+   <value enum='2' description='TOTALRETURNSWAP' />
+  </field>
+  <field number='776' name='IndividualAllocRejCode' type='INT' />
+  <field number='777' name='SettlInstMsgID' type='STRING' />
+  <field number='778' name='NoSettlInst' type='NUMINGROUP' />
+  <field number='779' name='LastUpdateTime' type='UTCTIMESTAMP' />
+  <field number='780' name='AllocSettlInstType' type='INT'>
+   <value enum='0' description='USEDEFAULTINSTRUCTIONS' />
+   <value enum='1' description='DERIVEFROMPARAMETERSPROVIDED' />
+   <value enum='2' description='FULLDETAILSPROVIDED' />
+   <value enum='3' description='SSIDBIDSPROVIDED' />
+   <value enum='4' description='PHONEFORINSTRUCTIONS' />
+  </field>
+  <field number='781' name='NoSettlPartyIDs' type='NUMINGROUP' />
+  <field number='782' name='SettlPartyID' type='STRING' />
+  <field number='783' name='SettlPartyIDSource' type='CHAR' />
+  <field number='784' name='SettlPartyRole' type='INT' />
+  <field number='785' name='SettlPartySubID' type='STRING' />
+  <field number='786' name='SettlPartySubIDType' type='INT' />
+  <field number='787' name='DlvyInstType' type='CHAR'>
+   <value enum='C' description='CASH' />
+   <value enum='S' description='SECURITIES' />
+  </field>
+  <field number='788' name='TerminationType' type='INT'>
+   <value enum='1' description='OVERNIGHT' />
+   <value enum='2' description='TERM' />
+   <value enum='3' description='FLEXIBLE' />
+   <value enum='4' description='OPEN' />
+  </field>
+  <field number='789' name='NextExpectedMsgSeqNum' type='SEQNUM' />
+  <field number='790' name='OrdStatusReqID' type='STRING' />
+  <field number='791' name='SettlInstReqID' type='STRING' />
+  <field number='792' name='SettlInstReqRejCode' type='INT'>
+   <value enum='0' description='UNABLETOPROCESSREQUEST' />
+   <value enum='1' description='UNKNOWNACCOUNT' />
+   <value enum='2' description='NOMATCHINGSETTLEMENTINSTRUCTIONSFOUND' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='793' name='SecondaryAllocID' type='STRING' />
+  <field number='794' name='AllocReportType' type='INT'>
+   <value enum='3' description='SELLSIDECALCULATEDUSINGPRELIMINARY' />
+   <value enum='4' description='SELLSIDECALCULATEDWITHOUTPRELIMINARY' />
+   <value enum='5' description='WAREHOUSERECAP' />
+   <value enum='8' description='REQUESTTOINTERMEDIARY' />
