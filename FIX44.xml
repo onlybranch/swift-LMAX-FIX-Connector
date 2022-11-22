@@ -6757,3 +6757,85 @@
   </field>
   <field number='854' name='QtyType' type='INT'>
    <value enum='0' description='UNITS' />
+   <value enum='1' description='CONTRACTS' />
+  </field>
+  <field number='855' name='SecondaryTrdType' type='INT' />
+  <field number='856' name='TradeReportType' type='INT'>
+   <value enum='0' description='SUBMIT' />
+   <value enum='1' description='ALLEGED' />
+   <value enum='2' description='ACCEPT' />
+   <value enum='3' description='DECLINE' />
+   <value enum='4' description='ADDENDUM' />
+   <value enum='5' description='NOWAS' />
+   <value enum='6' description='TRADEREPORTCANCEL' />
+   <value enum='7' description='LOCKEDINTRADEBREAK' />
+  </field>
+  <field number='857' name='AllocNoOrdersType' type='INT'>
+   <value enum='0' description='NOTSPECIFIED' />
+   <value enum='1' description='EXPLICITLISTPROVIDED' />
+  </field>
+  <field number='858' name='SharedCommission' type='AMT' />
+  <field number='859' name='ConfirmReqID' type='STRING' />
+  <field number='860' name='AvgParPx' type='PRICE' />
+  <field number='861' name='ReportedPx' type='PRICE' />
+  <field number='862' name='NoCapacities' type='NUMINGROUP' />
+  <field number='863' name='OrderCapacityQty' type='QTY' />
+  <field number='864' name='NoEvents' type='NUMINGROUP' />
+  <field number='865' name='EventType' type='INT'>
+   <value enum='1' description='PUT' />
+   <value enum='2' description='CALL' />
+   <value enum='3' description='TENDER' />
+   <value enum='4' description='SINKINGFUNDCALL' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='866' name='EventDate' type='LOCALMKTDATE' />
+  <field number='867' name='EventPx' type='PRICE' />
+  <field number='868' name='EventText' type='STRING' />
+  <field number='869' name='PctAtRisk' type='PERCENTAGE' />
+  <field number='870' name='NoInstrAttrib' type='NUMINGROUP' />
+  <field number='871' name='InstrAttribType' type='INT'>
+   <value enum='1' description='FLAT' />
+   <value enum='10' description='ORIGINALISSUEDISCOUNT' />
+   <value enum='11' description='CALLABLEPUTTABLE' />
+   <value enum='12' description='ESCROWEDTOMATURITY' />
+   <value enum='13' description='ESCROWEDTOREDEMPTIONDATE' />
+   <value enum='14' description='PREREFUNDED' />
+   <value enum='15' description='INDEFAULT' />
+   <value enum='16' description='UNRATED' />
+   <value enum='17' description='TAXABLE' />
+   <value enum='18' description='INDEXED' />
+   <value enum='19' description='SUBJECTTOALTERNATIVEMINIMUMTAX' />
+   <value enum='2' description='ZEROCOUPON' />
+   <value enum='20' description='ORIGINALISSUEDISCOUNTPRICE' />
+   <value enum='21' description='CALLABLEBELOWMATURITYVALUE' />
+   <value enum='22' description='CALLABLEWITHOUTNOTICEBYMAILTOHOLDERUNLESSREGISTERED' />
+   <value enum='3' description='INTERESTBEARING' />
+   <value enum='4' description='NOPERIODICPAYMENTS' />
+   <value enum='5' description='VARIABLERATE' />
+   <value enum='6' description='LESSFEEFORPUT' />
+   <value enum='7' description='STEPPEDCOUPON' />
+   <value enum='8' description='COUPONPERIOD' />
+   <value enum='9' description='WHENISSUED' />
+   <value enum='99' description='TEXT' />
+  </field>
+  <field number='872' name='InstrAttribValue' type='STRING' />
+  <field number='873' name='DatedDate' type='LOCALMKTDATE' />
+  <field number='874' name='InterestAccrualDate' type='LOCALMKTDATE' />
+  <field number='875' name='CPProgram' type='INT'>
+   <value enum='1' description='3A3' />
+   <value enum='2' description='42' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='876' name='CPRegType' type='STRING' />
+  <field number='877' name='UnderlyingCPProgram' type='STRING' />
+  <field number='878' name='UnderlyingCPRegType' type='STRING' />
+  <field number='879' name='UnderlyingQty' type='QTY' />
+  <field number='880' name='TrdMatchID' type='STRING' />
+  <field number='881' name='SecondaryTradeReportRefID' type='STRING' />
+  <field number='882' name='UnderlyingDirtyPrice' type='PRICE' />
+  <field number='883' name='UnderlyingEndPrice' type='PRICE' />
+  <field number='884' name='UnderlyingStartValue' type='AMT' />
+  <field number='885' name='UnderlyingCurrentValue' type='AMT' />
+  <field number='886' name='UnderlyingEndValue' type='AMT' />
+  <field number='887' name='NoUnderlyingStips' type='NUMINGROUP' />
+  <field number='888' name='UnderlyingStipType' type='STRING' />
