@@ -6687,3 +6687,73 @@
    <value enum='2' description='TICKS' />
    <value enum='3' description='PRICETIERLEVEL' />
   </field>
+  <field number='837' name='PegLimitType' type='INT'>
+   <value enum='0' description='ORBETTER' />
+   <value enum='1' description='STRICT' />
+   <value enum='2' description='ORWORSE' />
+  </field>
+  <field number='838' name='PegRoundDirection' type='INT'>
+   <value enum='1' description='MOREAGGRESSIVE' />
+   <value enum='2' description='MOREPASSIVE' />
+  </field>
+  <field number='839' name='PeggedPrice' type='PRICE' />
+  <field number='840' name='PegScope' type='INT'>
+   <value enum='1' description='LOCALEXCHANGEECNATS' />
+   <value enum='2' description='NATIONAL' />
+   <value enum='3' description='GLOBAL' />
+   <value enum='4' description='NATIONALEXCLUDINGLOCAL' />
+  </field>
+  <field number='841' name='DiscretionMoveType' type='INT'>
+   <value enum='0' description='FLOATING' />
+   <value enum='1' description='FIXED' />
+  </field>
+  <field number='842' name='DiscretionOffsetType' type='INT'>
+   <value enum='0' description='PRICE' />
+   <value enum='1' description='BASISPOINTS' />
+   <value enum='2' description='TICKS' />
+   <value enum='3' description='PRICETIERLEVEL' />
+  </field>
+  <field number='843' name='DiscretionLimitType' type='INT'>
+   <value enum='0' description='ORBETTER' />
+   <value enum='1' description='STRICT' />
+   <value enum='2' description='ORWORSE' />
+  </field>
+  <field number='844' name='DiscretionRoundDirection' type='INT'>
+   <value enum='1' description='MOREAGGRESSIVE' />
+   <value enum='2' description='MOREPASSIVE' />
+  </field>
+  <field number='845' name='DiscretionPrice' type='PRICE' />
+  <field number='846' name='DiscretionScope' type='INT'>
+   <value enum='1' description='LOCALEXCHANGEECNATS' />
+   <value enum='2' description='NATIONAL' />
+   <value enum='3' description='GLOBAL' />
+   <value enum='4' description='NATIONALEXCLUDINGLOCAL' />
+  </field>
+  <field number='847' name='TargetStrategy' type='INT'>
+   <value enum='1' description='VWAP' />
+   <value enum='1000' description='RESERVEDANDAVAILABLEFORBILATERALLYAGREEDUPONUSERDEFINEDVALUES' />
+   <value enum='2' description='PARTICIPATE' />
+   <value enum='3' description='MININIZEMARKETIMPACT' />
+  </field>
+  <field number='848' name='TargetStrategyParameters' type='STRING' />
+  <field number='849' name='ParticipationRate' type='PERCENTAGE' />
+  <field number='850' name='TargetStrategyPerformance' type='FLOAT' />
+  <field number='851' name='LastLiquidityInd' type='INT'>
+   <value enum='1' description='ADDEDLIQUIDITY' />
+   <value enum='2' description='REMOVEDLIQUIDITY' />
+   <value enum='3' description='LIQUIDITYROUTEDOUT' />
+  </field>
+  <field number='852' name='PublishTrdIndicator' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='853' name='ShortSaleReason' type='INT'>
+   <value enum='0' description='DEALERSOLDSHORT' />
+   <value enum='1' description='DEALERSOLDSHORTEXEMPT' />
+   <value enum='2' description='SELLINGCUSTOMERSOLDSHORT' />
+   <value enum='3' description='SELLINGCUSTOMERSOLDSHORTEXEMPT' />
+   <value enum='4' description='QSRORAGUCONTRASIDESOLDSHORT' />
+   <value enum='5' description='QSRORAGUCONTRASIDESOLDSHORTEXEMPT' />
+  </field>
+  <field number='854' name='QtyType' type='INT'>
+   <value enum='0' description='UNITS' />
