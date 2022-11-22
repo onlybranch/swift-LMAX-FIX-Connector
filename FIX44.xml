@@ -6839,3 +6839,67 @@
   <field number='886' name='UnderlyingEndValue' type='AMT' />
   <field number='887' name='NoUnderlyingStips' type='NUMINGROUP' />
   <field number='888' name='UnderlyingStipType' type='STRING' />
+  <field number='889' name='UnderlyingStipValue' type='STRING' />
+  <field number='890' name='MaturityNetMoney' type='AMT' />
+  <field number='891' name='MiscFeeBasis' type='INT'>
+   <value enum='0' description='ABSOLUTE' />
+   <value enum='1' description='PERUNIT' />
+   <value enum='2' description='PERCENTAGE' />
+  </field>
+  <field number='892' name='TotNoAllocs' type='INT' />
+  <field number='893' name='LastFragment' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='894' name='CollReqID' type='STRING' />
+  <field number='895' name='CollAsgnReason' type='INT'>
+   <value enum='0' description='INITIAL' />
+   <value enum='1' description='SCHEDULED' />
+   <value enum='2' description='TIMEWARNING' />
+   <value enum='3' description='MARGINDEFICIENCY' />
+   <value enum='4' description='MARGINEXCESS' />
+   <value enum='5' description='FORWARDCOLLATERALDEMAND' />
+   <value enum='6' description='EVENTOFDEFAULT' />
+   <value enum='7' description='ADVERSETAXEVENT' />
+  </field>
+  <field number='896' name='CollInquiryQualifier' type='INT'>
+   <value enum='0' description='TRADEDATE' />
+   <value enum='1' description='GCINSTRUMENT' />
+   <value enum='2' description='COLLATERALINSTRUMENT' />
+   <value enum='3' description='SUBSTITUTIONELIGIBLE' />
+   <value enum='4' description='NOTASSIGNED' />
+   <value enum='5' description='PARTIALLYASSIGNED' />
+   <value enum='6' description='FULLYASSIGNED' />
+   <value enum='7' description='OUTSTANDINGTRADES' />
+  </field>
+  <field number='897' name='NoTrades' type='NUMINGROUP' />
+  <field number='898' name='MarginRatio' type='PERCENTAGE' />
+  <field number='899' name='MarginExcess' type='AMT' />
+  <field number='900' name='TotalNetValue' type='AMT' />
+  <field number='901' name='CashOutstanding' type='AMT' />
+  <field number='902' name='CollAsgnID' type='STRING' />
+  <field number='903' name='CollAsgnTransType' type='INT'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='REPLACE' />
+   <value enum='2' description='CANCEL' />
+   <value enum='3' description='RELEASE' />
+   <value enum='4' description='REVERSE' />
+  </field>
+  <field number='904' name='CollRespID' type='STRING' />
+  <field number='905' name='CollAsgnRespType' type='INT'>
+   <value enum='0' description='RECEIVED' />
+   <value enum='1' description='ACCEPTED' />
+   <value enum='2' description='DECLINED' />
+   <value enum='3' description='REJECTED' />
+  </field>
+  <field number='906' name='CollAsgnRejectReason' type='INT'>
+   <value enum='0' description='UNKNOWNDEAL' />
+   <value enum='1' description='UNKNOWNORINVALIDINSTRUMENT' />
+   <value enum='2' description='UNAUTHORIZEDTRANSACTION' />
+   <value enum='3' description='INSUFFICIENTCOLLATERAL' />
+   <value enum='4' description='INVALIDTYPEOFCOLLATERAL' />
+   <value enum='5' description='EXCESSIVESUBSTITUTION' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='907' name='CollAsgnRefID' type='STRING' />
+  <field number='908' name='CollRptID' type='STRING' />
