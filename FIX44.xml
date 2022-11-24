@@ -6975,3 +6975,49 @@
   <field number='939' name='TrdRptStatus' type='INT'>
    <value enum='0' description='ACCEPTED' />
    <value enum='1' description='REJECTED' />
+  </field>
+  <field number='940' name='AffirmStatus' type='INT'>
+   <value enum='1' description='RECEIVED' />
+   <value enum='2' description='CONFIRMREJECTED' />
+   <value enum='3' description='AFFIRMED' />
+  </field>
+  <field number='941' name='UnderlyingStrikeCurrency' type='CURRENCY' />
+  <field number='942' name='LegStrikeCurrency' type='CURRENCY' />
+  <field number='943' name='TimeBracket' type='STRING' />
+  <field number='944' name='CollAction' type='INT'>
+   <value enum='0' description='RETAIN' />
+   <value enum='1' description='ADD' />
+   <value enum='2' description='REMOVE' />
+  </field>
+  <field number='945' name='CollInquiryStatus' type='INT'>
+   <value enum='0' description='ACCEPTED' />
+   <value enum='1' description='ACCEPTEDWITHWARNINGS' />
+   <value enum='2' description='COMPLETED' />
+   <value enum='3' description='COMPLETEDWITHWARNINGS' />
+   <value enum='4' description='REJECTED' />
+  </field>
+  <field number='946' name='CollInquiryResult' type='INT'>
+   <value enum='0' description='SUCCESSFUL' />
+   <value enum='1' description='INVALIDORUNKNOWNINSTRUMENT' />
+   <value enum='2' description='INVALIDORUNKNOWNCOLLATERALTYPE' />
+   <value enum='3' description='INVALIDPARTIES' />
+   <value enum='4' description='INVALIDTRANSPORTTYPEREQUESTED' />
+   <value enum='5' description='INVALIDDESTINATIONREQUESTED' />
+   <value enum='6' description='NOCOLLATERALFOUNDFORTHETRADESPECIFIED' />
+   <value enum='7' description='NOCOLLATERALFOUNDFORTHEORDERSPECIFIED' />
+   <value enum='8' description='COLLATERALINQUIRYTYPENOTSUPPORTED' />
+   <value enum='9' description='UNAUTHORIZEDFORCOLLATERALINQUIRY' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='947' name='StrikeCurrency' type='CURRENCY' />
+  <field number='948' name='NoNested3PartyIDs' type='NUMINGROUP' />
+  <field number='949' name='Nested3PartyID' type='STRING' />
+  <field number='950' name='Nested3PartyIDSource' type='CHAR' />
+  <field number='951' name='Nested3PartyRole' type='INT' />
+  <field number='952' name='NoNested3PartySubIDs' type='NUMINGROUP' />
+  <field number='953' name='Nested3PartySubID' type='STRING' />
+  <field number='954' name='Nested3PartySubIDType' type='INT' />
+  <field number='955' name='LegContractSettlMonth' type='MONTHYEAR' />
+  <field number='956' name='LegInterestAccrualDate' type='LOCALMKTDATE' />
+ </fields>
+</fix>
