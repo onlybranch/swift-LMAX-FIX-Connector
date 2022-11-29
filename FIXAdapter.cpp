@@ -6,4 +6,6 @@
 #include "quickfix/FileLog.h"
 #include "quickfix/SocketInitiator.h"
 #include "quickfix/Session.h"
-#inc
+#include "quickfix/SessionSettings.h"
+#include "quickfix/fix44/Logon.h"
+#include "quic
