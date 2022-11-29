@@ -4,4 +4,6 @@
 #include "FIXAdapter.h"
 #include "quickfix/FileStore.h"
 #include "quickfix/FileLog.h"
-#incl
+#include "quickfix/SocketInitiator.h"
+#include "quickfix/Session.h"
+#inc
