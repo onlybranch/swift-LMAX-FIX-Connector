@@ -8,4 +8,6 @@
 #include "quickfix/Session.h"
 #include "quickfix/SessionSettings.h"
 #include "quickfix/fix44/Logon.h"
-#include "quic
+#include "quickfix/fix44/Logout.h"
+#include "quickfix/fix44/TestRequest.h"
+#include "quickfix
