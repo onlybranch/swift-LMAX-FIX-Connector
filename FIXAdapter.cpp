@@ -10,4 +10,5 @@
 #include "quickfix/fix44/Logon.h"
 #include "quickfix/fix44/Logout.h"
 #include "quickfix/fix44/TestRequest.h"
-#include "quickfix
+#include "quickfix/fix44/NewOrderSingle.h"
+#include "quickfix/fix44/OrderCancelRequest
