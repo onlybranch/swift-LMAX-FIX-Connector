@@ -13,4 +13,6 @@
 #include "quickfix/fix44/NewOrderSingle.h"
 #include "quickfix/fix44/OrderCancelRequest.h"
 #include "quickfix/fix44/SequenceReset.h"
-#include "quickfi
+#include "quickfix/fix44/ExecutionReport.h"
+#include "quickfix/fix44/MarketDataRequest.h"
+#in
