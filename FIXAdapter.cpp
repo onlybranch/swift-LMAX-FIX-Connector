@@ -15,4 +15,6 @@
 #include "quickfix/fix44/SequenceReset.h"
 #include "quickfix/fix44/ExecutionReport.h"
 #include "quickfix/fix44/MarketDataRequest.h"
-#in
+#include "quickfix/fix44/MarketDataSnapshotFullRefresh.h"
+
+using 
