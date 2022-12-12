@@ -21,4 +21,7 @@ using namespace std;
 using namespace FIX;
 
 CFIXAdapter::CFIXAdapter(void):
-			m_
+			m_pInitiator(nullptr),
+			m_OrderCount(0),
+			m_bTradeLoggedIn(false),
+			m_bPriceLogged
