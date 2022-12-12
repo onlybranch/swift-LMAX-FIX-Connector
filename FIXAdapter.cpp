@@ -17,4 +17,8 @@
 #include "quickfix/fix44/MarketDataRequest.h"
 #include "quickfix/fix44/MarketDataSnapshotFullRefresh.h"
 
-using 
+using namespace std;
+using namespace FIX;
+
+CFIXAdapter::CFIXAdapter(void):
+			m_
