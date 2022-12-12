@@ -24,4 +24,12 @@ CFIXAdapter::CFIXAdapter(void):
 			m_pInitiator(nullptr),
 			m_OrderCount(0),
 			m_bTradeLoggedIn(false),
-			m_bPriceLogged
+			m_bPriceLoggedIn(false)
+{
+}
+
+CFIXAdapter::~CFIXAdapter(void)
+{
+}
+
+void CFIXAdapter::SetLogin
