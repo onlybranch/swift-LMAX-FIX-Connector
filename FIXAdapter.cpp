@@ -32,4 +32,5 @@ CFIXAdapter::~CFIXAdapter(void)
 {
 }
 
-void CFIXAdapter::SetLogin
+void CFIXAdapter::SetLoginDetails(const string &UserName,
+								  const string &Passwo
