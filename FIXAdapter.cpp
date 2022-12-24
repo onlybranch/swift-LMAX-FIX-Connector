@@ -51,4 +51,5 @@ bool CFIXAdapter::Initialise()
 	bool bRet = true;
 	try
 	{
-		// Assume that
+		// Assume that the config file is in the same directory as the executable
+		FIX::SessionSettings	settings("fixset
