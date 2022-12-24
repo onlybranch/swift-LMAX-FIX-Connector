@@ -42,3 +42,8 @@ void CFIXAdapter::SetLoginDetails(const string &UserName,
 void CFIXAdapter::SetCompIDs(const std::string &TradeCompID,
 							 const std::string &PriceCompID)
 {
+	m_TradeCompID = TradeCompID;
+	m_PriceCompID = PriceCompID;
+}
+
+b
