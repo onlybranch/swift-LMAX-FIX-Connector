@@ -46,4 +46,9 @@ void CFIXAdapter::SetCompIDs(const std::string &TradeCompID,
 	m_PriceCompID = PriceCompID;
 }
 
-b
+bool CFIXAdapter::Initialise()
+{
+	bool bRet = true;
+	try
+	{
+		// Assume that
