@@ -52,4 +52,6 @@ bool CFIXAdapter::Initialise()
 	try
 	{
 		// Assume that the config file is in the same directory as the executable
-		FIX::SessionSettings	settings("fixset
+		FIX::SessionSettings	settings("fixsettings.cfg");
+		FIX::FileStoreFactory	storeFactory(settings);
+		FIX::FileLogFactory		logFact
