@@ -55,4 +55,7 @@ bool CFIXAdapter::Initialise()
 		FIX::SessionSettings	settings("fixsettings.cfg");
 		FIX::FileStoreFactory	storeFactory(settings);
 		FIX::FileLogFactory		logFactory(settings);
-		m_pInitiator = new SocketInitiator(*this, sto
+		m_pInitiator = new SocketInitiator(*this, storeFactory, settings, logFactory);
+
+		// Start the connection and login process
+		m_p
