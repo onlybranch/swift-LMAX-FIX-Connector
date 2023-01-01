@@ -58,4 +58,7 @@ bool CFIXAdapter::Initialise()
 		m_pInitiator = new SocketInitiator(*this, storeFactory, settings, logFactory);
 
 		// Start the connection and login process
-		m_p
+		m_pInitiator->start();
+
+		// Setup all the currency details
+		if (!m_Cur
