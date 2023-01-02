@@ -63,4 +63,8 @@ bool CFIXAdapter::Initialise()
 		// Setup all the currency details
 		if (!m_Currencies.Initialise())
 		{
-			cout << "Failed to initialise the currency collection" << endl
+			cout << "Failed to initialise the currency collection" << endl;
+			return false;
+		}
+	}
+	catch(const FIX::ConfigError
