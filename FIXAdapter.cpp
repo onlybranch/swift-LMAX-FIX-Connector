@@ -61,4 +61,6 @@ bool CFIXAdapter::Initialise()
 		m_pInitiator->start();
 
 		// Setup all the currency details
-		if (!m_Cur
+		if (!m_Currencies.Initialise())
+		{
+			cout << "Failed to initialise the currency collection" << endl
