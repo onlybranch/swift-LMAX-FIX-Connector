@@ -80,4 +80,10 @@ bool CFIXAdapter::Initialise()
 
 bool CFIXAdapter::Shutdown()
 {
-	bool bRe
+	bool bRet = true;
+	try
+	{
+		if (m_pInitiator)
+		{
+			m_pInitiator->stop();
+
