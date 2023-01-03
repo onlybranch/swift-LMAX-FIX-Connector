@@ -67,4 +67,10 @@ bool CFIXAdapter::Initialise()
 			return false;
 		}
 	}
-	catch(const FIX::ConfigError
+	catch(const FIX::ConfigError &error)
+	{
+		cout << error.detail << endl;
+	}
+	catch(...)
+	{
+		bRet = 
