@@ -73,4 +73,11 @@ bool CFIXAdapter::Initialise()
 	}
 	catch(...)
 	{
-		bRet = 
+		bRet = false;
+	}
+	return bRet;
+}
+
+bool CFIXAdapter::Shutdown()
+{
+	bool bRe
