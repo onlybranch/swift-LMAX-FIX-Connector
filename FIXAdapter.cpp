@@ -87,3 +87,8 @@ bool CFIXAdapter::Shutdown()
 		{
 			m_pInitiator->stop();
 
+			while (!m_pInitiator->isStopped())
+			{
+				Sleep(100);
+			}
+/
