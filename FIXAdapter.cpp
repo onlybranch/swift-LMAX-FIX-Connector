@@ -91,4 +91,11 @@ bool CFIXAdapter::Shutdown()
 			{
 				Sleep(100);
 			}
-/
+//			delete m_pInitiator;
+		}
+	}
+	catch(...)
+	{
+		bRet = false;
+	}
+	re
