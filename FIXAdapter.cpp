@@ -98,4 +98,9 @@ bool CFIXAdapter::Shutdown()
 	{
 		bRet = false;
 	}
-	re
+	return bRet;
+}
+
+bool CFIXAdapter::IsTradeLoggedIn()
+{
+	return m_bTradeLo
