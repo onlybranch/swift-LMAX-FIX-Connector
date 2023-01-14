@@ -103,4 +103,9 @@ bool CFIXAdapter::Shutdown()
 
 bool CFIXAdapter::IsTradeLoggedIn()
 {
-	return m_bTradeLo
+	return m_bTradeLoggedIn;
+}
+
+bool CFIXAdapter::IsPriceLoggedIn()
+{
+	return m_bP
