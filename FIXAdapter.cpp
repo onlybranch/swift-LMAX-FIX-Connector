@@ -108,4 +108,9 @@ bool CFIXAdapter::IsTradeLoggedIn()
 
 bool CFIXAdapter::IsPriceLoggedIn()
 {
-	return m_bP
+	return m_bPriceLoggedIn;
+}
+
+void CFIXAdapter::onCreate( const SessionID &sessionID )
+{
+//	cou
