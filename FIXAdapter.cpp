@@ -113,4 +113,7 @@ bool CFIXAdapter::IsPriceLoggedIn()
 
 void CFIXAdapter::onCreate( const SessionID &sessionID )
 {
-//	cou
+//	cout << "Session to LMAX has been created successfully" << endl;
+}
+
+vo
