@@ -116,4 +116,6 @@ void CFIXAdapter::onCreate( const SessionID &sessionID )
 //	cout << "Session to LMAX has been created successfully" << endl;
 }
 
-vo
+void CFIXAdapter::onLogon( const SessionID &sessionID )
+{
+	cout << "We are logged 
