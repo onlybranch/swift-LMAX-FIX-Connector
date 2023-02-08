@@ -118,4 +118,7 @@ void CFIXAdapter::onCreate( const SessionID &sessionID )
 
 void CFIXAdapter::onLogon( const SessionID &sessionID )
 {
-	cout << "We are logged 
+	cout << "We are logged on to the ";
+
+	string CompID = sessionID.getTargetCompID();
+	if (Com
