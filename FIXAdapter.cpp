@@ -124,4 +124,8 @@ void CFIXAdapter::onLogon( const SessionID &sessionID )
 	if (CompID.compare(m_TradeCompID)==0)
 	{
 		cout << "trade server";
-		m_bTradeLoggedIn = tru
+		m_bTradeLoggedIn = true;
+	}
+	else if (CompID.compare(m_PriceCompID)==0)
+	{
+		cout << "ma
