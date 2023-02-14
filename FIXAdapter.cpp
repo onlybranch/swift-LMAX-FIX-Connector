@@ -128,4 +128,9 @@ void CFIXAdapter::onLogon( const SessionID &sessionID )
 	}
 	else if (CompID.compare(m_PriceCompID)==0)
 	{
-		cout << "ma
+		cout << "market data server";
+		m_bPriceLoggedIn = true;
+	}
+	else
+	{
+		cout 
