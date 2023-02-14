@@ -121,4 +121,7 @@ void CFIXAdapter::onLogon( const SessionID &sessionID )
 	cout << "We are logged on to the ";
 
 	string CompID = sessionID.getTargetCompID();
-	if (Com
+	if (CompID.compare(m_TradeCompID)==0)
+	{
+		cout << "trade server";
+		m_bTradeLoggedIn = tru
