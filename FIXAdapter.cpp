@@ -133,4 +133,5 @@ void CFIXAdapter::onLogon( const SessionID &sessionID )
 	}
 	else
 	{
-		cout 
+		cout << "unknown server (" << sessionID.getTargetCompID() << ")";
+	}
