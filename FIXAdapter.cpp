@@ -138,4 +138,8 @@ void CFIXAdapter::onLogon( const SessionID &sessionID )
 	cout << endl;
 }
 
-void CFIXAdapter::onLogout( const SessionID &ses
+void CFIXAdapter::onLogout( const SessionID &sessionID )
+{
+	cout << "We are logged out from the ";
+
+	string CompID = ses
