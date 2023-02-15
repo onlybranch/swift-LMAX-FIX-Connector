@@ -135,3 +135,7 @@ void CFIXAdapter::onLogon( const SessionID &sessionID )
 	{
 		cout << "unknown server (" << sessionID.getTargetCompID() << ")";
 	}
+	cout << endl;
+}
+
+void CFIXAdapter::onLogout( const SessionID &ses
