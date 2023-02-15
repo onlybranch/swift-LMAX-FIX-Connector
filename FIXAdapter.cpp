@@ -142,4 +142,7 @@ void CFIXAdapter::onLogout( const SessionID &sessionID )
 {
 	cout << "We are logged out from the ";
 
-	string CompID = ses
+	string CompID = sessionID.getTargetCompID();
+	if (CompID.compare(m_TradeCompID)==0)
+	{
+		cout << "trade server
