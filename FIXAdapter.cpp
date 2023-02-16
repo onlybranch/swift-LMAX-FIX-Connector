@@ -148,4 +148,7 @@ void CFIXAdapter::onLogout( const SessionID &sessionID )
 		cout << "trade server";
 		m_bTradeLoggedIn = false;
 	}
-	else if (CompID.compare(m_PriceCom
+	else if (CompID.compare(m_PriceCompID)==0)
+	{
+		cout << "market data server";
+		m_bPriceLoggedIn = false
