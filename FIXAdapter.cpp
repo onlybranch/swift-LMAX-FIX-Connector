@@ -151,4 +151,13 @@ void CFIXAdapter::onLogout( const SessionID &sessionID )
 	else if (CompID.compare(m_PriceCompID)==0)
 	{
 		cout << "market data server";
-		m_bPriceLoggedIn = false
+		m_bPriceLoggedIn = false;
+	}
+	else
+	{
+		cout << "unknown server";
+	}
+	cout << endl;
+}
+
+void CFIXAdapter
