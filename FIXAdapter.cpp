@@ -163,4 +163,5 @@ void CFIXAdapter::onLogout( const SessionID &sessionID )
 void CFIXAdapter::toAdmin( Message &message, const SessionID &sessionID )
 {
 	cout << message << endl;
-	// If this is a login message we need to add the username and pa
+	// If this is a login message we need to add the username and password
+	string value = message.getHeader().getField(FIX::FIELD::Ms
