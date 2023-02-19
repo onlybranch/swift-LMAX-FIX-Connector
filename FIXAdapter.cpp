@@ -162,4 +162,5 @@ void CFIXAdapter::onLogout( const SessionID &sessionID )
 
 void CFIXAdapter::toAdmin( Message &message, const SessionID &sessionID )
 {
-	cout << message << 
+	cout << message << endl;
+	// If this is a login message we need to add the username and pa
