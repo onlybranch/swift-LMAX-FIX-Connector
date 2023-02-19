@@ -160,4 +160,6 @@ void CFIXAdapter::onLogout( const SessionID &sessionID )
 	cout << endl;
 }
 
-void CFIXAdapter
+void CFIXAdapter::toAdmin( Message &message, const SessionID &sessionID )
+{
+	cout << message << 
