@@ -164,4 +164,7 @@ void CFIXAdapter::toAdmin( Message &message, const SessionID &sessionID )
 {
 	cout << message << endl;
 	// If this is a login message we need to add the username and password
-	string value = message.getHeader().getField(FIX::FIELD::Ms
+	string value = message.getHeader().getField(FIX::FIELD::MsgType);
+	if (value.compare("A")==0)
+	{
+		message.getHeader().setFi
