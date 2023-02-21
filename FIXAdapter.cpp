@@ -167,4 +167,6 @@ void CFIXAdapter::toAdmin( Message &message, const SessionID &sessionID )
 	string value = message.getHeader().getField(FIX::FIELD::MsgType);
 	if (value.compare("A")==0)
 	{
-		message.getHeader().setFi
+		message.getHeader().setField(FIX::Password(m_Password));
+		message.getHeader().setField(FIX::Username(m_UserName));
+		me
