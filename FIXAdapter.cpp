@@ -169,4 +169,6 @@ void CFIXAdapter::toAdmin( Message &message, const SessionID &sessionID )
 	{
 		message.getHeader().setField(FIX::Password(m_Password));
 		message.getHeader().setField(FIX::Username(m_UserName));
-		me
+		message.setField(FIX::ResetSeqNumFlag(true));
+
+		// Store the sessio
