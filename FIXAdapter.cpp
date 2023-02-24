@@ -177,4 +177,7 @@ void CFIXAdapter::toAdmin( Message &message, const SessionID &sessionID )
 		{
 			m_PriceSessionID = sessionID;
 		}
-		else if (Targe
+		else if (TargetCompID.compare("LMXBD")==0)
+		{
+			m_TradeSessionID = sessionID;
+	
