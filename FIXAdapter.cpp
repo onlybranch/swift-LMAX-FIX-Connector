@@ -173,4 +173,8 @@ void CFIXAdapter::toAdmin( Message &message, const SessionID &sessionID )
 
 		// Store the session ID
 		string TargetCompID = message.getHeader().getField(FIX::FIELD::TargetCompID);
-		if (TargetCompID.compare("L
+		if (TargetCompID.compare("LMXBDM")==0)
+		{
+			m_PriceSessionID = sessionID;
+		}
+		else if (Targe
