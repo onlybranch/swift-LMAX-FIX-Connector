@@ -190,4 +190,5 @@ void CFIXAdapter::toApp( Message &message, const SessionID &sessionID )
 	cout << "toApp:" << message << " - " << sessionID << endl;
 }
 
-void CFIXAdapter::fromAdmin( const Message &messag
+void CFIXAdapter::fromAdmin( const Message &message, const SessionID &sessionID ) 
+	throw( FieldNotFound, IncorrectDataFormat, IncorrectTag
