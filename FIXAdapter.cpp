@@ -180,4 +180,8 @@ void CFIXAdapter::toAdmin( Message &message, const SessionID &sessionID )
 		else if (TargetCompID.compare("LMXBD")==0)
 		{
 			m_TradeSessionID = sessionID;
-	
+		}
+	}
+}
+
+void CFIXAdapter::toApp( Message &message, const SessionID &se
