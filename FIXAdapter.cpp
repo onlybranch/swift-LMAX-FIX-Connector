@@ -187,4 +187,7 @@ void CFIXAdapter::toAdmin( Message &message, const SessionID &sessionID )
 void CFIXAdapter::toApp( Message &message, const SessionID &sessionID ) 
 	throw( DoNotSend )
 {
-	cout << "toApp:" << message << " - " << ses
+	cout << "toApp:" << message << " - " << sessionID << endl;
+}
+
+void CFIXAdapter::fromAdmin( const Message &messag
