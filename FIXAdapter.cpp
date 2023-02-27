@@ -196,3 +196,5 @@ void CFIXAdapter::fromAdmin( const Message &message, const SessionID &sessionID 
 	cout << message << endl;
 	crack(message, sessionID);
 }
+
+void CFIXAdapter::fromApp( const Message &message, const SessionID
