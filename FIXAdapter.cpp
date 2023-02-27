@@ -198,4 +198,8 @@ void CFIXAdapter::fromAdmin( const Message &message, const SessionID &sessionID 
 }
 
 void CFIXAdapter::fromApp( const Message &message, const SessionID &sessionID ) 
-	throw( FieldNotFound, IncorrectDataFormat, In
+	throw( FieldNotFound, IncorrectDataFormat, IncorrectTagValue, UnsupportedMessageType )
+{
+	try
+	{
+		cout << message
