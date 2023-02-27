@@ -197,4 +197,5 @@ void CFIXAdapter::fromAdmin( const Message &message, const SessionID &sessionID 
 	crack(message, sessionID);
 }
 
-void CFIXAdapter::fromApp( const Message &message, const SessionID
+void CFIXAdapter::fromApp( const Message &message, const SessionID &sessionID ) 
+	throw( FieldNotFound, IncorrectDataFormat, In
