@@ -191,4 +191,8 @@ void CFIXAdapter::toApp( Message &message, const SessionID &sessionID )
 }
 
 void CFIXAdapter::fromAdmin( const Message &message, const SessionID &sessionID ) 
-	throw( FieldNotFound, IncorrectDataFormat, IncorrectTag
+	throw( FieldNotFound, IncorrectDataFormat, IncorrectTagValue, RejectLogon )
+{
+	cout << message << endl;
+	crack(message, sessionID);
+}
