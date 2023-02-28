@@ -202,4 +202,7 @@ void CFIXAdapter::fromApp( const Message &message, const SessionID &sessionID )
 {
 	try
 	{
-		cout << message
+		cout << message << endl;
+		crack(message, sessionID);
+	}
+	catch(FIX::UnsupportedMess
