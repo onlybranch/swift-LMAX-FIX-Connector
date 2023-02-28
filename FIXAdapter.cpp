@@ -205,4 +205,10 @@ void CFIXAdapter::fromApp( const Message &message, const SessionID &sessionID )
 		cout << message << endl;
 		crack(message, sessionID);
 	}
-	catch(FIX::UnsupportedMess
+	catch(FIX::UnsupportedMessageType &/*value*/)
+	{
+		cout << "Not handled message " << message << endl;
+	}
+}
+
+s
