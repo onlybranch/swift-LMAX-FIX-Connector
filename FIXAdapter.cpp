@@ -211,4 +211,6 @@ void CFIXAdapter::fromApp( const Message &message, const SessionID &sessionID )
 	}
 }
 
-s
+string CFIXAdapter::GenerateClOrdID()
+{
+	// This is a 16 char hex
