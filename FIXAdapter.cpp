@@ -219,4 +219,6 @@ string CFIXAdapter::GenerateClOrdID()
 	stringstream ss;
 	ss << setfill('0');
 	ss << setw(4) << dtNow.GetYear();
-	ss <
+	ss << setw(2) << dtNow.GetMonth();
+	ss << setw(2) << dtNow.GetDay();
+	ss << setw
