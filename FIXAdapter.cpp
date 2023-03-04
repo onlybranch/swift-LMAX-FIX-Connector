@@ -216,4 +216,7 @@ string CFIXAdapter::GenerateClOrdID()
 	// This is a 16 char hex number without a leading zero
 	CTimeObject dtNow = CTimeObject::Now();
 
-	
+	stringstream ss;
+	ss << setfill('0');
+	ss << setw(4) << dtNow.GetYear();
+	ss <
