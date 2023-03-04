@@ -213,4 +213,7 @@ void CFIXAdapter::fromApp( const Message &message, const SessionID &sessionID )
 
 string CFIXAdapter::GenerateClOrdID()
 {
-	// This is a 16 char hex
+	// This is a 16 char hex number without a leading zero
+	CTimeObject dtNow = CTimeObject::Now();
+
+	
