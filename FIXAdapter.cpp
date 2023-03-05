@@ -224,4 +224,9 @@ string CFIXAdapter::GenerateClOrdID()
 	ss << setw(2) << dtNow.GetHour();
 	ss << setw(2) << dtNow.GetMinute();
 	ss << setw(2) << dtNow.GetSecond();
-	ss << setw(2) << (m_Ord
+	ss << setw(2) << (m_OrderCount++) % 100;
+
+	return ss.str();
+}
+
+/*****************************
