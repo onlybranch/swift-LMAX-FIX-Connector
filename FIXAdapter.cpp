@@ -221,4 +221,6 @@ string CFIXAdapter::GenerateClOrdID()
 	ss << setw(4) << dtNow.GetYear();
 	ss << setw(2) << dtNow.GetMonth();
 	ss << setw(2) << dtNow.GetDay();
-	ss << setw
+	ss << setw(2) << dtNow.GetHour();
+	ss << setw(2) << dtNow.GetMinute();
+	ss << s
