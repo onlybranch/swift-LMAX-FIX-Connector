@@ -231,4 +231,5 @@ string CFIXAdapter::GenerateClOrdID()
 
 /*****************************************************************************/
 /*          All the available client functions that can be used				 */
-/*                
+/*                  to issue commands to the FIX server						 */
+/**************
