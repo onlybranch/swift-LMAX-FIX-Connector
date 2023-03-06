@@ -230,4 +230,5 @@ string CFIXAdapter::GenerateClOrdID()
 }
 
 /*****************************************************************************/
-/*          All t
+/*          All the available client functions that can be used				 */
+/*                
