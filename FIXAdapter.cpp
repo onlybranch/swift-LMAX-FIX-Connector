@@ -237,4 +237,8 @@ bool CFIXAdapter::TestRequest(const string &RequestID)
 {
 	bool bRet = false;
 
-	if (m_bTradeL
+	if (m_bTradeLoggedIn)
+	{
+		FIX44::TestRequest message;
+
+		message.set(FIX::TestRe
