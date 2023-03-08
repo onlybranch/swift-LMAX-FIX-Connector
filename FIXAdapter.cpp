@@ -241,4 +241,7 @@ bool CFIXAdapter::TestRequest(const string &RequestID)
 	{
 		FIX44::TestRequest message;
 
-		message.set(FIX::TestRe
+		message.set(FIX::TestReqID(RequestID));
+
+		cout << "Sending test request" << endl;
+		bRet = FIX
