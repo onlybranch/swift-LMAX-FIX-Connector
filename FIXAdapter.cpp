@@ -244,4 +244,7 @@ bool CFIXAdapter::TestRequest(const string &RequestID)
 		message.set(FIX::TestReqID(RequestID));
 
 		cout << "Sending test request" << endl;
-		bRet = FIX
+		bRet = FIX::Session::sendToTarget(message, m_TradeSessionID);
+	}
+	return bRet;
+}
