@@ -248,3 +248,9 @@ bool CFIXAdapter::TestRequest(const string &RequestID)
 	}
 	return bRet;
 }
+
+bool CFIXAdapter::SendSequenceReset()
+{
+	bool bRet = false;
+
+	if (m_bTr
