@@ -253,4 +253,8 @@ bool CFIXAdapter::SendSequenceReset()
 {
 	bool bRet = false;
 
-	if (m_bTr
+	if (m_bTradeLoggedIn)
+	{
+		FIX44::SequenceReset message;
+
+		message.set(FIX::GapFillF
