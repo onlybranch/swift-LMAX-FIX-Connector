@@ -257,4 +257,6 @@ bool CFIXAdapter::SendSequenceReset()
 	{
 		FIX44::SequenceReset message;
 
-		message.set(FIX::GapFillF
+		message.set(FIX::GapFillFlag(false));
+
+		bRet = FIX::Session::sendToTarget(message, m_
