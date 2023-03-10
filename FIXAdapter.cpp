@@ -259,4 +259,9 @@ bool CFIXAdapter::SendSequenceReset()
 
 		message.set(FIX::GapFillFlag(false));
 
-		bRet = FIX::Session::sendToTarget(message, m_
+		bRet = FIX::Session::sendToTarget(message, m_TradeSessionID);
+	}
+	return bRet;
+}
+
+bool CFIXAdapter::Logout(const string &Reason)
