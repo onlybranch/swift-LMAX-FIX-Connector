@@ -273,4 +273,9 @@ bool CFIXAdapter::Logout(const string &Reason)
 		FIX44::Logout message;
 		message.set(FIX::Text(Reason));
 
-		bRet = FIX::Session::sendToTarg
+		bRet = FIX::Session::sendToTarget(message);
+	}
+	return bRet;
+}
+
+bool CFIXAdapter::NewOrderSingle(cons
