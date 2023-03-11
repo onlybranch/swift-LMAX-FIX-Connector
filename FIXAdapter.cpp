@@ -265,3 +265,9 @@ bool CFIXAdapter::SendSequenceReset()
 }
 
 bool CFIXAdapter::Logout(const string &Reason)
+{
+	bool bRet = false;
+
+	if (m_bTradeLoggedIn)
+	{
+		FIX44::Logout messag
