@@ -270,4 +270,7 @@ bool CFIXAdapter::Logout(const string &Reason)
 
 	if (m_bTradeLoggedIn)
 	{
-		FIX44::Logout messag
+		FIX44::Logout message;
+		message.set(FIX::Text(Reason));
+
+		bRet = FIX::Session::sendToTarg
