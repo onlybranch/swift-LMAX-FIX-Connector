@@ -278,4 +278,4 @@ bool CFIXAdapter::Logout(const string &Reason)
 	return bRet;
 }
 
-bool CFIXAdapter::NewOrderSingle(cons
+bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double Price, bool 
