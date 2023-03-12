@@ -278,4 +278,8 @@ bool CFIXAdapter::Logout(const string &Reason)
 	return bRet;
 }
 
-bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double Price, bool 
+bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double Price, bool bIsLimit, string &OrderID)
+{
+	if (!m_bTradeLoggedIn)
+	{
+		cout << "Not logged
