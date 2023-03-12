@@ -286,4 +286,8 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 		return false;
 	}
 
-	// Get the uniq
+	// Get the unique order ID
+	string ClOrdID = GenerateClOrdID();
+
+	FIX::Side	OrderSide;
+	if (Q
