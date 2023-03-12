@@ -282,4 +282,8 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 {
 	if (!m_bTradeLoggedIn)
 	{
-		cout << "Not logged
+		cout << "Not logged in so unable to send new order" << endl;
+		return false;
+	}
+
+	// Get the uniq
