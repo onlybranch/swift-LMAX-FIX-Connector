@@ -296,4 +296,9 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 	}
 	else
 	{
+		OrderSide = FIX::Side_SELL;
+	}
+
+	FIX::OrdType OrderType;
+	if (bIsLimit)
 	
