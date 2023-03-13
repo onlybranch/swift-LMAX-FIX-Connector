@@ -290,4 +290,10 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 	string ClOrdID = GenerateClOrdID();
 
 	FIX::Side	OrderSide;
-	if (Q
+	if (Quantity > 0)
+	{
+		OrderSide = FIX::Side_BUY;
+	}
+	else
+	{
+	
