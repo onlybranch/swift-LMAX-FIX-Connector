@@ -301,4 +301,9 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 
 	FIX::OrdType OrderType;
 	if (bIsLimit)
-	
+	{
+		OrderType = FIX::OrdType_LIMIT;
+	}
+	else
+	{
+		OrderType = FIX::OrdType_MAR
