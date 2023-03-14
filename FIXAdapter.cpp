@@ -306,4 +306,8 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 	}
 	else
 	{
-		OrderType = FIX::OrdType_MAR
+		OrderType = FIX::OrdType_MARKET;
+	}
+
+	FIX44::NewOrderSingle message(
+		FIX::ClOrdID(ClOrdID),
