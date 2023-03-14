@@ -311,3 +311,8 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 
 	FIX44::NewOrderSingle message(
 		FIX::ClOrdID(ClOrdID),
+		OrderSide,				
+		FIX::TransactTime(true),
+		OrderType);		
+
+	// Conv
