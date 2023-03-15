@@ -315,4 +315,6 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 		FIX::TransactTime(true),
 		OrderType);		
 
-	// Conv
+	// Convert currency string into ID
+	int CurrencyID;
+	if (!m_Currencies.GetCur
