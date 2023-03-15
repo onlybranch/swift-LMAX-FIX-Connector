@@ -319,4 +319,9 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 	int CurrencyID;
 	if (!m_Currencies.GetCurrencyID(Currency, CurrencyID))
 	{
-		cout << "Unable to get th
+		cout << "Unable to get the currencyID for " << Currency << endl;
+		return false;
+	}
+
+	// Instrument
+	
