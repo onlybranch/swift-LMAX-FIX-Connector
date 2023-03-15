@@ -317,4 +317,6 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 
 	// Convert currency string into ID
 	int CurrencyID;
-	if (!m_Currencies.GetCur
+	if (!m_Currencies.GetCurrencyID(Currency, CurrencyID))
+	{
+		cout << "Unable to get th
