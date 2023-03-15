@@ -324,4 +324,6 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 	}
 
 	// Instrument
-	
+	stringstream ss;
+	ss << CurrencyID;
+	message.set(FIX::Securi
