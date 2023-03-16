@@ -327,4 +327,7 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 	stringstream ss;
 	ss << CurrencyID;
 	message.set(FIX::SecurityID(ss.str()));		// LMAX orderbook ID
-	message.set(FIX::SecurityIDSource("
+	message.set(FIX::SecurityIDSource("8"));	// "8" = Exchange Symbol
+
+	// OrderQtyData
+	message.set(FIX::
