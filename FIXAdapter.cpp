@@ -326,4 +326,5 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 	// Instrument
 	stringstream ss;
 	ss << CurrencyID;
-	message.set(FIX::Securi
+	message.set(FIX::SecurityID(ss.str()));		// LMAX orderbook ID
+	message.set(FIX::SecurityIDSource("
