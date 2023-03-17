@@ -334,4 +334,5 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 
 	message.set(FIX::Price(Price));
 
-	/
+	// Time in force is dependant on the order type
+	if (bIsLimit)
