@@ -330,4 +330,8 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 	message.set(FIX::SecurityIDSource("8"));	// "8" = Exchange Symbol
 
 	// OrderQtyData
-	message.set(FIX::
+	message.set(FIX::OrderQty(fabs(Quantity)));
+
+	message.set(FIX::Price(Price));
+
+	/
