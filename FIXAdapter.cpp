@@ -336,3 +336,6 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 
 	// Time in force is dependant on the order type
 	if (bIsLimit)
+	{
+		// Valid all day (trading session)
+		message.set(FIX::TimeInForce('0'));
