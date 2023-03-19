@@ -339,3 +339,9 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 	{
 		// Valid all day (trading session)
 		message.set(FIX::TimeInForce('0'));
+	}
+	else
+	{
+		// Immediate or Cancel
+		message.set(FIX::TimeInForce('3'));
+	
