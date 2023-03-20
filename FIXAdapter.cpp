@@ -346,4 +346,7 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 		message.set(FIX::TimeInForce('3'));
 	}
 
-	return FIX::Session::sendToTarget(message, m_TradeSessio
+	return FIX::Session::sendToTarget(message, m_TradeSessionID);
+}
+
+bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, 
