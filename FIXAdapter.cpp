@@ -349,4 +349,8 @@ bool CFIXAdapter::NewOrderSingle(const string &Currency, double Quantity, double
 	return FIX::Session::sendToTarget(message, m_TradeSessionID);
 }
 
-bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, 
+bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, const string &Currency, double Quantity)
+{
+	if (!m_bTradeLoggedIn)
+	{
+		retu
