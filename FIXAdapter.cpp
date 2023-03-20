@@ -353,4 +353,9 @@ bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, const string &Cu
 {
 	if (!m_bTradeLoggedIn)
 	{
-		retu
+		return false;
+	}
+
+	string ClOrdID = GenerateClOrdID();
+
+	FIX::Side
