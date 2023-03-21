@@ -358,4 +358,9 @@ bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, const string &Cu
 
 	string ClOrdID = GenerateClOrdID();
 
-	FIX::Side
+	FIX::Side OrderSide;
+	if (Quantity > 0)
+	{
+		OrderSide = FIX::Side_BUY;
+	}
+	else
