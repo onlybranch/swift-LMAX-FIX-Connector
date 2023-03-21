@@ -369,4 +369,7 @@ bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, const string &Cu
 	}
 
 	FIX44::OrderCancelRequest message(
-		
+		FIX::OrigClOrdID(OrigClOrdID),
+		FIX::ClOrdID(ClOrdID),
+		OrderSide,
+		FIX::Trans
