@@ -364,3 +364,9 @@ bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, const string &Cu
 		OrderSide = FIX::Side_BUY;
 	}
 	else
+	{
+		OrderSide = FIX::Side_SELL;
+	}
+
+	FIX44::OrderCancelRequest message(
+		
