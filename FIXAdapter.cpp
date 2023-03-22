@@ -372,4 +372,7 @@ bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, const string &Cu
 		FIX::OrigClOrdID(OrigClOrdID),
 		FIX::ClOrdID(ClOrdID),
 		OrderSide,
-		FIX::Trans
+		FIX::TransactTime(true));
+
+	// Convert currency string into ID
+	int CurrencyID;
