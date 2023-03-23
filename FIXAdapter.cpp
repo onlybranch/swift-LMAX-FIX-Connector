@@ -376,3 +376,6 @@ bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, const string &Cu
 
 	// Convert currency string into ID
 	int CurrencyID;
+	if (!m_Currencies.GetCurrencyID(Currency, CurrencyID))
+	{
+		cout <<
