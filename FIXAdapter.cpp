@@ -386,4 +386,7 @@ bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, const string &Cu
 	stringstream ss;
 	ss << CurrencyID;
 	message.set(FIX::SecurityID(ss.str()));		// LMAX orderbook ID
-	message.set(FIX::Sec
+	message.set(FIX::SecurityIDSource("8"));	// "8" = Exchange Symbol
+
+	// OrderQtyData
+	message.set(FIX::O
