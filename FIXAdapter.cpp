@@ -385,4 +385,5 @@ bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, const string &Cu
 	// Instrument
 	stringstream ss;
 	ss << CurrencyID;
-	message
+	message.set(FIX::SecurityID(ss.str()));		// LMAX orderbook ID
+	message.set(FIX::Sec
