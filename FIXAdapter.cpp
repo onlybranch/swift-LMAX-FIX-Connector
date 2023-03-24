@@ -379,4 +379,10 @@ bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, const string &Cu
 	if (!m_Currencies.GetCurrencyID(Currency, CurrencyID))
 	{
 		cout << "Unable to get the currencyID for " << Currency << endl;
-		retu
+		return false;
+	}
+
+	// Instrument
+	stringstream ss;
+	ss << CurrencyID;
+	message
