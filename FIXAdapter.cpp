@@ -389,4 +389,6 @@ bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, const string &Cu
 	message.set(FIX::SecurityIDSource("8"));	// "8" = Exchange Symbol
 
 	// OrderQtyData
-	message.set(FIX::O
+	message.set(FIX::OrderQty(fabs(Quantity)));
+
+	return FIX::Session::sendToTarget(me
