@@ -391,4 +391,7 @@ bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, const string &Cu
 	// OrderQtyData
 	message.set(FIX::OrderQty(fabs(Quantity)));
 
-	return FIX::Session::sendToTarget(me
+	return FIX::Session::sendToTarget(message, m_TradeSessionID);
+}
+
+/*************************************
