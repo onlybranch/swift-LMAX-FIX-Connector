@@ -394,4 +394,5 @@ bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, const string &Cu
 	return FIX::Session::sendToTarget(message, m_TradeSessionID);
 }
 
-/*************************************
+/******************************************************************************/
+/*              Handler functi
