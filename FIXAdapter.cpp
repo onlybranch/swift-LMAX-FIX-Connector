@@ -396,4 +396,5 @@ bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, const string &Cu
 
 /******************************************************************************/
 /*              Handler functions for every type of message					  */
-/*                  we can get b
+/*                  we can get back from the FIX server						  */
+/**************************************************
