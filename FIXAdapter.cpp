@@ -400,4 +400,7 @@ bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, const string &Cu
 /******************************************************************************/
 void CFIXAdapter::onMessage(const FIX44::Heartbeat &message, const FIX::SessionID&)
 {
-	cout << "We have received a heartb
+	cout << "We have received a heartbeat message" << endl;
+}
+
+void CFIXAdapter::onMessage(const FIX44::Reject &message, const FIX::Sessi
