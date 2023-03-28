@@ -398,4 +398,6 @@ bool CFIXAdapter::OrderCancelRequest(const string &OrigClOrdID, const string &Cu
 /*              Handler functions for every type of message					  */
 /*                  we can get back from the FIX server						  */
 /******************************************************************************/
-void CFIXAdapter::onMessage(const FIX44::Heartbea
+void CFIXAdapter::onMessage(const FIX44::Heartbeat &message, const FIX::SessionID&)
+{
+	cout << "We have received a heartb
