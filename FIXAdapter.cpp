@@ -408,4 +408,4 @@ void CFIXAdapter::onMessage(const FIX44::Reject &message, const FIX::SessionID&)
 	cout << "We have received a reject message" << endl;
 }
 
-void CFIXAd
+void CFIXAdapter::onMessage(const FIX44::Logout &message, const FIX::Sess
