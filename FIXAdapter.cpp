@@ -403,4 +403,9 @@ void CFIXAdapter::onMessage(const FIX44::Heartbeat &message, const FIX::SessionI
 	cout << "We have received a heartbeat message" << endl;
 }
 
-void CFIXAdapter::onMessage(const FIX44::Reject &message, const FIX::Sessi
+void CFIXAdapter::onMessage(const FIX44::Reject &message, const FIX::SessionID&)
+{
+	cout << "We have received a reject message" << endl;
+}
+
+void CFIXAd
