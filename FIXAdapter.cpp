@@ -413,4 +413,6 @@ void CFIXAdapter::onMessage(const FIX44::Logout &message, const FIX::SessionID&)
 	cout << "We have received a logout message" << endl;
 }
 
-void CFIXAd
+void CFIXAdapter::onMessage(const FIX44::ExecutionReport &message, const FIX::SessionID&)
+{
+	co
