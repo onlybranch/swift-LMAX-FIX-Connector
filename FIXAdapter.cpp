@@ -417,4 +417,8 @@ void CFIXAdapter::onMessage(const FIX44::ExecutionReport &message, const FIX::Se
 {
 	cout << "We have received an execution report" << endl;
 
-	// Check to see what
+	// Check to see what sort of message this is
+	FIX::OrdStatus orderStatus;
+	message.get(orderStatus);
+
+	switc
