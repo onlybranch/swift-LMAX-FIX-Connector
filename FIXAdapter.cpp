@@ -415,4 +415,6 @@ void CFIXAdapter::onMessage(const FIX44::Logout &message, const FIX::SessionID&)
 
 void CFIXAdapter::onMessage(const FIX44::ExecutionReport &message, const FIX::SessionID&)
 {
-	co
+	cout << "We have received an execution report" << endl;
+
+	// Check to see what
