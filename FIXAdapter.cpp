@@ -425,4 +425,6 @@ void CFIXAdapter::onMessage(const FIX44::ExecutionReport &message, const FIX::Se
 	{
 	case	'0':	handleNewOrder(message);
 					break;
-	c
+	case	'1':	handlePartiallyFilledOrder(message);
+					break;
+	case	'2':	handleFilled
