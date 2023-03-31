@@ -421,4 +421,8 @@ void CFIXAdapter::onMessage(const FIX44::ExecutionReport &message, const FIX::Se
 	FIX::OrdStatus orderStatus;
 	message.get(orderStatus);
 
-	switc
+	switch(orderStatus)
+	{
+	case	'0':	handleNewOrder(message);
+					break;
+	c
