@@ -427,4 +427,7 @@ void CFIXAdapter::onMessage(const FIX44::ExecutionReport &message, const FIX::Se
 					break;
 	case	'1':	handlePartiallyFilledOrder(message);
 					break;
-	case	'2':	handleFilled
+	case	'2':	handleFilledOrder(message);
+					break;
+	case	'4':	handleCanceledOrder(message);
+					break;
