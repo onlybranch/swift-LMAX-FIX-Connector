@@ -431,3 +431,6 @@ void CFIXAdapter::onMessage(const FIX44::ExecutionReport &message, const FIX::Se
 					break;
 	case	'4':	handleCanceledOrder(message);
 					break;
+	case	'8':	handleRejectedOrder(message);
+					break;
+	default:		cout << "Unknown Execu
