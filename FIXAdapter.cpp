@@ -433,4 +433,8 @@ void CFIXAdapter::onMessage(const FIX44::ExecutionReport &message, const FIX::Se
 					break;
 	case	'8':	handleRejectedOrder(message);
 					break;
-	default:		cout << "Unknown Execu
+	default:		cout << "Unknown ExecutionReport with status " << orderStatus << endl;
+	}
+}
+
+void CFIXAdapter::onMessa
