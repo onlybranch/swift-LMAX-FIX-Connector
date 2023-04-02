@@ -437,4 +437,6 @@ void CFIXAdapter::onMessage(const FIX44::ExecutionReport &message, const FIX::Se
 	}
 }
 
-void CFIXAdapter::onMessa
+void CFIXAdapter::onMessage(const FIX44::OrderCancelReject &message, const FIX::SessionID&)
+{
+	cout << "We have
