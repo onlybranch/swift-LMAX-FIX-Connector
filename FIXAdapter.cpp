@@ -444,4 +444,7 @@ void CFIXAdapter::onMessage(const FIX44::OrderCancelReject &message, const FIX::
 
 void CFIXAdapter::onMessage(const FIX44::Logon &message, const FIX::SessionID&)
 {
-	cout << "We have received a log
+	cout << "We have received a login message" << endl;
+}
+
+void CFIXAdapter::onMessa
