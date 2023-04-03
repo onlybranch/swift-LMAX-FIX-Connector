@@ -442,4 +442,6 @@ void CFIXAdapter::onMessage(const FIX44::OrderCancelReject &message, const FIX::
 	cout << "We have received a cancel order reject message" << endl;
 }
 
-void CFIXAdapter::onMessage(const FIX
+void CFIXAdapter::onMessage(const FIX44::Logon &message, const FIX::SessionID&)
+{
+	cout << "We have received a log
