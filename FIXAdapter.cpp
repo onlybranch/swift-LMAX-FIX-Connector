@@ -451,4 +451,6 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 {
 	cout << "Quote received" << endl;
 
-	FIX::Secu
+	FIX::SecurityID										SecID;
+	FIX::NoMDEntries									NoValues;
+	FIX44::MarketDat
