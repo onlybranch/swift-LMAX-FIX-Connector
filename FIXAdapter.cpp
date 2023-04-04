@@ -447,4 +447,8 @@ void CFIXAdapter::onMessage(const FIX44::Logon &message, const FIX::SessionID&)
 	cout << "We have received a login message" << endl;
 }
 
-void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message, 
+void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message, const FIX::SessionID&)
+{
+	cout << "Quote received" << endl;
+
+	FIX::Secu
