@@ -453,4 +453,5 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 
 	FIX::SecurityID										SecID;
 	FIX::NoMDEntries									NoValues;
-	FIX44::MarketDat
+	FIX44::MarketDataSnapshotFullRefresh::NoMDEntries	Group;
+	FIX::MDEntryType									Q
