@@ -456,4 +456,6 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 	FIX44::MarketDataSnapshotFullRefresh::NoMDEntries	Group;
 	FIX::MDEntryType									QuoteType;
 	FIX::MDEntryPx										QuotePrice;
-	FIX::MDE
+	FIX::MDEntrySize									QuoteSize;
+	FIX::MDEntryDate									QuoteDate;
+	FIX::MDEntryTim
