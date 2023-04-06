@@ -458,4 +458,9 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 	FIX::MDEntryPx										QuotePrice;
 	FIX::MDEntrySize									QuoteSize;
 	FIX::MDEntryDate									QuoteDate;
-	FIX::MDEntryTim
+	FIX::MDEntryTime									QuoteTime;
+
+	try
+	{
+		// Get the currency ID
+		message.g
