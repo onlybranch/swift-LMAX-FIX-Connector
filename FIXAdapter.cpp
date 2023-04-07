@@ -463,4 +463,8 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 	try
 	{
 		// Get the currency ID
+		message.get(SecID);
+		string CurrencyID = SecID;
+
+		// Get number of values
 		message.g
