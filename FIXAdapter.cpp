@@ -467,4 +467,8 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 		string CurrencyID = SecID;
 
 		// Get number of values
-		message.g
+		message.get(NoValues);
+		int Count = NoValues;
+
+		for (int i=1;i<=Count;i++)
+		
