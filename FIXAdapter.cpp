@@ -471,4 +471,7 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 		int Count = NoValues;
 
 		for (int i=1;i<=Count;i++)
-		
+		{
+			message.getGroup(i, Group);
+			Group.get(QuoteType);
+			Group.get(QuotePrice);
