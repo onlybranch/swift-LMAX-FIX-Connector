@@ -476,4 +476,10 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 			Group.get(QuoteType);
 			Group.get(QuotePrice);
 			Group.get(QuoteSize);
-			// Date and time are the same for all items in this g
+			// Date and time are the same for all items in this group
+			if (i==1)
+			{
+				Group.get(QuoteDate);
+				Group.get(QuoteTime);
+		
+			   C
