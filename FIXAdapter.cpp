@@ -482,4 +482,7 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 				Group.get(QuoteDate);
 				Group.get(QuoteTime);
 		
-			   C
+			   CTimeObject now = CTimeObject::Now();
+
+				// Create message string
+		
