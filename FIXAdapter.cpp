@@ -487,4 +487,5 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 				// Create message string
 				cout << setfill('0');
 				cout << setw(2) << now.GetHour() << ":";
-				cou
+				cout << setw(2) << now.GetMinute() << ":";
+				cout << setw(2) << now.GetSecon
