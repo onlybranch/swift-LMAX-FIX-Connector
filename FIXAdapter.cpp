@@ -493,4 +493,5 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 
 				cout << QuoteTime << endl;
 
-//				cout << CurrencyID << ":" << Quot
+//				cout << CurrencyID << ":" << QuoteType << " " << QuotePrice << " " << QuoteSize << " ";
+//				cout << QuoteDate
