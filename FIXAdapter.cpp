@@ -500,4 +500,8 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 	}
 	catch(...)
 	{
-		// Don't know what
+		// Don't know what to do here
+	}
+}
+
+/*void CFIXAdapter::HandleResendRequest(const Mess
