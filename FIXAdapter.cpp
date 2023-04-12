@@ -509,4 +509,4 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 	cout << "We have received a resend request" << endl;
 
 	string StartSeqStr = message.getField(FIX::FIELD::BeginSeqNo);
-	string
+	string EndSeqStr = message.getField(FIX::FIELD::EndSeqNo)
