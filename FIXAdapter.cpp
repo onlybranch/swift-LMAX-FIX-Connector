@@ -506,4 +506,7 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 
 /*void CFIXAdapter::HandleResendRequest(const Message &message)
 {
-	cout << "We have received a resend reques
+	cout << "We have received a resend request" << endl;
+
+	string StartSeqStr = message.getField(FIX::FIELD::BeginSeqNo);
+	string
