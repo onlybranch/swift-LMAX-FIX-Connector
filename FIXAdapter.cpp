@@ -504,4 +504,6 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 	}
 }
 
-/*void CFIXAdapter::HandleResendRequest(const Mess
+/*void CFIXAdapter::HandleResendRequest(const Message &message)
+{
+	cout << "We have received a resend reques
