@@ -516,4 +516,6 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 }*/
 
 /*
- * Create a new order in our system key
+ * Create a new order in our system keyed on the ClOrdID
+ */
+void CFIXAdapter::handleNewOrder(const FIX44::Execut
