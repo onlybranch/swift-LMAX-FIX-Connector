@@ -510,4 +510,10 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 
 	string StartSeqStr = message.getField(FIX::FIELD::BeginSeqNo);
 	string EndSeqStr = message.getField(FIX::FIELD::EndSeqNo);
-//	cout << "Asking for messages " << StartSeqStr << " to " << EndSeqStr
+//	cout << "Asking for messages " << StartSeqStr << " to " << EndSeqStr << endl;
+
+//	SendSequenceReset();
+}*/
+
+/*
+ * Create a new order in our system key
