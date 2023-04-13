@@ -518,4 +518,8 @@ void CFIXAdapter::onMessage(const FIX44::MarketDataSnapshotFullRefresh &message,
 /*
  * Create a new order in our system keyed on the ClOrdID
  */
-void CFIXAdapter::handleNewOrder(const FIX44::Execut
+void CFIXAdapter::handleNewOrder(const FIX44::ExecutionReport &message)
+{
+	// Grab the ClOrdID
+	FIX::ClOrdID clOrdID;
+	message.get(cl
