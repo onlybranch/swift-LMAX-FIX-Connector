@@ -522,4 +522,8 @@ void CFIXAdapter::handleNewOrder(const FIX44::ExecutionReport &message)
 {
 	// Grab the ClOrdID
 	FIX::ClOrdID clOrdID;
-	message.get(cl
+	message.get(clOrdID);
+
+	// Get the amount we have requested
+	FIX::OrderQty orderQty;
+	messa
