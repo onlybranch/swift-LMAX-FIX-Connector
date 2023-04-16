@@ -526,4 +526,7 @@ void CFIXAdapter::handleNewOrder(const FIX44::ExecutionReport &message)
 
 	// Get the amount we have requested
 	FIX::OrderQty orderQty;
-	messa
+	message.get(orderQty);
+
+	// Get the order side
+	FIX::Side sid
