@@ -534,4 +534,5 @@ void CFIXAdapter::handleNewOrder(const FIX44::ExecutionReport &message)
 
 	if (side == FIX::Side_BUY)
 	{
-		// 
+		// Update our trades collection
+		m_Orders.Add(clOrdID, order
