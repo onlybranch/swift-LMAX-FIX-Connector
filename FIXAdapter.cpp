@@ -529,4 +529,9 @@ void CFIXAdapter::handleNewOrder(const FIX44::ExecutionReport &message)
 	message.get(orderQty);
 
 	// Get the order side
-	FIX::Side sid
+	FIX::Side side;
+	message.get(side);
+
+	if (side == FIX::Side_BUY)
+	{
+		// 
