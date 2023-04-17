@@ -545,4 +545,6 @@ void CFIXAdapter::handleNewOrder(const FIX44::ExecutionReport &message)
 }
 
 /*
- * Update our previou
+ * Update our previously created order with partial fill information
+ */
+void CFIXAdap
