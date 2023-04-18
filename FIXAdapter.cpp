@@ -547,4 +547,8 @@ void CFIXAdapter::handleNewOrder(const FIX44::ExecutionReport &message)
 /*
  * Update our previously created order with partial fill information
  */
-void CFIXAdapter::handlePartiallyFilledOrder(const FIX44::ExecutionReport 
+void CFIXAdapter::handlePartiallyFilledOrder(const FIX44::ExecutionReport &message)
+{
+	// Grab the ClOrdID
+	FIX::ClOrdID clOrdID;
+	message.get(c
