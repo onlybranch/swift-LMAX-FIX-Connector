@@ -561,4 +561,6 @@ void CFIXAdapter::handlePartiallyFilledOrder(const FIX44::ExecutionReport &messa
 }
 
 /*
- * Update our order and mark it as
+ * Update our order and mark it as successful and complete
+ */
+void CFIXAdapter::handleFilledOrd
