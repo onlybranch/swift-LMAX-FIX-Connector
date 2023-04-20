@@ -563,4 +563,7 @@ void CFIXAdapter::handlePartiallyFilledOrder(const FIX44::ExecutionReport &messa
 /*
  * Update our order and mark it as successful and complete
  */
-void CFIXAdapter::handleFilledOrd
+void CFIXAdapter::handleFilledOrder(const FIX44::ExecutionReport &message)
+{
+	// Grab the ClOrdID
+	FIX::Cl
