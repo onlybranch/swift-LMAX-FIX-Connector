@@ -556,3 +556,9 @@ void CFIXAdapter::handlePartiallyFilledOrder(const FIX44::ExecutionReport &messa
 	// Get the new total amount of fills
 //	FIX::
 	double Received=0.0;
+
+	m_Orders.Update(clOrdID, Received);
+}
+
+/*
+ * Update our order and mark it as
