@@ -570,4 +570,5 @@ void CFIXAdapter::handleFilledOrder(const FIX44::ExecutionReport &message)
 	message.get(clOrdID);
 
 	double Received=0.0;
-	m
+	m_Orders.Update(clOrdID, Received);
+	m_Orders.Update(clOrdID, eOrderState::
