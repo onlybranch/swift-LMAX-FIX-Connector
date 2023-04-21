@@ -566,4 +566,8 @@ void CFIXAdapter::handlePartiallyFilledOrder(const FIX44::ExecutionReport &messa
 void CFIXAdapter::handleFilledOrder(const FIX44::ExecutionReport &message)
 {
 	// Grab the ClOrdID
-	FIX::Cl
+	FIX::ClOrdID clOrdID;
+	message.get(clOrdID);
+
+	double Received=0.0;
+	m
