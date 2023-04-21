@@ -571,4 +571,10 @@ void CFIXAdapter::handleFilledOrder(const FIX44::ExecutionReport &message)
 
 	double Received=0.0;
 	m_Orders.Update(clOrdID, Received);
-	m_Orders.Update(clOrdID, eOrderState::
+	m_Orders.Update(clOrdID, eOrderState::FILLED);
+}
+
+/*
+ * Update out order and mark it as cancelled and complete
+ */
+void CFIXAdap
