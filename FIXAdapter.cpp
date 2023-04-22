@@ -577,4 +577,10 @@ void CFIXAdapter::handleFilledOrder(const FIX44::ExecutionReport &message)
 /*
  * Update out order and mark it as cancelled and complete
  */
-void CFIXAdapter::handleCanceledOrder(const FIX44::ExecutionReport &messa
+void CFIXAdapter::handleCanceledOrder(const FIX44::ExecutionReport &message)
+{
+	// Grab the ClOrdID
+	FIX::ClOrdID clOrdID;
+	message.get(clOrdID);
+
+	m_Orders.U
