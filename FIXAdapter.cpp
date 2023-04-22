@@ -577,4 +577,4 @@ void CFIXAdapter::handleFilledOrder(const FIX44::ExecutionReport &message)
 /*
  * Update out order and mark it as cancelled and complete
  */
-void CFIXAdap
+void CFIXAdapter::handleCanceledOrder(const FIX44::ExecutionReport &messa
