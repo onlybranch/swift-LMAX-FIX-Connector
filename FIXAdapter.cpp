@@ -583,4 +583,8 @@ void CFIXAdapter::handleCanceledOrder(const FIX44::ExecutionReport &message)
 	FIX::ClOrdID clOrdID;
 	message.get(clOrdID);
 
-	m_Orders.U
+	m_Orders.Update(clOrdID, eOrderState::CANCELED);
+}
+
+/*
+ * Update our order and mark it 
