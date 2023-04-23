@@ -589,4 +589,8 @@ void CFIXAdapter::handleCanceledOrder(const FIX44::ExecutionReport &message)
 /*
  * Update our order and mark it as rejected and complete
  */
-void CFIXAdapter::handleRejectedOrder(const FIX44::
+void CFIXAdapter::handleRejectedOrder(const FIX44::ExecutionReport &message)
+{
+	// Grab the ClOrdID
+	FIX::ClOrdID clOrdID;
+	message
