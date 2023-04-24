@@ -593,4 +593,9 @@ void CFIXAdapter::handleRejectedOrder(const FIX44::ExecutionReport &message)
 {
 	// Grab the ClOrdID
 	FIX::ClOrdID clOrdID;
-	message
+	message.get(clOrdID);
+
+	m_Orders.Update(clOrdID, eOrderState::REJECTED);
+}
+
+bool CFI
