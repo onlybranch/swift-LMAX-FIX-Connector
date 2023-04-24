@@ -598,4 +598,6 @@ void CFIXAdapter::handleRejectedOrder(const FIX44::ExecutionReport &message)
 	m_Orders.Update(clOrdID, eOrderState::REJECTED);
 }
 
-bool CFI
+bool CFIXAdapter::StartMarketDataRequest(const string &Currency)
+{
+	cout << "Subscrib
