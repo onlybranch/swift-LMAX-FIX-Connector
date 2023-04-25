@@ -600,4 +600,7 @@ void CFIXAdapter::handleRejectedOrder(const FIX44::ExecutionReport &message)
 
 bool CFIXAdapter::StartMarketDataRequest(const string &Currency)
 {
-	cout << "Subscrib
+	cout << "Subscribing to currency " << Currency << endl;
+
+	int CurrencyID;
+	if (!m_Currenc
