@@ -603,4 +603,6 @@ bool CFIXAdapter::StartMarketDataRequest(const string &Currency)
 	cout << "Subscribing to currency " << Currency << endl;
 
 	int CurrencyID;
-	if (!m_Currenc
+	if (!m_Currencies.GetCurrencyID(Currency, CurrencyID))
+	{
+		cout << "Unable to get currency for 
