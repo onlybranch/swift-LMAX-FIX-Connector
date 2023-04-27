@@ -617,4 +617,7 @@ bool CFIXAdapter::StartMarketDataRequest(const string &Currency)
 	}
 
 	// Get the unique order ID
-	string RequestID
+	string RequestID = GenerateClOrdID();
+
+	// Register this as subscribed
+	m_mapMarketData[CurrencyID] 
