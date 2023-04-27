@@ -612,4 +612,9 @@ bool CFIXAdapter::StartMarketDataRequest(const string &Currency)
 	// Make sure we are not already subscribed to this one
 	if (m_mapMarketData.find(CurrencyID)!=m_mapMarketData.end())
 	{
-		cout << "We are already subscribed to market data for currencyID " << CurrencyID << endl
+		cout << "We are already subscribed to market data for currencyID " << CurrencyID << endl;
+		return false;
+	}
+
+	// Get the unique order ID
+	string RequestID
