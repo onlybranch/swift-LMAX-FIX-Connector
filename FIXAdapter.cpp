@@ -609,4 +609,7 @@ bool CFIXAdapter::StartMarketDataRequest(const string &Currency)
 		return false;
 	}
 
-	// Make sure we are not already su
+	// Make sure we are not already subscribed to this one
+	if (m_mapMarketData.find(CurrencyID)!=m_mapMarketData.end())
+	{
+		c
