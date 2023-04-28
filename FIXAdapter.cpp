@@ -620,4 +620,8 @@ bool CFIXAdapter::StartMarketDataRequest(const string &Currency)
 	string RequestID = GenerateClOrdID();
 
 	// Register this as subscribed
-	m_mapMarketData[CurrencyID] 
+	m_mapMarketData[CurrencyID] = RequestID;
+
+	FIX44::MarketDataRequest message(
+		FIX::MDReqID(RequestID),
+		FI
