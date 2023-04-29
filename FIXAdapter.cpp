@@ -624,4 +624,7 @@ bool CFIXAdapter::StartMarketDataRequest(const string &Currency)
 
 	FIX44::MarketDataRequest message(
 		FIX::MDReqID(RequestID),
-		FIX::SubscriptionRequestType(SubscriptionRequestType_SNAPSHOT_PLUS_UPD
+		FIX::SubscriptionRequestType(SubscriptionRequestType_SNAPSHOT_PLUS_UPDATES),				
+		FIX::MarketDepth(0));		
+
+	FIX44::MarketDataRequest::NoMDEntryTyp
