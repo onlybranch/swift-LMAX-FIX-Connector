@@ -634,4 +634,7 @@ bool CFIXAdapter::StartMarketDataRequest(const string &Currency)
 	message.addGroup(group1);
 
 	// Instrument
-	string
+	stringstream ss;
+	ss << CurrencyID;
+
+	FIX44::MarketDataRequest::NoRelate
