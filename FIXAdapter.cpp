@@ -637,4 +637,6 @@ bool CFIXAdapter::StartMarketDataRequest(const string &Currency)
 	stringstream ss;
 	ss << CurrencyID;
 
-	FIX44::MarketDataRequest::NoRelate
+	FIX44::MarketDataRequest::NoRelatedSym group2;
+	group2.set(FIX::SecurityID(ss.str()));
+	group2.set(FIX::Secu
