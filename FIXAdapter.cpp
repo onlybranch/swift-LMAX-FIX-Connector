@@ -639,4 +639,9 @@ bool CFIXAdapter::StartMarketDataRequest(const string &Currency)
 
 	FIX44::MarketDataRequest::NoRelatedSym group2;
 	group2.set(FIX::SecurityID(ss.str()));
-	group2.set(FIX::Secu
+	group2.set(FIX::SecurityIDSource("8"));
+	message.addGroup(group2);
+
+	bool bRet = true;
+
+	t
