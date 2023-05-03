@@ -644,4 +644,8 @@ bool CFIXAdapter::StartMarketDataRequest(const string &Currency)
 
 	bool bRet = true;
 
-	t
+	try
+	{
+		bRet = FIX::Session::sendToTarget(message, m_PriceSessionID);
+	}
+	catch(FI
