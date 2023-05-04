@@ -651,4 +651,9 @@ bool CFIXAdapter::StartMarketDataRequest(const string &Currency)
 	catch(FIX::SessionNotFound &SNF)
 	{
 		cout << SNF.detail << endl;
-		bRet = fa
+		bRet = false;
+	}
+	return bRet;
+}
+
+bool CFIXAdapter::DisableMarketDataRequest
