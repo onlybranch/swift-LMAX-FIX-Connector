@@ -648,4 +648,7 @@ bool CFIXAdapter::StartMarketDataRequest(const string &Currency)
 	{
 		bRet = FIX::Session::sendToTarget(message, m_PriceSessionID);
 	}
-	catch(FI
+	catch(FIX::SessionNotFound &SNF)
+	{
+		cout << SNF.detail << endl;
+		bRet = fa
