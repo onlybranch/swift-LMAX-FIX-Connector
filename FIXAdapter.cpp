@@ -656,4 +656,6 @@ bool CFIXAdapter::StartMarketDataRequest(const string &Currency)
 	return bRet;
 }
 
-bool CFIXAdapter::DisableMarketDataRequest
+bool CFIXAdapter::DisableMarketDataRequest(const string &Currency)
+{
+	cout << "Unsubscribing from currency
