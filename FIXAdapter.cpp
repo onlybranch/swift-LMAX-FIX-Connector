@@ -669,4 +669,6 @@ bool CFIXAdapter::DisableMarketDataRequest(const string &Currency)
 
 	// See if we are already subscribed to this currency
 	auto it = m_mapMarketData.find(CurrencyID);
-	if 
+	if (it == m_mapMarketData.end())
+	{
+		cout << "We are trying to unsu
