@@ -661,4 +661,6 @@ bool CFIXAdapter::DisableMarketDataRequest(const string &Currency)
 	cout << "Unsubscribing from currency " << Currency << endl;
 
 	int CurrencyID;
-	if (!m_Currencies.GetCurrencyID(Curre
+	if (!m_Currencies.GetCurrencyID(Currency, CurrencyID))
+	{
+		cout << "Unable to get currency ID for 
