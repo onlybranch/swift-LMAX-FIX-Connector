@@ -667,4 +667,6 @@ bool CFIXAdapter::DisableMarketDataRequest(const string &Currency)
 		return false;
 	}
 
-	// See if we are already subs
+	// See if we are already subscribed to this currency
+	auto it = m_mapMarketData.find(CurrencyID);
+	if 
