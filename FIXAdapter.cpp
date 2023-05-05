@@ -663,4 +663,8 @@ bool CFIXAdapter::DisableMarketDataRequest(const string &Currency)
 	int CurrencyID;
 	if (!m_Currencies.GetCurrencyID(Currency, CurrencyID))
 	{
-		cout << "Unable to get currency ID for 
+		cout << "Unable to get currency ID for " << Currency << endl;
+		return false;
+	}
+
+	// See if we are already subs
