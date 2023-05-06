@@ -677,4 +677,7 @@ bool CFIXAdapter::DisableMarketDataRequest(const string &Currency)
 
 	FIX44::MarketDataRequest message(
 		FIX::MDReqID(it->second),
-		FIX::SubscriptionRequestType(Subs
+		FIX::SubscriptionRequestType(SubscriptionRequestType_UNSUBSCRIBE),				
+		FIX::MarketDepth(0));		
+
+	m_mapM
