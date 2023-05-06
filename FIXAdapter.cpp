@@ -671,4 +671,4 @@ bool CFIXAdapter::DisableMarketDataRequest(const string &Currency)
 	auto it = m_mapMarketData.find(CurrencyID);
 	if (it == m_mapMarketData.end())
 	{
-		cout << "We are trying to unsu
+		cout << "We are trying to unsubscribe from a currency we are not subscribed to (" << CurrencyID
