@@ -686,4 +686,10 @@ bool CFIXAdapter::DisableMarketDataRequest(const string &Currency)
 	group1.set(FIX::MDEntryType(FIX::MDEntryType_BID));
 	message.addGroup(group1);
 	group1.set(FIX::MDEntryType(FIX::MDEntryType_OFFER));
-	message.addGrou
+	message.addGroup(group1);
+
+	// Instrument
+	stringstream ss;
+	ss << CurrencyID;
+
+	FIX44::M
