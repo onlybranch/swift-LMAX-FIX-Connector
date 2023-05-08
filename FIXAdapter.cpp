@@ -683,4 +683,5 @@ bool CFIXAdapter::DisableMarketDataRequest(const string &Currency)
 	m_mapMarketData.erase(it);
 
 	FIX44::MarketDataRequest::NoMDEntryTypes group1;
-	
+	group1.set(FIX::MDEntryType(FIX::MDEntryType_BID));
+	message.addGroup(group1);
