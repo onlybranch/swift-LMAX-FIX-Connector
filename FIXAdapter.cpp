@@ -693,4 +693,8 @@ bool CFIXAdapter::DisableMarketDataRequest(const string &Currency)
 	ss << CurrencyID;
 
 	FIX44::MarketDataRequest::NoRelatedSym group2;
-	group2.set(FIX::SecurityID(ss.st
+	group2.set(FIX::SecurityID(ss.str()));
+	group2.set(FIX::SecurityIDSource("8"));
+	message.addGroup(group2);
+
+	bo
