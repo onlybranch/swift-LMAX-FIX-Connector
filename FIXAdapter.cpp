@@ -697,4 +697,8 @@ bool CFIXAdapter::DisableMarketDataRequest(const string &Currency)
 	group2.set(FIX::SecurityIDSource("8"));
 	message.addGroup(group2);
 
-	bo
+	bool bRet = true;
+
+	try
+	{
+		bRet = FIX::Session::sendToTarget(message, m_PriceSe
