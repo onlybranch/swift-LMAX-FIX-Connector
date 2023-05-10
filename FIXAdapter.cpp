@@ -701,4 +701,8 @@ bool CFIXAdapter::DisableMarketDataRequest(const string &Currency)
 
 	try
 	{
-		bRet = FIX::Session::sendToTarget(message, m_PriceSe
+		bRet = FIX::Session::sendToTarget(message, m_PriceSessionID);
+	}
+	catch(FIX::SessionNotFound &SNF)
+	{
+		cout << SNF.detail <<
