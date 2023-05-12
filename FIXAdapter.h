@@ -3,4 +3,9 @@
 #include "quickfix/Application.h"
 #include "quickfix/MessageCracker.h"
 #include "quickfix/SocketInitiator.h"
-#include "FIXOrderC
+#include "FIXOrderCollection.h"
+#include "CurrencyCollection.h"
+
+using namespace FIX;
+
+class CFIXA
