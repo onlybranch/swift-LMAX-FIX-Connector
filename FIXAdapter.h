@@ -9,4 +9,9 @@
 using namespace FIX;
 
 class CFIXAdapter : public FIX::Application,
-					public FIX::MessageCrack
+					public FIX::MessageCracker
+{
+private:
+	FIX::SocketInitiator		*m_pInitiator;
+
+	unsigned int				m_Orde
