@@ -14,4 +14,6 @@ class CFIXAdapter : public FIX::Application,
 private:
 	FIX::SocketInitiator		*m_pInitiator;
 
-	unsigned int				m_Orde
+	unsigned int				m_OrderCount;
+	FIX::SessionID				m_TradeSessionID;
+	FIX::Sessi
