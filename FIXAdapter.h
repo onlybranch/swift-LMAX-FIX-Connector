@@ -16,4 +16,7 @@ private:
 
 	unsigned int				m_OrderCount;
 	FIX::SessionID				m_TradeSessionID;
-	FIX::Sessi
+	FIX::SessionID				m_PriceSessionID;
+
+	std::string					m_UserName;
+	std::strin
