@@ -8,4 +8,5 @@
 
 using namespace FIX;
 
-class CFIXA
+class CFIXAdapter : public FIX::Application,
+					public FIX::MessageCrack
