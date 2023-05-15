@@ -25,4 +25,8 @@ private:
 	std::string					m_PriceCompID;
 
 	bool						m_bTradeLoggedIn;
-	bool						m_bPriceLogg
+	bool						m_bPriceLoggedIn;
+
+	std::map<int, std::string>	m_mapMarketData;
+
+	// Stores all the or
