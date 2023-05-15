@@ -29,4 +29,7 @@ private:
 
 	std::map<int, std::string>	m_mapMarketData;
 
-	// Stores all the or
+	// Stores all the orders we have received
+	CFIXOrderCollection			m_Orders;
+
+	// Stores all 
