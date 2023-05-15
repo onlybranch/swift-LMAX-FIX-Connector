@@ -19,4 +19,7 @@ private:
 	FIX::SessionID				m_PriceSessionID;
 
 	std::string					m_UserName;
-	std::strin
+	std::string					m_Password;
+
+	std::string					m_TradeCompID;
+	std::stri
