@@ -22,4 +22,7 @@ private:
 	std::string					m_Password;
 
 	std::string					m_TradeCompID;
-	std::stri
+	std::string					m_PriceCompID;
+
+	bool						m_bTradeLoggedIn;
+	bool						m_bPriceLogg
