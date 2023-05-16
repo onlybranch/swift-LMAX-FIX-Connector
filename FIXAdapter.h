@@ -32,4 +32,7 @@ private:
 	// Stores all the orders we have received
 	CFIXOrderCollection			m_Orders;
 
-	// Stores all 
+	// Stores all the tradable currencies
+	CCurrencyCollection			m_Currencies;
+
+	std::stri
