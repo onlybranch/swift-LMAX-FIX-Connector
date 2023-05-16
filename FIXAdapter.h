@@ -38,4 +38,6 @@ private:
 	std::string		GenerateClOrdID();
 
 	// Notification of a session begin created
-	vir
+	virtual void onCreate( const SessionID& );
+
+	// These are all 
