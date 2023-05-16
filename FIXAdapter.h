@@ -35,4 +35,7 @@ private:
 	// Stores all the tradable currencies
 	CCurrencyCollection			m_Currencies;
 
-	std::stri
+	std::string		GenerateClOrdID();
+
+	// Notification of a session begin created
+	vir
