@@ -40,4 +40,5 @@ private:
 	// Notification of a session begin created
 	virtual void onCreate( const SessionID& );
 
-	// These are all 
+	// These are all the message types we can get back from the server
+	void	onMessage(const FIX44::Hea
