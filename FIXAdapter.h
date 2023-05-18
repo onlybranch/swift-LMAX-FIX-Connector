@@ -43,4 +43,5 @@ private:
 	// These are all the message types we can get back from the server
 	void	onMessage(const FIX44::Heartbeat &message, const FIX::SessionID&);
 	void	onMessage(const FIX44::Reject &message, const FIX::SessionID&);
-	void	onMe
+	void	onMessage(const FIX44::Logout &message, const FIX::SessionID&);
+	void	onMessage(cons
