@@ -46,4 +46,5 @@ private:
 	void	onMessage(const FIX44::Logout &message, const FIX::SessionID&);
 	void	onMessage(const FIX44::ExecutionReport &message, const FIX::SessionID&);
 	void	onMessage(const FIX44::OrderCancelReject &message, const FIX::SessionID&);
-	void	onMes
+	void	onMessage(const FIX44::Logon &message, const FIX::SessionID&);
+	void	onMess
