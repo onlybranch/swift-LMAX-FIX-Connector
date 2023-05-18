@@ -44,4 +44,5 @@ private:
 	void	onMessage(const FIX44::Heartbeat &message, const FIX::SessionID&);
 	void	onMessage(const FIX44::Reject &message, const FIX::SessionID&);
 	void	onMessage(const FIX44::Logout &message, const FIX::SessionID&);
-	void	onMessage(cons
+	void	onMessage(const FIX44::ExecutionReport &message, const FIX::SessionID&);
+	void	onM
