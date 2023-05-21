@@ -49,4 +49,5 @@ private:
 	void	onMessage(const FIX44::Logon &message, const FIX::SessionID&);
 	void	onMessage(const FIX44::MarketDataSnapshotFullRefresh &message, const FIX::SessionID&);
 
-	void	handleNewOrder(const FIX44::ExecutionReport &me
+	void	handleNewOrder(const FIX44::ExecutionReport &message);
+	void	handlePartiallyFilledOrder(const FIX44::ExecutionReport &
