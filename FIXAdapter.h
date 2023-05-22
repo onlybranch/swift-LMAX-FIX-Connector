@@ -52,4 +52,5 @@ private:
 	void	handleNewOrder(const FIX44::ExecutionReport &message);
 	void	handlePartiallyFilledOrder(const FIX44::ExecutionReport &message);
 	void	handleFilledOrder(const FIX44::ExecutionReport &message);
-	void	handleCanceledOrder(const FIX44::ExecutionReport
+	void	handleCanceledOrder(const FIX44::ExecutionReport &message);
+	void	handleRejectedOrder(const FIX44::ExecutionReport &message);
