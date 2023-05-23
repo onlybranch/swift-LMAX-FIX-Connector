@@ -57,4 +57,6 @@ private:
 
 	// Notification of a session successfully logging on
 	virtual void onLogon( const SessionID& );
-	// Notification of a session logging o
+	// Notification of a session logging off or disconnecting
+	virtual void onLogout( const SessionID& );
+	// Notification of
