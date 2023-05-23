@@ -56,4 +56,5 @@ private:
 	void	handleRejectedOrder(const FIX44::ExecutionReport &message);
 
 	// Notification of a session successfully logging on
-	virtual void on
+	virtual void onLogon( const SessionID& );
+	// Notification of a session logging o
