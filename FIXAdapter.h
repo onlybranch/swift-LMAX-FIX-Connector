@@ -59,4 +59,5 @@ private:
 	virtual void onLogon( const SessionID& );
 	// Notification of a session logging off or disconnecting
 	virtual void onLogout( const SessionID& );
-	// Notification of
+	// Notification of admin message being sent to target
+	virtual void toAdmin( Messag
