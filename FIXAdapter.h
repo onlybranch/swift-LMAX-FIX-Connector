@@ -60,4 +60,5 @@ private:
 	// Notification of a session logging off or disconnecting
 	virtual void onLogout( const SessionID& );
 	// Notification of admin message being sent to target
-	virtual void toAdmin( Messag
+	virtual void toAdmin( Message&, const SessionID& );
+	// Notification of app message being se
