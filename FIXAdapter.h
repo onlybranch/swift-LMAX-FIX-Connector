@@ -62,4 +62,5 @@ private:
 	// Notification of admin message being sent to target
 	virtual void toAdmin( Message&, const SessionID& );
 	// Notification of app message being sent to target
-	virtual void toApp( Message&, const SessionID& ) t
+	virtual void toApp( Message&, const SessionID& ) throw( DoNotSend );
+	// Notification of admin message being received 
