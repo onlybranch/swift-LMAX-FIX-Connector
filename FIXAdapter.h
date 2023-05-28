@@ -65,4 +65,5 @@ private:
 	virtual void toApp( Message&, const SessionID& ) throw( DoNotSend );
 	// Notification of admin message being received from target
 	virtual void fromAdmin( const Message&, const SessionID& ) 
-		thr
+		throw( FieldNotFound, IncorrectDataFormat, IncorrectTagValue, RejectLogon );
+	
