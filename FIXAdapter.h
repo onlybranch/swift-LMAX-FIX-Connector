@@ -68,4 +68,7 @@ private:
 		throw( FieldNotFound, IncorrectDataFormat, IncorrectTagValue, RejectLogon );
 	// Notification of app message being received from target
 	virtual void fromApp( const Message&, const SessionID& ) 
-		throw( FieldNotFound, Incorrect
+		throw( FieldNotFound, IncorrectDataFormat, IncorrectTagValue, UnsupportedMessageType );
+
+public:
+			CFIXAda
