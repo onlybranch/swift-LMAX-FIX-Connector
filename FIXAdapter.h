@@ -67,4 +67,5 @@ private:
 	virtual void fromAdmin( const Message&, const SessionID& ) 
 		throw( FieldNotFound, IncorrectDataFormat, IncorrectTagValue, RejectLogon );
 	// Notification of app message being received from target
-	
+	virtual void fromApp( const Message&, const SessionID& ) 
+		throw( FieldNotFound, Incorrect
