@@ -76,4 +76,7 @@ public:
 
 	// Alow the client to set the login details
 	void	SetLoginDetails(const std::string &UserName,
-						    
+						    const std::string &Password);
+
+	void	SetCompIDs(const std::string &TradeCompID,
+					   const std::str
