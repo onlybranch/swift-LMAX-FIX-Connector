@@ -74,4 +74,6 @@ public:
 			CFIXAdapter();
 			~CFIXAdapter();
 
-	// Alow the client to set the login deta
+	// Alow the client to set the login details
+	void	SetLoginDetails(const std::string &UserName,
+						    
