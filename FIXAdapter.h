@@ -71,4 +71,7 @@ private:
 		throw( FieldNotFound, IncorrectDataFormat, IncorrectTagValue, UnsupportedMessageType );
 
 public:
-			CFIXAda
+			CFIXAdapter();
+			~CFIXAdapter();
+
+	// Alow the client to set the login deta
