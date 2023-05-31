@@ -79,4 +79,9 @@ public:
 						    const std::string &Password);
 
 	void	SetCompIDs(const std::string &TradeCompID,
-					   const std::str
+					   const std::string &PriceCompID);
+
+	bool	Initialise();
+	bool	Shutdown();
+
+	// Check to see if
