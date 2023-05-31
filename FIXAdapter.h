@@ -86,4 +86,7 @@ public:
 
 	// Check to see if we are currently logged in
 	bool	IsTradeLoggedIn();
-	bool	IsPriceLo
+	bool	IsPriceLoggedIn();
+
+	// These are all the messages we can send to the server
+	boo
