@@ -89,4 +89,6 @@ public:
 	bool	IsPriceLoggedIn();
 
 	// These are all the messages we can send to the server
-	boo
+	bool	TestRequest(const std::string &RequestID);
+	bool	SendSequenceReset();
+	bool	Lo
