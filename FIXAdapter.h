@@ -84,4 +84,6 @@ public:
 	bool	Initialise();
 	bool	Shutdown();
 
-	// Check to see if
+	// Check to see if we are currently logged in
+	bool	IsTradeLoggedIn();
+	bool	IsPriceLo
