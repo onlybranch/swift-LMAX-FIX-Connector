@@ -92,4 +92,4 @@ public:
 	bool	TestRequest(const std::string &RequestID);
 	bool	SendSequenceReset();
 	bool	Logout(const std::string &Reason);
-	bool	NewOrderSingle(const std::string &Currency,
+	bool	NewOrderSingle(const std::string &Currency, double Quantity, double Price, bool bIsLimit, std::string &OrderID)
