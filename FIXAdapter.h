@@ -91,4 +91,5 @@ public:
 	// These are all the messages we can send to the server
 	bool	TestRequest(const std::string &RequestID);
 	bool	SendSequenceReset();
-	bool	Lo
+	bool	Logout(const std::string &Reason);
+	bool	NewOrderSingle(const std::string &Currency,
