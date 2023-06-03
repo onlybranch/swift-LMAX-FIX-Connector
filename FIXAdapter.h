@@ -93,4 +93,6 @@ public:
 	bool	SendSequenceReset();
 	bool	Logout(const std::string &Reason);
 	bool	NewOrderSingle(const std::string &Currency, double Quantity, double Price, bool bIsLimit, std::string &OrderID);
-	bool	OrderCancelRequest(const std::string &OrigClOrdID, const std::string &Cur
+	bool	OrderCancelRequest(const std::string &OrigClOrdID, const std::string &Currency, double Quantity);
+
+	bool	StartMarketDataRequest(const std::str
