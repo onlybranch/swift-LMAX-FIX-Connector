@@ -1,1 +1,5 @@
-// FIXConnector.cpp : Defines the entry point for the cons
+// FIXConnector.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include "FIXAdapter.h"
+#
