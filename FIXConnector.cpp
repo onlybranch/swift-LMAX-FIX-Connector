@@ -2,4 +2,6 @@
 //
 #include "stdafx.h"
 #include "FIXAdapter.h"
-#
+#include "Platform.h"
+#include <iostream>
+#include "TimeObject.h"
