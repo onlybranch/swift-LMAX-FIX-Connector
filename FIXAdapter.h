@@ -96,4 +96,6 @@ public:
 	bool	OrderCancelRequest(const std::string &OrigClOrdID, const std::string &Currency, double Quantity);
 
 	bool	StartMarketDataRequest(const std::string &Currency);
-	bool	DisableMarketDataRequest(const std::string &Cu
+	bool	DisableMarketDataRequest(const std::string &Currency);
+};
+
