@@ -5,3 +5,9 @@
 #include "Platform.h"
 #include <iostream>
 #include "TimeObject.h"
+
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+	// 
