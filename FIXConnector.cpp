@@ -10,4 +10,9 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	// 
+	// Testing code
+	CTimeObject	TimeObj;
+
+	for (int i=0;i<100;i++)
+	{
+		TimeObj.Se
