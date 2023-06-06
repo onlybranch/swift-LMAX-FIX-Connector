@@ -20,4 +20,8 @@ int main(int argc, char* argv[])
 		Sleep(250);
 	}
 
-	cout << "Waiting fo
+	cout << "Waiting for 5 seconds...";
+	Sleep(1000*5);
+	cout << "Done" << endl;
+
+	retur
