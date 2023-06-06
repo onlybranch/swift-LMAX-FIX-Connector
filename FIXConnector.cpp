@@ -15,4 +15,9 @@ int main(int argc, char* argv[])
 
 	for (int i=0;i<100;i++)
 	{
-		TimeObj.Se
+		TimeObj.SetCurrentTime();
+		TimeObj.Print();
+		Sleep(250);
+	}
+
+	cout << "Waiting fo
