@@ -24,4 +24,9 @@ int main(int argc, char* argv[])
 	Sleep(1000*5);
 	cout << "Done" << endl;
 
-	retur
+	return 0;
+
+
+	CFIXAdapter	app;
+	app.SetLoginDetails("username", "password");
+	app.SetCom
