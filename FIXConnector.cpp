@@ -29,4 +29,7 @@ int main(int argc, char* argv[])
 
 	CFIXAdapter	app;
 	app.SetLoginDetails("username", "password");
-	app.SetCom
+	app.SetCompIDs("CompID", "CompID");
+	if (!app.Initialise())
+	{
+		cout << "Fai
