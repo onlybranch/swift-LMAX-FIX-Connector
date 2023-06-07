@@ -37,4 +37,5 @@ int main(int argc, char* argv[])
 	}
 
 	// Wait for it to complete
-	cout
+	cout << "Waiting for app to login" << endl;
+	while (!app.IsTradeLoggedIn() &
