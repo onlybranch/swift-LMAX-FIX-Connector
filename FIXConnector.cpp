@@ -32,4 +32,9 @@ int main(int argc, char* argv[])
 	app.SetCompIDs("CompID", "CompID");
 	if (!app.Initialise())
 	{
-		cout << "Fai
+		cout << "Failed to initialise" << endl;
+		return 1;
+	}
+
+	// Wait for it to complete
+	cout
