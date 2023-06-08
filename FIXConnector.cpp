@@ -45,4 +45,5 @@ int main(int argc, char* argv[])
 	}
 	Sleep(1000);
 	
-	
+	// Request live price stream
+	cout << "About to send request for live pri
