@@ -48,4 +48,7 @@ int main(int argc, char* argv[])
 	// Request live price stream
 	cout << "About to send request for live prices" << endl; 
 	app.StartMarketDataRequest("GBPUSD");
-	cout << "
+	cout << "Waiting for prices" << endl;
+
+	Sleep(1000*60*100);
+	if (!app.Shutdown())
