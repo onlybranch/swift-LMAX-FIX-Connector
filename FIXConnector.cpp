@@ -52,3 +52,10 @@ int main(int argc, char* argv[])
 
 	Sleep(1000*60*100);
 	if (!app.Shutdown())
+	{
+		cout << "Failed to shutdown" << endl;
+		return 1;
+	}
+	return 0;
+}
+
