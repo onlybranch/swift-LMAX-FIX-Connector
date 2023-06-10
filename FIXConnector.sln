@@ -4,4 +4,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FIXConnector", "FIXConnector.vcxproj", "{55EB142E-35B9-4214-8A7C-4BD15407E77E}"
 EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSol
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
