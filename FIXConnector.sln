@@ -14,4 +14,7 @@ Global
 		{55EB142E-35B9-4214-8A7C-4BD15407E77E}.Release|x64.ActiveCfg = Release|x64
 		{55EB142E-35B9-4214-8A7C-4BD15407E77E}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolut
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
