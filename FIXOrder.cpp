@@ -1,4 +1,10 @@
 #include "stdafx.h"
 #include "FIXOrder.h"
 
-using namesp
+using namespace std;
+
+CFIXOrder::CFIXOrder(void)
+{
+}
+
+CFIXOrder::CFIXOrder(string OrderID)
