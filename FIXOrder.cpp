@@ -16,4 +16,6 @@ CFIXOrder::~CFIXOrder(void)
 {
 }
 
-void CFIXOr
+void CFIXOrder::SetAmountRequested(double Amount)
+{
+	m_AmountRequested = Amount
