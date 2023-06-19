@@ -36,4 +36,9 @@ double CFIXOrder::GetAmountReceived()
 	return m_AmountReceived;
 }
 
-void CFIXOrder::SetOrder
+void CFIXOrder::SetOrderState(eOrderState State)
+{
+	m_OrderState = State;
+}
+
+eOrderState CFIXOrder::
