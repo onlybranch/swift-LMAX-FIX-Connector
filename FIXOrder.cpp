@@ -31,4 +31,9 @@ void CFIXOrder::SetAmountReceived(double Amount)
 	m_AmountReceived = Amount;
 }
 
-double CFIXOrder::GetAmo
+double CFIXOrder::GetAmountReceived()
+{
+	return m_AmountReceived;
+}
+
+void CFIXOrder::SetOrder
