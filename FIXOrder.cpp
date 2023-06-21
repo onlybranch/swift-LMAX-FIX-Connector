@@ -46,4 +46,11 @@ eOrderState CFIXOrder::GetOrderState()
 	return m_OrderState;
 }
 
-void CFIXOrder::SetOrderSide(eOrderSide
+void CFIXOrder::SetOrderSide(eOrderSide Side)
+{
+	m_Side = Side;
+}
+
+eOrderSide CFIXOrder::GetOrderSide()
+{
+	return m_Side
