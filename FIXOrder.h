@@ -11,4 +11,12 @@ enum eOrderState
 	CANCELED
 };
 
-enum eO
+enum eOrderSide
+{
+	BUY = 1,
+	SELL
+};
+
+class CFIXOrder
+{
+	std::string		m_Ord
