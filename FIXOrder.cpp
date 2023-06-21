@@ -53,4 +53,5 @@ void CFIXOrder::SetOrderSide(eOrderSide Side)
 
 eOrderSide CFIXOrder::GetOrderSide()
 {
-	return m_Side
+	return m_Side;
+}
