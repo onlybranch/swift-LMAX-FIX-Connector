@@ -19,4 +19,7 @@ enum eOrderSide
 
 class CFIXOrder
 {
-	std::string		m_Ord
+	std::string		m_OrderID;
+	double			m_AmountRequested;
+	double			m_AmountReceived;
+	eOrderState		m_Or
