@@ -22,4 +22,7 @@ class CFIXOrder
 	std::string		m_OrderID;
 	double			m_AmountRequested;
 	double			m_AmountReceived;
-	eOrderState		m_Or
+	eOrderState		m_OrderState;
+	eOrderSide		m_Side;
+	tm				m_CreationTime;
+	tm				m_LastUpdated
