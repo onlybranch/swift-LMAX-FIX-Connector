@@ -25,4 +25,9 @@ class CFIXOrder
 	eOrderState		m_OrderState;
 	eOrderSide		m_Side;
 	tm				m_CreationTime;
-	tm				m_LastUpdated
+	tm				m_LastUpdatedTime;
+
+public:
+				CFIXOrder(void);
+				CFIXOrder(std::string OrderID);
+				~CFIXOrder(vo
