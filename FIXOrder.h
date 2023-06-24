@@ -30,4 +30,7 @@ class CFIXOrder
 public:
 				CFIXOrder(void);
 				CFIXOrder(std::string OrderID);
-				~CFIXOrder(vo
+				~CFIXOrder(void);
+
+	void		SetAmountRequested(double Amount);
+	double		GetAmountR
