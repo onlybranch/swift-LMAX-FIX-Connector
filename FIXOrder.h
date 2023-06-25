@@ -40,3 +40,8 @@ public:
 
 	void		SetOrderState(eOrderState State);
 	eOrderState	GetOrderState();
+
+	void		SetOrderSide(eOrderSide Side);
+	eOrderSide	GetOrderSide();
+};
+
