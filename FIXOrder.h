@@ -33,4 +33,7 @@ public:
 				~CFIXOrder(void);
 
 	void		SetAmountRequested(double Amount);
-	double		GetAmountR
+	double		GetAmountRequested();
+
+	void		SetAmountReceived(double Amount);
+	double		GetAmountReceiv
