@@ -36,4 +36,7 @@ public:
 	double		GetAmountRequested();
 
 	void		SetAmountReceived(double Amount);
-	double		GetAmountReceiv
+	double		GetAmountReceived();
+
+	void		SetOrderState(eOrderState State);
+	eOrderState	GetOrderState();
