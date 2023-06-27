@@ -9,4 +9,7 @@ EXE=app
 
 all: $(SOURCES) $(HEADERS) $(EXE)
 
-release: CC_ARGS = -O3 -std=
+release: CC_ARGS = -O3 -std=c++0x $(INC_DIRS)
+release: $(SOURCES) $(HEADERS) $(EXE)
+
+$(EXE): $(OBJECTS) FIXConnecto
