@@ -12,4 +12,5 @@ all: $(SOURCES) $(HEADERS) $(EXE)
 release: CC_ARGS = -O3 -std=c++0x $(INC_DIRS)
 release: $(SOURCES) $(HEADERS) $(EXE)
 
-$(EXE): $(OBJECTS) FIXConnecto
+$(EXE): $(OBJECTS) FIXConnector.cpp
+	g++ $(CC_ARGS) $(LIB_DIRS) $(LIBRARIES) $
