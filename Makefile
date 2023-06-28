@@ -13,4 +13,7 @@ release: CC_ARGS = -O3 -std=c++0x $(INC_DIRS)
 release: $(SOURCES) $(HEADERS) $(EXE)
 
 $(EXE): $(OBJECTS) FIXConnector.cpp
-	g++ $(CC_ARGS) $(LIB_DIRS) $(LIBRARIES) $
+	g++ $(CC_ARGS) $(LIB_DIRS) $(LIBRARIES) $(OBJECTS) $(QFLIB) FIXConnector.cpp -o $(EXE)
+
+.cpp.o: 
+	g++ -c $
