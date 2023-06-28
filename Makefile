@@ -16,4 +16,10 @@ $(EXE): $(OBJECTS) FIXConnector.cpp
 	g++ $(CC_ARGS) $(LIB_DIRS) $(LIBRARIES) $(OBJECTS) $(QFLIB) FIXConnector.cpp -o $(EXE)
 
 .cpp.o: 
-	g++ -c $
+	g++ -c $(CC_ARGS) $< -o $@
+
+clean:
+	@rm -f *.o
+	@rm -f *~
+	@rm -f $(EXE)
+
