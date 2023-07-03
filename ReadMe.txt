@@ -2,4 +2,6 @@
     CONSOLE APPLICATION : FIXConnector Project Overview
 ========================================================================
 
-AppWizard
+AppWizard has created this FIXConnector application for you.
+
+This file contai
