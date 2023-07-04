@@ -9,4 +9,4 @@ make up your FIXConnector application.
 
 
 FIXConnector.vcxproj
-    This is th
+    This is the main project file for VC++ projects generated using a
