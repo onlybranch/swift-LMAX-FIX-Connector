@@ -9,4 +9,5 @@ make up your FIXConnector application.
 
 
 FIXConnector.vcxproj
-    This is the main project file for VC++ projects generated using a
+    This is the main project file for VC++ projects generated using an Application Wizard.
+    It contains information about the versio
