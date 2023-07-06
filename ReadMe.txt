@@ -12,4 +12,7 @@ FIXConnector.vcxproj
     This is the main project file for VC++ projects generated using an Application Wizard.
     It contains information about the version of Visual C++ that generated the file, and
     information about the platforms, configurations, and project features selected with the
-    Ap
+    Application Wizard.
+
+FIXConnector.vcxproj.filters
+    This is the filters 
