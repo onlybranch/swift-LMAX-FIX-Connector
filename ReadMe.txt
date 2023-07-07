@@ -16,4 +16,5 @@ FIXConnector.vcxproj
 
 FIXConnector.vcxproj.filters
     This is the filters file for VC++ projects generated using an Application Wizard. 
-    It co
+    It contains information about the association between the files in your project 
+    and 
