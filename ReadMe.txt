@@ -24,3 +24,4 @@ FIXConnector.vcxproj.filters
 FIXConnector.cpp
     This is the main application source file.
 
+//////////////////////////////////////////////////////////////////////
