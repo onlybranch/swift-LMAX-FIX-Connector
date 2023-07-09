@@ -28,4 +28,5 @@ FIXConnector.cpp
 Other standard files:
 
 StdAfx.h, StdAfx.cpp
-    These files
+    These files are used to build a precompiled header (PCH) file
+    named FIXConnect
