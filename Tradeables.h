@@ -1,4 +1,8 @@
 #pragma once
 #include <string>
 
-const int CURRENC
+const int CURRENCY_PAIRS = 62;
+
+CurrencyPairDetails Tradeables[] =
+{ 
+	{"AUDJPY",  4
