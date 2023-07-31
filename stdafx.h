@@ -5,4 +5,7 @@
 
 #pragma once
 
-#ifd
+#ifdef _DEBUG
+#define _ITERATOR_DEBUG_LEVEL	2
+#else
+#define _ITERAT
