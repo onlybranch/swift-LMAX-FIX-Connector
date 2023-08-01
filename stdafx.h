@@ -13,4 +13,8 @@
 
 #ifdef _WIN32
 #include "targetver.h"
-#include <afxmt.h
+#include <afxmt.h>
+#include <ATLComTime.h>
+#endif // _WIN
+
+// TODO: reference additional headers your
