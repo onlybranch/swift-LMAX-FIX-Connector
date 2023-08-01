@@ -8,4 +8,9 @@
 #ifdef _DEBUG
 #define _ITERATOR_DEBUG_LEVEL	2
 #else
-#define _ITERAT
+#define _ITERATOR_DEBUG_LEVEL	0
+#endif
+
+#ifdef _WIN32
+#include "targetver.h"
+#include <afxmt.h
