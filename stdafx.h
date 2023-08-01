@@ -17,4 +17,4 @@
 #include <ATLComTime.h>
 #endif // _WIN
 
-// TODO: reference additional headers your
+// TODO: reference additional headers your program requires here
